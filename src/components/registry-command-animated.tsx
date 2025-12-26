@@ -3,10 +3,10 @@
 import { motion } from "motion/react";
 import { useRef } from "react";
 
+import { FlipSentences } from "@/components/flip-sentences";
 import { registryConfig } from "@/config/registry";
 import type { PackageManager } from "@/hooks/use-config";
 import { useConfig } from "@/hooks/use-config";
-import { FlipSentences } from "@/registry/flip-sentences";
 import { components } from "@/registry/registry-components";
 
 import {
