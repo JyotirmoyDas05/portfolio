@@ -36,7 +36,7 @@ export const PROJECTS: Project[] = [
     period: {
       start: "12.2024",
     },
-    link: "https://github.com/JyotirmoyDas05/ColabDraw",
+    link: "https://colab-draw-with-nextjs.vercel.app/",
     skills: [
       "Open Source",
       "React 19",
@@ -67,34 +67,34 @@ export const PROJECTS: Project[] = [
     isExpanded: true,
   },
   {
-    id: "tuneup-v2",
-    title: "TuneUp V2",
+    id: "geeksforgeeks-gu",
+    title: "GeeksForGeeks-GU",
     period: {
-      start: "11.2024",
+      start: "12.2024",
     },
-    link: "https://github.com/JyotirmoyDas05/tuneup-v2",
+    link: "https://geeks-for-geeks-gu.vercel.app/",
     skills: [
       "Next.js 15",
       "React 19",
       "TypeScript",
-      "Appwrite",
-      "Tailwind CSS",
+      "Tailwind CSS 4",
       "GSAP",
-      "Framer Motion",
-      "shadcn/ui",
-      "OAuth",
+      "Lenis",
+      "next-themes",
+      "Vercel Analytics",
     ],
-    description: `A platform connecting Musicians, Bands, Studios, Cafés, and Organizers — with profiles, hiring, and real-time collaboration.
+    description: `Official website for the GeeksForGeeks-GU university chapter — modern, animated, and fully responsive.
 
 **Featured:**
-- 👤 User Profiles for Musicians, Bands, Studios, Cafés, and Organizers
-- 💼 Posting & Hiring System with application chat and status updates
-- 📱 Social Feed with posts, photos, videos, likes, comments, reposts
-- 🔍 Discovery & Filtering by genre, city, instruments, availability
-- 💬 Real-time Chat System via Appwrite Realtime
-- 🔐 OAuth Integration with Google and GitHub
-- ✨ Dynamic animations with GSAP & Framer Motion`,
-    logo: "PLACEHOLDER_TUNEUP_LOGO",
+- 🎨 Modern Design with clean, responsive layout and smooth animations
+- ⚡ Performance Optimized with Next.js 15 and React 19
+- ✨ GSAP-powered text animations for engaging content presentation
+- 🌙 Dark/Light theme toggle with next-themes
+- 🧈 Butter-smooth scrolling with Lenis integration
+- 📅 Events Section showcasing activities with image gallery
+- 👥 About Page for community members and group information
+- 📱 Fully responsive for desktop, tablet, and mobile`,
+    logo: "https://geeks-for-geeks-gu.vercel.app/favicon.ico",
   },
   {
     id: "lightnote",
@@ -130,6 +130,36 @@ export const PROJECTS: Project[] = [
     logo: "https://lightnote.page/favicon.ico",
   },
   {
+    id: "tuneup-v2",
+    title: "TuneUp V2",
+    period: {
+      start: "11.2024",
+    },
+    link: "https://github.com/JyotirmoyDas05/tuneup-v2",
+    skills: [
+      "Next.js 15",
+      "React 19",
+      "TypeScript",
+      "Appwrite",
+      "Tailwind CSS",
+      "GSAP",
+      "Framer Motion",
+      "shadcn/ui",
+      "OAuth",
+    ],
+    description: `A platform connecting Musicians, Bands, Studios, Cafés, and Organizers — with profiles, hiring, and real-time collaboration.
+
+**Featured:**
+- 👤 User Profiles for Musicians, Bands, Studios, Cafés, and Organizers
+- 💼 Posting & Hiring System with application chat and status updates
+- 📱 Social Feed with posts, photos, videos, likes, comments, reposts
+- 🔍 Discovery & Filtering by genre, city, instruments, availability
+- 💬 Real-time Chat System via Appwrite Realtime
+- 🔐 OAuth Integration with Google and GitHub
+- ✨ Dynamic animations with GSAP & Framer Motion`,
+    logo: "PLACEHOLDER_TUNEUP_LOGO",
+  },
+  {
     id: "finwisely",
     title: "FinWise.ly",
     period: {
@@ -156,7 +186,7 @@ export const PROJECTS: Project[] = [
 - 🤖 AI Financial Assistant powered by Google Gemini for budget advice
 - 🔒 Secure authentication with Firebase
 - 📱 Fully responsive design for all devices`,
-    logo: "PLACEHOLDER_FINWISELY_LOGO",
+    logo: "https://finwise-ly-jyotirmoydas05s-projects.vercel.app/favicon.ico",
   },
   {
     id: "openpilot",
