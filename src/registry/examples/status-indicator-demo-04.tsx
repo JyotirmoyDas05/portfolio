@@ -1,6 +1,6 @@
 "use client";
 
-import { TbDownload, TbHeart,TbShoppingCart } from "react-icons/tb";
+import { TbDownload, TbHeart, TbShoppingCart } from "react-icons/tb";
 
 import { showStatusIndicator } from "@/registry/status-indicator";
 

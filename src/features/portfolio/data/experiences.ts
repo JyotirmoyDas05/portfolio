@@ -1,7 +1,6 @@
 import type { Experience } from "../types/experiences";
 
 export const EXPERIENCES: Experience[] = [
-
   {
     id: "freelance",
     companyName: "Freelance",
@@ -109,14 +108,8 @@ export const EXPERIENCES: Experience[] = [
 - Achieved the title of Outstanding Student from Grade 6-9.
 - Achieved **9.89** CGPA in 10th Standard
 - Developed playful starter websites using the open-source Scratch.`,
-        skills: [
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "Self-learning",
-        ],
+        skills: ["HTML", "CSS", "JavaScript", "Self-learning"],
       },
     ],
   },
 ];
-

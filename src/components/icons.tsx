@@ -604,10 +604,7 @@ export function ComponentIcon({ variant, ...props }: ComponentIconProps) {
                 y2="20"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop
-                  stopColor="rgba(87, 87, 87, 1)"
-                  data-glass-11="on"
-                ></stop>
+                <stop stopColor="rgba(87, 87, 87, 1)" data-glass-11="on"></stop>
                 <stop
                   offset="1"
                   stopColor="rgba(21, 21, 21, 1)"
@@ -688,7 +685,6 @@ export function ComponentIcon({ variant, ...props }: ComponentIconProps) {
           </g>
         </svg>
       );
-
 
     case "dynamic-scroll-island-toc":
       return (

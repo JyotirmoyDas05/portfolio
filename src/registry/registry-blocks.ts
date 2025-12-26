@@ -16,7 +16,12 @@ export const blocks: Registry["items"] = [
     name: "wheel-picker-block-02",
     type: "registry:block",
     dependencies: ["react-hook-form", "@hookform/resolvers", "zod"],
-    registryDependencies: ["@jyotirmoydas/wheel-picker", "form", "button", "sonner"],
+    registryDependencies: [
+      "@jyotirmoydas/wheel-picker",
+      "form",
+      "button",
+      "sonner",
+    ],
     files: [
       {
         path: "examples/wheel-picker-form-demo.tsx",
@@ -60,7 +65,10 @@ export const blocks: Registry["items"] = [
   {
     name: "slide-to-unlock-block-01",
     type: "registry:block",
-    registryDependencies: ["@jyotirmoydas/slide-to-unlock", "@jyotirmoydas/use-sound"],
+    registryDependencies: [
+      "@jyotirmoydas/slide-to-unlock",
+      "@jyotirmoydas/use-sound",
+    ],
     files: [
       {
         path: "examples/slide-to-unlock-demo-01.tsx",

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { useCallback,useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { TbPlus } from "react-icons/tb";
 
 import { cn } from "@/lib/utils";
