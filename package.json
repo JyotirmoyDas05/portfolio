@@ -2,17 +2,17 @@
   "name": "portfolio",
   "version": "0.1.0",
   "description": "A minimal, pixel-perfect dev portfolio, component registry, and blog.",
-  "homepage": "https://jyotirmoydas.com",
+  "homepage": "https://jyotimoydas.in",
   "license": "MIT",
   "author": {
     "name": "Jyotirmoy Das",
-    "email": "contact@jyotirmoydas.com",
+    "email": "contact@jyotimoydas.in",
     "url": "https://github.com/JyotirmoyDas05"
   },
   "contributors": [
     {
       "name": "Jyotirmoy Das",
-      "email": "contact@jyotirmoydas.com",
+      "email": "contact@jyotimoydas.in",
       "url": "https://github.com/JyotirmoyDas05"
     }
   ],

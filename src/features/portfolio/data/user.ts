@@ -16,13 +16,13 @@ export const USER = {
   address: "India",
   phoneNumber: "KzkxNjAwMjQyMjcwNQ==", // Base64 encoded for spam protection
   email: "anlvdGltb3lkYXNjc2VAZ21haWwuY29t", // Base64 encoded for spam protection
-  website: "https://jyotirmoydas.com",
+  website: "https://jyotimoydas.in",
   jobTitle: "Full Stack Developer",
   jobs: [
     {
       title: "Full Stack Developer",
       company: "For Myself",
-      website: "https://jyotirmoydas.com",
+      website: "https://jyotimoydas.in",
     },
   ],
   about: `
@@ -31,7 +31,7 @@ export const USER = {
 - Passionate about exploring new technologies and turning ideas into reality through polished, thoughtfully crafted personal projects.
 `,
   avatar: "https://github.com/JyotirmoyDas05.png",
-  ogImage: "https://jyotirmoydas.com/og-image.png",
+  ogImage: "https://jyotimoydas.in/og-image.png",
   namePronunciationUrl: "",
   timeZone: "Asia/Kolkata",
   keywords: ["jyotirmoydas", "jyotirmoy das", "jyotirmoy", "das"],

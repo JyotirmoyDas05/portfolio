@@ -3,7 +3,7 @@ import type { NavItem } from "@/types/nav";
 
 export const SITE_INFO = {
   name: USER.displayName,
-  url: process.env.APP_URL || "https://jyotirmoydas.com",
+  url: process.env.APP_URL || "https://jyotimoydas.in",
   ogImage: USER.ogImage,
   description: USER.bio,
   keywords: USER.keywords,
@@ -41,7 +41,7 @@ export const SOURCE_CODE_GITHUB_URL =
 export const SPONSORSHIP_URL = "https://github.com/sponsors/JyotirmoyDas05";
 
 export const UTM_PARAMS = {
-  utm_source: "jyotirmoydas.com",
+  utm_source: "jyotimoydas.in",
   utm_medium: "referral",
   utm_campaign: "portfolio",
 };

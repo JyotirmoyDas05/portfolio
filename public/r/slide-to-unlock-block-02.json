@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "src/registry/examples/slide-to-unlock-demo-02.tsx",
-      "content": "\"use client\";\r\n\r\nimport { SlideToUnlock } from \"@/registry/slide-to-unlock\";\r\n\r\nexport default function SlideToUnlockDemo2() {\r\n  return (\r\n    <SlideToUnlock\r\n      thumbColor=\"rgba(59, 130, 246, 0.95)\"\r\n      trackColorOff=\"#e7e5e4\"\r\n      trackColorOn=\"#173462\"\r\n      toastMessage=\"Color Changed\"\r\n    />\r\n  );\r\n}\r\n",
+      "content": "\"use client\";\n\nimport { SlideToUnlock } from \"@/registry/slide-to-unlock\";\n\nexport default function SlideToUnlockDemo2() {\n  return (\n    <SlideToUnlock\n      thumbColor=\"rgba(59, 130, 246, 0.95)\"\n      trackColorOff=\"#e7e5e4\"\n      trackColorOn=\"#173462\"\n      toastMessage=\"Color Changed\"\n    />\n  );\n}\n",
       "type": "registry:component"
     }
   ]

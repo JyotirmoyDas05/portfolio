@@ -79,16 +79,16 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "https://assets.jyotirmoydas.com/images/favicon.ico",
+        url: "https://assets.jyotimoydas.in/images/favicon.ico",
         sizes: "any",
       },
       {
-        url: "https://assets.jyotirmoydas.com/images/favicon.svg",
+        url: "https://assets.jyotimoydas.in/images/favicon.svg",
         type: "image/svg+xml",
       },
     ],
     apple: {
-      url: "https://assets.jyotirmoydas.com/images/apple-touch-icon.png",
+      url: "https://assets.jyotimoydas.in/images/apple-touch-icon.png",
       type: "image/png",
       sizes: "180x180",
     },

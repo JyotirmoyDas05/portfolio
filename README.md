@@ -1,11 +1,11 @@
-# [jyotirmoydas.com](https://jyotirmoydas.com) &middot; [![GitHub License](https://img.shields.io/github/license/JyotirmoyDas05/portfolio?label=License)](https://github.com/JyotirmoyDas05/portfolio/blob/main/LICENSE) ![GitHub Repo Views](https://gitviews.com/repo/JyotirmoyDas05/portfolio.svg?style=flat&label-color=%23555&color=%23f59e0b)
+# [jyotimoydas.in](https://jyotimoydas.in) &middot; [![GitHub License](https://img.shields.io/github/license/JyotirmoyDas05/portfolio?label=License)](https://github.com/JyotirmoyDas05/portfolio/blob/main/LICENSE) ![GitHub Repo Views](https://gitviews.com/repo/JyotirmoyDas05/portfolio.svg?style=flat&label-color=%23555&color=%23f59e0b)
 
 A minimal, pixel-perfect dev portfolio, component registry, and blog to showcase my work as a Design Engineer.
 
-Check out the live site: [jyotirmoydas.com](https://jyotirmoydas.com)
+Check out the live site: [jyotimoydas.in](https://jyotimoydas.in)
 
-[![screenshot-dark](https://assets.jyotirmoydas.com/images/screenshot-desktop-dark.webp?t=1764345394#gh-dark-mode-only)](https://github.com/JyotirmoyDas05/portfolio#gh-dark-mode-only)
-[![screenshot-light](https://assets.jyotirmoydas.com/images/screenshot-desktop-light.webp?t=1764345394#gh-light-mode-only)](https://github.com/JyotirmoyDas05/portfolio#gh-light-mode-only)
+[![screenshot-dark](https://assets.jyotimoydas.in/images/screenshot-desktop-dark.webp?t=1764345394#gh-dark-mode-only)](https://github.com/JyotirmoyDas05/portfolio#gh-dark-mode-only)
+[![screenshot-light](https://assets.jyotimoydas.in/images/screenshot-desktop-light.webp?t=1764345394#gh-light-mode-only)](https://github.com/JyotirmoyDas05/portfolio#gh-light-mode-only)
 
 ## Overview
 
@@ -72,7 +72,7 @@ You're free to use my code! Just make sure to <ins>remove all my personal inform
 
 ## Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=jyotirmoydas/jyotirmoydas.com)](https://github.com/jyotirmoydas/jyotirmoydas.com/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=jyotirmoydas/jyotimoydas.in)](https://github.com/jyotirmoydas/jyotimoydas.in/graphs/contributors)
 
 > Made with [contrib.rocks](https://contrib.rocks)
 
@@ -82,7 +82,7 @@ You're free to use my code! Just make sure to <ins>remove all my personal inform
 
 ## Star History
 
-[![Star History](https://starchart.cc/jyotirmoydas/jyotirmoydas.com.svg?variant=adaptive&line=%23d37f2c)](https://starchart.cc/jyotirmoydas/jyotirmoydas.com)
+[![Star History](https://starchart.cc/jyotirmoydas/jyotimoydas.in.svg?variant=adaptive&line=%23d37f2c)](https://starchart.cc/jyotirmoydas/jyotimoydas.in)
 
 ## Acknowledgments
 
@@ -103,6 +103,6 @@ You're free to use my code! Just make sure to <ins>remove all my personal inform
 
 ## GitAds Sponsored
 
-[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=jyotirmoydas/jyotirmoydas.com@github)](https://gitads.dev/v1/ad-track?source=jyotirmoydas/jyotirmoydas.com@github)
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=jyotirmoydas/jyotimoydas.in@github)](https://gitads.dev/v1/ad-track?source=jyotirmoydas/jyotimoydas.in@github)
 
 <!-- GitAds-Verify: QICCAB4PFWV9MHUGPGPN5B2I8SAXLAOK -->

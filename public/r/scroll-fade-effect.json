@@ -11,7 +11,7 @@
   "files": [
     {
       "path": "src/registry/scroll-fade-effect/scroll-fade-effect.tsx",
-      "content": "import React from \"react\";\r\n\r\nimport { cn } from \"@/lib/utils\";\r\n\r\nexport function ScrollFadeEffect({\r\n  className,\r\n  orientation = \"vertical\",\r\n  ...props\r\n}: React.ComponentProps<\"div\"> & {\r\n  orientation?: \"horizontal\" | \"vertical\";\r\n}) {\r\n  return (\r\n    <div\r\n      data-orientation={orientation}\r\n      className={cn(\r\n        \"data-[orientation=horizontal]:overflow-x-auto data-[orientation=vertical]:overflow-y-auto\",\r\n        \"data-[orientation=horizontal]:scroll-fade-effect-x data-[orientation=vertical]:scroll-fade-effect-y\",\r\n        className\r\n      )}\r\n      {...props}\r\n    />\r\n  );\r\n}\r\n",
+      "content": "import React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport function ScrollFadeEffect({\n  className,\n  orientation = \"vertical\",\n  ...props\n}: React.ComponentProps<\"div\"> & {\n  orientation?: \"horizontal\" | \"vertical\";\n}) {\n  return (\n    <div\n      data-orientation={orientation}\n      className={cn(\n        \"data-[orientation=horizontal]:overflow-x-auto data-[orientation=vertical]:overflow-y-auto\",\n        \"data-[orientation=horizontal]:scroll-fade-effect-x data-[orientation=vertical]:scroll-fade-effect-y\",\n        className\n      )}\n      {...props}\n    />\n  );\n}\n",
       "type": "registry:component"
     }
   ],

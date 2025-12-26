@@ -16,7 +16,7 @@ export const components: Registry["items"] = [
         type: "registry:component",
       },
     ],
-    docs: "https://jyotirmoydas.com/components/theme-switcher-component",
+    docs: "https://jyotimoydas.in/components/theme-switcher-component",
   },
   {
     name: "flip-sentences",
@@ -47,7 +47,7 @@ export const components: Registry["items"] = [
         type: "registry:component",
       },
     ],
-    docs: "https://jyotirmoydas.com/components/apple-hello-effect",
+    docs: "https://jyotimoydas.in/components/apple-hello-effect",
   },
   {
     name: "wheel-picker",
@@ -64,7 +64,7 @@ export const components: Registry["items"] = [
         type: "registry:component",
       },
     ],
-    docs: "https://jyotirmoydas.com/components/react-wheel-picker",
+    docs: "https://jyotimoydas.in/components/react-wheel-picker",
   },
   {
     name: "work-experience",
@@ -100,7 +100,7 @@ export const components: Registry["items"] = [
       '@import "tw-animate-css"': {},
       "@plugin @tailwindcss/typography": {},
     },
-    docs: "https://jyotirmoydas.com/components/work-experience-component",
+    docs: "https://jyotimoydas.in/components/work-experience-component",
   },
   {
     name: "shimmering-text",
@@ -148,7 +148,7 @@ export const components: Registry["items"] = [
         type: "registry:lib",
       },
     ],
-    docs: "https://jyotirmoydas.com/components/slide-to-unlock",
+    docs: "https://jyotimoydas.in/components/slide-to-unlock",
   },
   {
     name: "liquid-glass-slider",
@@ -181,7 +181,7 @@ export const components: Registry["items"] = [
         type: "registry:lib",
       },
     ],
-    docs: "https://jyotirmoydas.com/components/liquid-glass-slider",
+    docs: "https://jyotimoydas.in/components/liquid-glass-slider",
   },
   {
     name: "liquid-glass-searchbox",
@@ -214,7 +214,7 @@ export const components: Registry["items"] = [
         type: "registry:lib",
       },
     ],
-    docs: "https://jyotirmoydas.com/components/liquid-glass-searchbox",
+    docs: "https://jyotimoydas.in/components/liquid-glass-searchbox",
   },
   {
     name: "command-box",
@@ -231,7 +231,7 @@ export const components: Registry["items"] = [
         type: "registry:component",
       },
     ],
-    docs: "https://jyotirmoydas.com/components/command-box",
+    docs: "https://jyotimoydas.in/components/command-box",
   },
   {
     name: "testimonials-marquee",
@@ -247,7 +247,7 @@ export const components: Registry["items"] = [
         type: "registry:component",
       },
     ],
-    docs: "https://jyotirmoydas.com/components/testimonials-marquee",
+    docs: "https://jyotimoydas.in/components/testimonials-marquee",
   },
   {
     name: "github-stars",
@@ -411,7 +411,7 @@ export const components: Registry["items"] = [
         type: "registry:component",
       },
     ],
-    docs: "https://jyotirmoydas.com/components/dynamic-scroll-island-toc",
+    docs: "https://jyotimoydas.in/components/dynamic-scroll-island-toc",
   },
   {
     name: "status-button",
@@ -428,7 +428,7 @@ export const components: Registry["items"] = [
         type: "registry:component",
       },
     ],
-    docs: "https://jyotirmoydas.com/components/status-button",
+    docs: "https://jyotimoydas.in/components/status-button",
   },
   {
     name: "status-indicator",
@@ -445,6 +445,6 @@ export const components: Registry["items"] = [
         type: "registry:component",
       },
     ],
-    docs: "https://jyotirmoydas.com/components/status-indicator",
+    docs: "https://jyotimoydas.in/components/status-indicator",
   },
 ];

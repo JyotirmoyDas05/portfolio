@@ -361,7 +361,7 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
             </CommandItem>
 
             <CommandItem asChild>
-              <a href="https://jyotirmoydas.com/brand.zip" download>
+              <a href="https://jyotimoydas.in/brand.zip" download>
                 <DownloadIcon />
                 Download Brand Assets
               </a>

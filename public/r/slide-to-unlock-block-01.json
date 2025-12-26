@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "src/registry/examples/slide-to-unlock-demo-01.tsx",
-      "content": "\"use client\";\r\n\r\nimport { SlideToUnlock } from \"@/registry/slide-to-unlock\";\r\n\r\nexport default function SlideToUnlockDemo1() {\r\n  return <SlideToUnlock />;\r\n}\r\n",
+      "content": "\"use client\";\n\nimport { SlideToUnlock } from \"@/registry/slide-to-unlock\";\n\nexport default function SlideToUnlockDemo1() {\n  return <SlideToUnlock />;\n}\n",
       "type": "registry:component"
     }
   ]

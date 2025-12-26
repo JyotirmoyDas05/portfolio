@@ -3,7 +3,7 @@ import { getAllPosts } from "@/features/blog/data/posts";
 
 const allPosts = getAllPosts();
 
-const content = `# jyotirmoydas.com
+const content = `# jyotimoydas.in
 
 > A minimal, pixel-perfect dev portfolio, component registry, and blog to showcase my work as a Design Engineer.
 

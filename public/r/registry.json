@@ -1,13 +1,13 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "jyotirmoydas",
-  "homepage": "https://jyotirmoydas.com/components",
+  "homepage": "https://jyotimoydas.in/components",
   "items": [
     {
       "name": "utils",
       "type": "registry:lib",
       "title": "Utility Functions",
-      "author": "jyotirmoydas <dai@jyotirmoydas.com>",
+      "author": "jyotirmoydas <dai@jyotimoydas.in>",
       "dependencies": [
         "clsx",
         "tailwind-merge"
@@ -66,7 +66,7 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://jyotirmoydas.com/components/theme-switcher-component"
+      "docs": "https://jyotimoydas.in/components/theme-switcher-component"
     },
     {
       "name": "flip-sentences",
@@ -104,7 +104,7 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://jyotirmoydas.com/components/apple-hello-effect"
+      "docs": "https://jyotimoydas.in/components/apple-hello-effect"
     },
     {
       "name": "wheel-picker",
@@ -124,7 +124,7 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://jyotirmoydas.com/components/react-wheel-picker"
+      "docs": "https://jyotimoydas.in/components/react-wheel-picker"
     },
     {
       "name": "work-experience",
@@ -169,7 +169,7 @@
         "@import \"tw-animate-css\"": {},
         "@plugin @tailwindcss/typography": {}
       },
-      "docs": "https://jyotirmoydas.com/components/work-experience-component"
+      "docs": "https://jyotimoydas.in/components/work-experience-component"
     },
     {
       "name": "shimmering-text",
@@ -226,7 +226,7 @@
           "type": "registry:lib"
         }
       ],
-      "docs": "https://jyotirmoydas.com/components/slide-to-unlock"
+      "docs": "https://jyotimoydas.in/components/slide-to-unlock"
     },
     {
       "name": "liquid-glass-slider",
@@ -262,7 +262,7 @@
           "type": "registry:lib"
         }
       ],
-      "docs": "https://jyotirmoydas.com/components/liquid-glass-slider"
+      "docs": "https://jyotimoydas.in/components/liquid-glass-slider"
     },
     {
       "name": "liquid-glass-searchbox",
@@ -299,7 +299,7 @@
           "type": "registry:lib"
         }
       ],
-      "docs": "https://jyotirmoydas.com/components/liquid-glass-searchbox"
+      "docs": "https://jyotimoydas.in/components/liquid-glass-searchbox"
     },
     {
       "name": "command-box",
@@ -322,7 +322,7 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://jyotirmoydas.com/components/command-box"
+      "docs": "https://jyotimoydas.in/components/command-box"
     },
     {
       "name": "testimonials-marquee",
@@ -340,7 +340,7 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://jyotirmoydas.com/components/testimonials-marquee"
+      "docs": "https://jyotimoydas.in/components/testimonials-marquee"
     },
     {
       "name": "github-stars",
@@ -506,7 +506,7 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://jyotirmoydas.com/components/dynamic-scroll-island-toc"
+      "docs": "https://jyotimoydas.in/components/dynamic-scroll-island-toc"
     },
     {
       "name": "status-button",
@@ -528,7 +528,7 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://jyotirmoydas.com/components/status-button"
+      "docs": "https://jyotimoydas.in/components/status-button"
     },
     {
       "name": "status-indicator",
@@ -548,7 +548,7 @@
           "type": "registry:component"
         }
       ],
-      "docs": "https://jyotirmoydas.com/components/status-indicator"
+      "docs": "https://jyotimoydas.in/components/status-indicator"
     },
     {
       "name": "wheel-picker-block-01",
