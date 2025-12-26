@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "work-experience-block-01",
+  "type": "registry:block",
+  "registryDependencies": [
+    "@jyotirmoydas/work-experience"
+  ],
+  "files": [
+    {
+      "path": "src/registry/examples/work-experience-demo.tsx",
+      "content": "import type { ExperienceItemType } from \"@/registry/work-experience\";\r\nimport { WorkExperience } from \"@/registry/work-experience\";\r\n\r\nconst WORK_EXPERIENCE: ExperienceItemType[] = [\r\n  {\r\n    id: \"quaric\",\r\n    companyName: \"Quaric Co., Ltd.\",\r\n    companyLogo: \"https://assets.jyotirmoydas.com/images/companies/quaric.svg\",\r\n    positions: [\r\n      {\r\n        id: \"30d3a9fb-021d-452a-9d27-83655369b4b9\",\r\n        title: \"Software Engineer\",\r\n        employmentPeriod: \"03.2024 — present\",\r\n        employmentType: \"Part-time\",\r\n        icon: \"code\",\r\n        description: `- Integrated VNPAY-QR for secure transactions.\r\n- Registered the e-commerce site with [online.gov.vn](https://online.gov.vn) for compliance.\r\n- Developed online ordering to streamline purchases.\r\n- Build and maintain ZaDark.com with Docusaurus, integrating AdSense.\r\n- Develop and maintain the ZaDark extension for Zalo Web on Chrome, Safari, Edge, and Firefox — with 15,000+ active users via Chrome Web Store.`,\r\n        skills: [\r\n          \"Next.js\",\r\n          \"Strapi\",\r\n          \"Auth0\",\r\n          \"VNPAY-QR\",\r\n          \"Docker\",\r\n          \"NGINX\",\r\n          \"Google Cloud\",\r\n          \"Docusaurus\",\r\n          \"Extension\",\r\n          \"Research\",\r\n          \"Project Management\",\r\n        ],\r\n        isExpanded: true,\r\n      },\r\n      {\r\n        id: \"7586afb2-40e8-49c4-8983-2254c9446540\",\r\n        title: \"Product Designer\",\r\n        employmentPeriod: \"03.2024 — present\",\r\n        employmentType: \"Part-time\",\r\n        icon: \"design\",\r\n        description: `- Design UI/UX for Quaric Website with a seamless experience.\r\n- Develop a Design System for consistency and efficiency.\r\n- Create Quaric's brand identity, including logo and guidelines.`,\r\n        skills: [\r\n          \"UI/UX Design\",\r\n          \"UX Writing\",\r\n          \"Design System\",\r\n          \"Brand Design\",\r\n          \"Figma\",\r\n        ],\r\n      },\r\n      {\r\n        id: \"991692c4-7d02-4666-8d31-933c4831768d\",\r\n        title: \"Founder & Director\",\r\n        employmentPeriod: \"03.2024 — present\",\r\n        employmentType: \"Part-time\",\r\n        icon: \"business\",\r\n        description: `- Lead and manage the company's strategy.\r\n- Oversee technical teams and product development.\r\n- Manage relationships with customers and partners.`,\r\n        skills: [\"Business Ownership\", \"Business Law\", \"Business Tax\"],\r\n      },\r\n    ],\r\n    isCurrentEmployer: true,\r\n  },\r\n];\r\n\r\nexport default function WorkExperienceDemo() {\r\n  return <WorkExperience className=\"w-full\" experiences={WORK_EXPERIENCE} />;\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

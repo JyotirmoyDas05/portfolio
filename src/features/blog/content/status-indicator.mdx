@@ -1,0 +1,130 @@
+---
+title: Status Indicator
+description: A toast notification that displays animated status transitions using Sonner.
+author: Jyotirmoy Das
+category: components
+icon: status-indicator
+createdAt: 2025-12-25
+updatedAt: 2025-12-25
+published: true
+---
+
+<ComponentPreview
+  name="status-indicator-demo-01"
+  openInV0Url="https://jyotirmoydas.com/r/status-indicator.json"
+  codeCollapsible
+/>
+
+## Features
+
+- **Toast notification**: Shows Status Button as a Sonner toast
+- **Animated states**: Loading → Success/Error with smooth transitions
+- **Auto-dismiss**: Automatically dismisses after completion
+- **6 color presets**: Default, Primary, Secondary, Success, Warning, Danger
+- **5 radius options**: None, Small, Medium, Large, Full
+- **Custom colors**: Use any Tailwind classes
+- **Helper function**: Simple `showStatusIndicator()` API
+
+## Colors
+
+<ComponentPreview name="status-indicator-demo-02" codeCollapsible />
+
+## Radius
+
+<ComponentPreview name="status-indicator-demo-03" codeCollapsible />
+
+## Custom Colors
+
+<ComponentPreview name="status-indicator-demo-04" codeCollapsible />
+
+## Installation
+
+<Tabs defaultValue="cli">
+  <TabsList>
+    <TabsTrigger value="cli">CLI</TabsTrigger>
+    <TabsTrigger value="manual">Manual</TabsTrigger>
+  </TabsList>
+  <TabsContent value="cli">
+
+```bash
+npx shadcn@latest add "https://jyotirmoydas.com/r/status-indicator.json"
+```
+
+  </TabsContent>
+  <TabsContent value="manual">
+    <Steps>
+      <Step>Install Status Button first:</Step>
+
+```bash
+npx shadcn@latest add "https://jyotirmoydas.com/r/status-button.json"
+```
+
+      <Step>Install Sonner:</Step>
+
+```bash
+npm install sonner
+```
+
+      <Step>Copy the Status Indicator code into your project.</Step>
+    </Steps>
+
+  </TabsContent>
+</Tabs>
+
+## Usage
+
+```tsx
+import { showStatusIndicator } from "@/registry/status-indicator";
+import { TbCreditCard } from "react-icons/tb";
+
+function PaymentButton() {
+  const handlePayment = () => {
+    showStatusIndicator({
+      icon: <TbCreditCard className="size-5" />,
+      label: "Pay $49.99",
+      text: {
+        loading: "Processing Payment",
+        success: "Payment Complete",
+        error: "Payment Failed",
+      },
+      onComplete: (success) => {
+        if (success) {
+          // Handle success
+        }
+      },
+    });
+  };
+
+  return <button onClick={handlePayment}>Pay Now</button>;
+}
+```
+
+## API
+
+### `showStatusIndicator(options)`
+
+Shows a status indicator toast and returns the toast ID.
+
+| Option               | Type                                                                          | Default        | Description                       |
+| -------------------- | ----------------------------------------------------------------------------- | -------------- | --------------------------------- |
+| `icon`               | `ReactNode`                                                                   | Required       | Icon to display                   |
+| `label`              | `string`                                                                      | Required       | Button label text                 |
+| `text`               | `{ loading; success; error }`                                                 | Required       | State text                        |
+| `color`              | `"default" \| "primary" \| "secondary" \| "success" \| "warning" \| "danger"` | `"default"`    | Color preset                      |
+| `radius`             | `"none" \| "sm" \| "md" \| "lg" \| "full"`                                    | `"full"`       | Border radius                     |
+| `colors`             | `{ loading?; success?; error? }`                                              | -              | Custom Tailwind classes per state |
+| `className`          | `string`                                                                      | -              | Additional CSS classes            |
+| `style`              | `CSSProperties`                                                               | -              | Inline styles                     |
+| `simulationDuration` | `number`                                                                      | `2000`         | Duration before resolving (ms)    |
+| `successRate`        | `number`                                                                      | `0.7`          | Probability of success (0-1)      |
+| `onComplete`         | `(success: boolean) => void`                                                  | -              | Completion callback               |
+| `position`           | `string`                                                                      | `"top-center"` | Toast position                    |
+| `dismissDelay`       | `number`                                                                      | `2000`         | Delay before auto-dismiss (ms)    |
+
+### `dismissStatusIndicator(id)`
+
+Manually dismiss a status indicator by ID.
+
+## Credits
+
+Based on [Status Button](/components/status-button) and [Sonner](https://sonner.emilkowal.ski/).

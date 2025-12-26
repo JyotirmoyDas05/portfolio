@@ -1,0 +1,155 @@
+---
+title: Liquid Glass Slider
+description: An iOS 26-inspired liquid glass slider with draggable thumb and SVG refraction effects.
+image: https://assets.jyotirmoydas.com/images/blog/liquid-glass-slider.webp
+category: components
+icon: liquid-glass-slider
+createdAt: 2025-12-23
+updatedAt: 2025-12-23
+---
+
+<BrowserCompatibility />
+
+<ComponentPreview
+  name="liquid-glass-slider-demo-01"
+  openInV0Url="https://jyotirmoydas.com/r/liquid-glass-slider-block-01.json"
+  codeCollapsible
+  remountOnThemeChange
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsListInstallType />
+
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @jyotirmoydas/liquid-glass-slider
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies</Step>
+
+```bash
+npm install motion clsx tailwind-merge
+```
+
+<Step>Add a cn helper</Step>
+
+<ComponentSource
+  src="src/lib/utils.ts"
+  title="lib/utils.ts"
+  showLineNumbers
+  collapsible={false}
+/>
+
+<Step>Copy and paste the following code into your project</Step>
+
+<ComponentSource
+  name="liquid-glass-slider"
+  title="components/jyotirmoydas/liquid-glass-slider.tsx"
+  showLineNumbers
+/>
+
+<Step>Update the import paths to match your project setup</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { LiquidGlassSlider } from "@/components/jyotirmoydas/liquid-glass-slider";
+```
+
+```tsx
+<LiquidGlassSlider
+  defaultValue={50}
+  onChange={(value) => console.log("Value:", value)}
+/>
+```
+
+## API Reference
+
+### Value Control
+
+| Prop           | Type                      | Default | Description                        |
+| -------------- | ------------------------- | ------- | ---------------------------------- |
+| `value`        | `number`                  |         | Controlled value of the slider.    |
+| `defaultValue` | `number`                  | `10`    | Default value (uncontrolled mode). |
+| `min`          | `number`                  | `0`     | Minimum value.                     |
+| `max`          | `number`                  | `100`   | Maximum value.                     |
+| `step`         | `number`                  | `1`     | Step size for value changes.       |
+| `onChange`     | `(value: number) => void` |         | Callback when value changes.       |
+| `onDragStart`  | `() => void`              |         | Callback when dragging starts.     |
+| `onDragEnd`    | `() => void`              |         | Callback when dragging ends.       |
+
+### Appearance
+
+| Prop         | Type      | Default                    | Description                          |
+| ------------ | --------- | -------------------------- | ------------------------------------ |
+| `className`  | `string`  |                            | Additional CSS classes.              |
+| `width`      | `number`  | `330`                      | Width of the slider track in pixels. |
+| `fillColor`  | `string`  | `"#0377F7"`                | Color of the track fill (progress).  |
+| `trackColor` | `string`  | `"#89898F66"`              | Color of the track background.       |
+| `thumbColor` | `string`  | `"rgba(255, 255, 255, 1)"` | Color of the thumb.                  |
+| `disabled`   | `boolean` | `false`                    | Whether the slider is disabled.      |
+
+### Optical Parameters
+
+Fine-tune the liquid glass refraction effect.
+
+| Prop                 | Type     | Default | Description                                       |
+| -------------------- | -------- | ------- | ------------------------------------------------- |
+| `blur`               | `number` | `0`     | Blur level for the glass refraction effect.       |
+| `specularOpacity`    | `number` | `0.4`   | Opacity of the specular highlight.                |
+| `specularSaturation` | `number` | `7`     | Saturation multiplier for the specular highlight. |
+| `refractionLevel`    | `number` | `1`     | Base refraction level (magnification intensity).  |
+
+## Examples
+
+### Default
+
+Basic slider with default settings.
+
+<ComponentPreview
+  className="mt-4"
+  name="liquid-glass-slider-demo-01"
+  openInV0Url="https://jyotirmoydas.com/r/liquid-glass-slider-block-01.json"
+  codeCollapsible
+  remountOnThemeChange
+/>
+
+### Custom Colors
+
+Customize the fill, track, and thumb colors.
+
+<ComponentPreview
+  className="mt-4"
+  name="liquid-glass-slider-demo-02"
+  openInV0Url="https://jyotirmoydas.com/r/liquid-glass-slider-block-02.json"
+  codeCollapsible
+  remountOnThemeChange
+/>
+
+### Custom Optical Parameters
+
+Fine-tune the glass refraction effect.
+
+<ComponentPreview
+  className="mt-4"
+  name="liquid-glass-slider-demo-03"
+  openInV0Url="https://jyotirmoydas.com/r/liquid-glass-slider-block-03.json"
+  codeCollapsible
+  remountOnThemeChange
+/>

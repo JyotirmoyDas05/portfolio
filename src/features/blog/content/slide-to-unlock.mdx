@@ -1,0 +1,180 @@
+---
+title: Slide to Unlock
+description: An iOS 26-inspired liquid glass slide-to-unlock switch with real-time SVG refraction effects.
+image: https://assets.jyotirmoydas.com/images/blog/slide-to-unlock.webp
+category: components
+icon: slide-to-unlock
+createdAt: 2025-10-08
+updatedAt: 2025-12-23
+---
+
+<BrowserCompatibility />
+
+<ComponentPreview
+  name="slide-to-unlock-demo-01"
+  openInV0Url="https://jyotirmoydas.com/r/slide-to-unlock-block-01.json"
+  codeCollapsible
+  remountOnThemeChange
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsListInstallType />
+
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @jyotirmoydas/slide-to-unlock
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies</Step>
+
+```bash
+npm install motion sonner clsx tailwind-merge
+```
+
+<Step>Add a cn helper</Step>
+
+<ComponentSource
+  src="src/lib/utils.ts"
+  title="lib/utils.ts"
+  showLineNumbers
+  collapsible={false}
+/>
+
+<Step>Add the use-sound hook</Step>
+
+<ComponentSource
+  src="src/hooks/use-sound.ts"
+  title="hooks/use-sound.ts"
+  showLineNumbers
+/>
+
+<Step>Copy and paste the following code into your project</Step>
+
+<ComponentSource
+  name="slide-to-unlock"
+  title="components/jyotirmoydas/slide-to-unlock.tsx"
+  showLineNumbers
+/>
+
+<Step>Update the import paths to match your project setup</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { SlideToUnlock } from "@/components/jyotirmoydas/slide-to-unlock";
+```
+
+```tsx
+<SlideToUnlock onUnlock={() => console.log("Unlocked!")} />
+```
+
+## API Reference
+
+### Callbacks
+
+Event handlers triggered during state transitions.
+
+| Prop       | Type         | Description                                              |
+| ---------- | ------------ | -------------------------------------------------------- |
+| `onUnlock` | `() => void` | Callback triggered when the slider reaches ON position.  |
+| `onLock`   | `() => void` | Callback triggered when the slider reaches OFF position. |
+
+### Behavior
+
+Control the switch's initial state and feedback mechanisms.
+
+| Prop             | Type      | Default      | Description                                     |
+| ---------------- | --------- | ------------ | ----------------------------------------------- |
+| `defaultChecked` | `boolean` | `false`      | Initial state of the switch.                    |
+| `soundEnabled`   | `boolean` | `true`       | Whether to play the unlock sound effect.        |
+| `toastEnabled`   | `boolean` | `true`       | Whether to show a toast notification on unlock. |
+| `toastMessage`   | `string`  | `"Unlocked"` | Custom message to display in the unlock toast.  |
+| `disabled`       | `boolean` | `false`      | Whether the switch is disabled.                 |
+
+### Appearance
+
+Customize the visual appearance of the switch.
+
+| Prop            | Type     | Default                    | Description                             |
+| --------------- | -------- | -------------------------- | --------------------------------------- |
+| `className`     | `string` |                            | Additional CSS classes to apply.        |
+| `thumbColor`    | `string` | `"rgba(255, 255, 255, 1)"` | Color of the thumb/handle.              |
+| `trackColorOff` | `string` | `"#94949F77"`              | Background color of the track when OFF. |
+| `trackColorOn`  | `string` | `"#3BBF4EEE"`              | Background color of the track when ON.  |
+
+### Optical Parameters
+
+Fine-tune the liquid glass refraction effect. These parameters control the SVG filter that creates the glass-like appearance.
+
+| Prop                 | Type     | Default | Description                                       |
+| -------------------- | -------- | ------- | ------------------------------------------------- |
+| `blur`               | `number` | `0.2`   | Blur level for the glass refraction effect.       |
+| `specularOpacity`    | `number` | `0.5`   | Opacity of the specular highlight.                |
+| `specularSaturation` | `number` | `6`     | Saturation multiplier for the specular highlight. |
+| `refractionLevel`    | `number` | `1`     | Base refraction level (magnification intensity).  |
+
+## Examples
+
+### Default
+
+The default configuration with unlock sound and toast notification enabled.
+
+<ComponentPreview
+  className="mt-4"
+  name="slide-to-unlock-demo-01"
+  openInV0Url="https://jyotirmoydas.com/r/slide-to-unlock-block-01.json"
+  codeCollapsible
+  remountOnThemeChange
+/>
+
+### Custom Colors
+
+Customize the thumb and track colors to match your design system.
+
+<ComponentPreview
+  className="mt-4"
+  name="slide-to-unlock-demo-02"
+  openInV0Url="https://jyotirmoydas.com/r/slide-to-unlock-block-02.json"
+  codeCollapsible
+  remountOnThemeChange
+/>
+
+### Custom Optical Parameters
+
+Fine-tune the glass refraction effect by adjusting the optical parameters. Try different values to achieve your desired look.
+
+<ComponentPreview
+  className="mt-4"
+  name="slide-to-unlock-demo-03"
+  openInV0Url="https://jyotirmoydas.com/r/slide-to-unlock-block-03.json"
+  codeCollapsible
+  remountOnThemeChange
+/>
+
+### Disabled State
+
+A disabled switch that doesn't respond to interactions.
+
+<ComponentPreview
+  className="mt-4"
+  name="slide-to-unlock-demo-04"
+  openInV0Url="https://jyotirmoydas.com/r/slide-to-unlock-block-04.json"
+  codeCollapsible
+  remountOnThemeChange
+/>

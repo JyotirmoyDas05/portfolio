@@ -1,0 +1,144 @@
+---
+title: Liquid Glass Searchbox
+description: An iOS 26-inspired liquid glass searchbox with focus animations and SVG refraction effects.
+image: https://assets.jyotirmoydas.com/images/blog/liquid-glass-searchbox.webp
+category: components
+icon: liquid-glass-searchbox
+createdAt: 2025-12-23
+updatedAt: 2025-12-23
+---
+
+<BrowserCompatibility />
+
+<ComponentPreview
+  name="liquid-glass-searchbox-demo-01"
+  openInV0Url="https://jyotirmoydas.com/r/liquid-glass-searchbox-block-01.json"
+  codeCollapsible
+  remountOnThemeChange
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsListInstallType />
+
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @jyotirmoydas/liquid-glass-searchbox
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies</Step>
+
+```bash
+npm install motion lucide-react clsx tailwind-merge
+```
+
+<Step>Add a cn helper</Step>
+
+<ComponentSource
+  src="src/lib/utils.ts"
+  title="lib/utils.ts"
+  showLineNumbers
+  collapsible={false}
+/>
+
+<Step>Copy and paste the following code into your project</Step>
+
+<ComponentSource
+  name="liquid-glass-searchbox"
+  title="components/jyotirmoydas/liquid-glass-searchbox.tsx"
+  showLineNumbers
+/>
+
+<Step>Update the import paths to match your project setup</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { LiquidGlassSearchbox } from "@/components/jyotirmoydas/liquid-glass-searchbox";
+```
+
+```tsx
+const [query, setQuery] = useState("");
+
+<LiquidGlassSearchbox
+  value={query}
+  onChange={setQuery}
+  onClear={() => setQuery("")}
+  placeholder="Search..."
+/>;
+```
+
+## API Reference
+
+### Input Control
+
+| Prop              | Type                      | Default    | Description                                         |
+| ----------------- | ------------------------- | ---------- | --------------------------------------------------- |
+| `value`           | `string`                  |            | Controlled value of the searchbox.                  |
+| `onChange`        | `(value: string) => void` |            | Callback when the input value changes.              |
+| `onClear`         | `() => void`              |            | Callback when the clear button is clicked.          |
+| `showClearButton` | `boolean`                 | `true`     | Whether to show the clear button when there's text. |
+| `placeholder`     | `string`                  | `"Search"` | Placeholder text for the input.                     |
+| `disabled`        | `boolean`                 | `false`    | Whether the searchbox is disabled.                  |
+
+### Appearance
+
+| Prop           | Type     | Default | Description                        |
+| -------------- | -------- | ------- | ---------------------------------- |
+| `className`    | `string` |         | Additional CSS classes.            |
+| `width`        | `number` | `420`   | Width of the searchbox in pixels.  |
+| `height`       | `number` | `56`    | Height of the searchbox in pixels. |
+| `idleOpacity`  | `number` | `0.05`  | Background opacity when idle.      |
+| `focusOpacity` | `number` | `0.2`   | Background opacity when focused.   |
+
+### Optical Parameters
+
+Fine-tune the liquid glass refraction effect.
+
+| Prop                 | Type     | Default | Description                                       |
+| -------------------- | -------- | ------- | ------------------------------------------------- |
+| `blur`               | `number` | `1`     | Blur level for the glass refraction effect.       |
+| `specularOpacity`    | `number` | `0.2`   | Opacity of the specular highlight.                |
+| `specularSaturation` | `number` | `4`     | Saturation multiplier for the specular highlight. |
+| `refractionLevel`    | `number` | `0.7`   | Base refraction level (magnification intensity).  |
+
+## Examples
+
+### Default
+
+Basic searchbox with default settings.
+
+<ComponentPreview
+  className="mt-4"
+  name="liquid-glass-searchbox-demo-01"
+  openInV0Url="https://jyotirmoydas.com/r/liquid-glass-searchbox-block-01.json"
+  codeCollapsible
+  remountOnThemeChange
+/>
+
+### Custom Dimensions & Optical Parameters
+
+Smaller searchbox with custom optical settings.
+
+<ComponentPreview
+  className="mt-4"
+  name="liquid-glass-searchbox-demo-02"
+  openInV0Url="https://jyotirmoydas.com/r/liquid-glass-searchbox-block-02.json"
+  codeCollapsible
+  remountOnThemeChange
+/>

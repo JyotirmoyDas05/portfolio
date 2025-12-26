@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "utils",
+  "type": "registry:lib",
+  "title": "Utility Functions",
+  "author": "jyotirmoydas <dai@jyotirmoydas.com>",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "files": [
+    {
+      "path": "src/lib/utils.ts",
+      "content": "import type { ClassValue } from \"clsx\";\r\nimport { clsx } from \"clsx\";\r\nimport { twMerge } from \"tailwind-merge\";\r\n\r\nexport const cn = (...inputs: ClassValue[]) => {\r\n  return twMerge(clsx(inputs));\r\n};\r\n",
+      "type": "registry:lib"
+    }
+  ]
+}

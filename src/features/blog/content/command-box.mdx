@@ -1,0 +1,228 @@
+---
+title: Command Box
+description: A customizable command palette/search box with keyboard shortcuts and footer logo customization.
+image: https://assets.jyotirmoydas.com/images/blog/command-box.webp
+category: components
+icon: command-box
+createdAt: 2025-12-23
+updatedAt: 2025-12-23
+---
+
+<ComponentPreview
+  name="command-box-demo-01"
+  openInV0Url="https://jyotirmoydas.com/r/command-box-block-01.json"
+  codeCollapsible
+  remountOnThemeChange
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsListInstallType />
+
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add @jyotirmoydas/command-box
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies</Step>
+
+```bash
+npm install cmdk radix-ui lucide-react react-hotkeys-hook
+```
+
+<Step>Add a cn helper</Step>
+
+<ComponentSource
+  src="src/lib/utils.ts"
+  title="lib/utils.ts"
+  showLineNumbers
+  collapsible={false}
+/>
+
+<Step>Copy and paste the following code into your project</Step>
+
+<ComponentSource
+  name="command-box"
+  title="components/jyotirmoydas/command-box.tsx"
+  showLineNumbers
+/>
+
+<Step>Update the import paths to match your project setup</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  CommandBox,
+  CommandBoxEmpty,
+  CommandBoxFooter,
+  CommandBoxGroup,
+  CommandBoxInput,
+  CommandBoxItem,
+  CommandBoxList,
+  CommandBoxTrigger,
+  useCommandBox,
+} from "@/components/jyotirmoydas/command-box";
+```
+
+```tsx
+const { open, setOpen } = useCommandBox();
+
+<>
+  <CommandBoxTrigger onClick={() => setOpen(true)} />
+
+  <CommandBox open={open} onOpenChange={setOpen}>
+    <CommandBoxInput placeholder="Search..." />
+    <CommandBoxList>
+      <CommandBoxEmpty>No results found.</CommandBoxEmpty>
+      <CommandBoxGroup heading="Actions">
+        <CommandBoxItem onSelect={() => console.log("selected")}>
+          Action 1
+        </CommandBoxItem>
+      </CommandBoxGroup>
+    </CommandBoxList>
+    <CommandBoxFooter logo={<MyLogo />} />
+  </CommandBox>
+</>;
+```
+
+## API Reference
+
+### CommandBox
+
+The main dialog wrapper component.
+
+| Prop            | Type                      | Default | Description                                      |
+| --------------- | ------------------------- | ------- | ------------------------------------------------ |
+| `open`          | `boolean`                 |         | Whether the dialog is open.                      |
+| `onOpenChange`  | `(open: boolean) => void` |         | Callback when dialog state changes.              |
+| `backdropBlur`  | `boolean`                 | `false` | Enable backdrop blur for focused view.           |
+| `blurIntensity` | `number`                  | `8`     | Blur intensity in pixels (when backdropBlur on). |
+| `children`      | `React.ReactNode`         |         | Content components.                              |
+
+### CommandBoxTrigger
+
+A styled trigger button showing ⌘K / Ctrl K.
+
+| Prop        | Type         | Default | Description                      |
+| ----------- | ------------ | ------- | -------------------------------- |
+| `onClick`   | `() => void` |         | Callback when button is clicked. |
+| `className` | `string`     |         | Additional CSS classes.          |
+
+### CommandBoxFooter
+
+Footer with customizable logo and action hints.
+
+| Prop             | Type                                        | Default   | Description                                    |
+| ---------------- | ------------------------------------------- | --------- | ---------------------------------------------- |
+| `logo`           | `React.ReactNode`                           |           | Custom logo component (SVG, icon, etc.)        |
+| `logoSrc`        | `string`                                    |           | Image URL for logo (PNG, JPG, SVG, WebP, etc.) |
+| `logoAlt`        | `string`                                    | `"Logo"`  | Alt text for logo image.                       |
+| `logoSize`       | `number`                                    | `24`      | Size of the logo image in pixels.              |
+| `commandMetaMap` | `Map<string, { commandKind: CommandKind }>` |           | Map titles to command kinds for action labels. |
+| `actionLabels`   | `Record<CommandKind, string>`               | See below | Custom labels for action hints.                |
+
+**Default action labels:**
+
+- `command`: "Run Command"
+- `page`: "Go to Page"
+- `link`: "Open Link"
+
+### useCommandBox
+
+Hook to manage command box state with keyboard shortcuts.
+
+```tsx
+const { open, setOpen, toggle } = useCommandBox({
+  defaultOpen: false,
+  hotkeys: "mod+k, slash",
+  onKeyboardOpen: (key) => console.log(key),
+});
+```
+
+| Option           | Type                    | Default          | Description                        |
+| ---------------- | ----------------------- | ---------------- | ---------------------------------- |
+| `defaultOpen`    | `boolean`               | `false`          | Initial open state.                |
+| `hotkeys`        | `string`                | `"mod+k, slash"` | Keyboard shortcut(s) to toggle.    |
+| `onKeyboardOpen` | `(key: string) => void` |                  | Callback when opened via keyboard. |
+
+### Other Components
+
+| Component             | Description                            |
+| --------------------- | -------------------------------------- |
+| `CommandBoxInput`     | Search input with placeholder.         |
+| `CommandBoxList`      | Scrollable list container.             |
+| `CommandBoxEmpty`     | Empty state message.                   |
+| `CommandBoxGroup`     | Group with heading.                    |
+| `CommandBoxItem`      | Individual command item.               |
+| `CommandBoxLinkGroup` | Convenience component for link groups. |
+| `CommandBoxSeparator` | Horizontal separator.                  |
+
+## Customizing the Footer Logo
+
+The `CommandBoxFooter` accepts either a React component or an image URL:
+
+### Using a React Component (recommended for SVG icons)
+
+```tsx
+<CommandBoxFooter
+  logo={<MyCustomIcon className="size-6 text-muted-foreground" />}
+/>
+```
+
+### Using an Image URL (PNG, JPG, SVG, WebP)
+
+```tsx
+<CommandBoxFooter
+  logoSrc="/path/to/logo.png"
+  logoAlt="My App Logo"
+  logoSize={24}
+/>
+```
+
+## Examples
+
+### Default
+
+A command box with all standard features.
+
+<ComponentPreview
+  className="mt-4"
+  name="command-box-demo-01"
+  openInV0Url="https://jyotirmoydas.com/r/command-box-block-01.json"
+  codeCollapsible
+  remountOnThemeChange
+/>
+
+### Backdrop Blur
+
+Enable `backdropBlur` to blur surrounding content for a focused view:
+
+```tsx
+<CommandBox open={open} onOpenChange={setOpen} backdropBlur blurIntensity={10}>
+  {/* ... */}
+</CommandBox>
+```
+
+<ComponentPreview
+  className="mt-4"
+  name="command-box-demo-02"
+  openInV0Url="https://jyotirmoydas.com/r/command-box-block-02.json"
+  codeCollapsible
+  remountOnThemeChange
+/>

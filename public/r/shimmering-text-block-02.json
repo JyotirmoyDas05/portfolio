@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "shimmering-text-block-02",
+  "type": "registry:block",
+  "registryDependencies": [
+    "@jyotirmoydas/shimmering-text"
+  ],
+  "files": [
+    {
+      "path": "src/registry/examples/shimmering-text-demo-02.tsx",
+      "content": "import { ShimmeringText } from \"@/registry/shimmering-text\";\r\n\r\nexport default function ShimmeringTextDemo2() {\r\n  return (\r\n    <ShimmeringText\r\n      className=\"font-medium [--color:#fbbf24] [--shimmering-color:#ca8a04] dark:[--color:#f59e0b] dark:[--shimmering-color:#fcd34d]\"\r\n      text=\"Processing your request with AI ...\"\r\n    />\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

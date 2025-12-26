@@ -1,0 +1,101 @@
+---
+title: Theme Switcher
+description: A theme switcher component for Next.js apps with next-themes and Tailwind CSS, supporting system, light, and dark modes with smooth circular transitions.
+image: https://assets.jyotirmoydas.com/images/blog/theme-switcher-component.webp
+category: components
+icon: theme-switcher
+createdAt: 2025-04-11
+updatedAt: 2025-04-11
+---
+
+<ComponentPreview
+  name="theme-switcher-demo"
+  openInV0Url="https://jyotirmoydas.com/r/theme-switcher.json"
+  codeCollapsible
+/>
+
+## Installation
+
+<CodeTabs>
+
+<TabsListInstallType />
+
+<TabsContent value="cli">
+
+```bash
+npx shadcn add @jyotirmoydas/theme-switcher
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies</Step>
+
+```bash
+npm install next-themes lucide-react motion clsx tailwind-merge
+```
+
+<Step>Add a cn helper</Step>
+
+<ComponentSource
+  src="src/lib/utils.ts"
+  title="lib/utils.ts"
+  showLineNumbers
+  collapsible={false}
+/>
+
+<Step>Copy and paste the following code into your project</Step>
+
+<ComponentSource
+  name="theme-switcher"
+  title="components/jyotirmoydas/theme-switcher.tsx"
+  showLineNumbers
+/>
+
+<Step>Update the import paths to match your project setup</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { ThemeSwitcher } from "@/components/jyotirmoydas/theme-switcher";
+```
+
+```tsx
+{
+  /* Tri-toggle (system, light, dark) - default */
+}
+<ThemeSwitcher />;
+
+{
+  /* Simple toggle (light/dark only) */
+}
+<ThemeSwitcher variant="toggle" />;
+
+{
+  /* Toggle with click sound */
+}
+<ThemeSwitcher variant="toggle" sound />;
+```
+
+## Props
+
+| Prop      | Type                         | Default        | Description                                                  |
+| --------- | ---------------------------- | -------------- | ------------------------------------------------------------ |
+| `variant` | `"toggle"` \| `"tri-toggle"` | `"tri-toggle"` | Style variant: tri-toggle (3 options) or toggle (2 options). |
+| `sound`   | `boolean`                    | `false`        | Enable click sound on theme change for added immersion.      |
+
+## References
+
+- https://ui.shadcn.com/docs/registry
+- https://ui.shadcn.com/docs/dark-mode/next
+- https://github.com/pacocoursey/next-themes
+- https://motion.dev/docs/react-motion-component

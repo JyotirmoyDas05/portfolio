@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "shimmering-text",
+  "type": "registry:component",
+  "title": "Shimmering Text",
+  "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
+  "description": "Smooth shimmering text animation built with Motion.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "@jyotirmoydas/utils"
+  ],
+  "files": [
+    {
+      "path": "src/registry/shimmering-text/shimmering-text.tsx",
+      "content": "\"use client\";\r\n\r\nimport type { HTMLMotionProps, Variants } from \"motion/react\";\r\nimport { motion } from \"motion/react\";\r\nimport * as React from \"react\";\r\n\r\nimport { cn } from \"@/lib/utils\";\r\n\r\nexport type ShimmeringTextProps = Omit<HTMLMotionProps<\"span\">, \"children\"> & {\r\n  text: string;\r\n  duration?: number;\r\n  isStopped?: boolean;\r\n};\r\n\r\nexport function ShimmeringText({\r\n  text,\r\n  duration = 1,\r\n  isStopped = false,\r\n  className,\r\n  ...props\r\n}: ShimmeringTextProps) {\r\n  const createCharVariants = React.useCallback(\r\n    (charIndex: number): Variants => ({\r\n      running: {\r\n        color: [\"var(--color)\", \"var(--shimmering-color)\", \"var(--color)\"],\r\n        transition: {\r\n          duration,\r\n          repeat: Infinity,\r\n          repeatType: \"loop\" as const,\r\n          repeatDelay: text.length * 0.05,\r\n          delay: (charIndex * duration) / text.length,\r\n          ease: \"easeInOut\",\r\n        },\r\n      },\r\n      stopped: {\r\n        color: \"var(--color)\",\r\n        transition: {\r\n          duration: duration * 0.5,\r\n          ease: \"easeOut\",\r\n        },\r\n      },\r\n    }),\r\n    [duration, text.length]\r\n  );\r\n\r\n  return (\r\n    <motion.span\r\n      className={cn(\r\n        \"inline-block select-none\",\r\n        \"[--color:var(--color-zinc-400)] [--shimmering-color:var(--color-zinc-950)]\",\r\n        \"dark:[--color:var(--color-zinc-600)] dark:[--shimmering-color:var(--color-zinc-50)]\",\r\n        className\r\n      )}\r\n      {...props}\r\n    >\r\n      {text?.split(\"\")?.map((char, i) => (\r\n        <motion.span\r\n          key={i}\r\n          className=\"inline-block whitespace-pre\"\r\n          initial=\"stopped\"\r\n          animate={isStopped ? \"stopped\" : \"running\"}\r\n          variants={createCharVariants(i)}\r\n        >\r\n          {char}\r\n        </motion.span>\r\n      ))}\r\n    </motion.span>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

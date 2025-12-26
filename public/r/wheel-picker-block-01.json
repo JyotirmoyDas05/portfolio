@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "wheel-picker-block-01",
+  "type": "registry:block",
+  "registryDependencies": [
+    "@jyotirmoydas/wheel-picker"
+  ],
+  "files": [
+    {
+      "path": "src/registry/examples/wheel-picker-demo.tsx",
+      "content": "import type { WheelPickerOption } from \"@/registry/wheel-picker\";\r\nimport { WheelPicker, WheelPickerWrapper } from \"@/registry/wheel-picker\";\r\n\r\nconst createArray = (length: number, add = 0): WheelPickerOption<number>[] =>\r\n  Array.from({ length }, (_, i) => {\r\n    const value = i + add;\r\n    return {\r\n      label: value.toString().padStart(2, \"0\"),\r\n      value: value,\r\n    };\r\n  });\r\n\r\nconst hourOptions = createArray(12, 1);\r\nconst minuteOptions = createArray(60);\r\nconst meridiemOptions: WheelPickerOption[] = [\r\n  { label: \"AM\", value: \"AM\" },\r\n  { label: \"PM\", value: \"PM\" },\r\n];\r\n\r\nexport default function WheelPickerDemo() {\r\n  return (\r\n    <div className=\"w-56\">\r\n      <WheelPickerWrapper>\r\n        <WheelPicker options={hourOptions} defaultValue={9} infinite />\r\n        <WheelPicker options={minuteOptions} defaultValue={41} infinite />\r\n        <WheelPicker options={meridiemOptions} defaultValue=\"AM\" />\r\n      </WheelPickerWrapper>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

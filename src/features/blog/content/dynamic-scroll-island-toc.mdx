@@ -1,0 +1,125 @@
+---
+title: Dynamic Scroll Island TOC
+description: An iOS Dynamic Island-style scroll progress indicator with expandable TOC navigation for filtering content.
+image: https://assets.jyotirmoydas.com/images/blog/dynamic-scroll-island-toc.webp
+category: components
+icon: dynamic-scroll-island-toc
+createdAt: 2025-04-11
+updatedAt: 2025-04-11
+---
+
+<ComponentPreview
+  name="dynamic-scroll-island-toc-demo"
+  openInV0Url="https://jyotirmoydas.com/r/dynamic-scroll-island-toc.json"
+  codeCollapsible
+/>
+
+## Features
+
+- **Scroll progress tracking** with circular indicator
+- **Expandable menu** with blur backdrop
+- **Filter selection** with smooth animations
+- **Keyboard accessible** (Escape to close)
+- **Container ref support** for tracking any scrollable element
+
+## Installation
+
+<CodeTabs>
+
+<TabsListInstallType />
+
+<TabsContent value="cli">
+
+```bash
+npx shadcn add @jyotirmoydas/dynamic-scroll-island-toc
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies</Step>
+
+```bash
+npm install motion lucide-react clsx tailwind-merge
+```
+
+<Step>Add a cn helper</Step>
+
+<ComponentSource
+  src="src/lib/utils.ts"
+  title="lib/utils.ts"
+  showLineNumbers
+  collapsible={false}
+/>
+
+<Step>Copy and paste the following code into your project</Step>
+
+<ComponentSource
+  name="dynamic-scroll-island-toc"
+  title="components/jyotirmoydas/dynamic-scroll-island-toc.tsx"
+  showLineNumbers
+/>
+
+<Step>Update the import paths to match your project setup</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  DynamicScrollIslandTOC,
+  type TOCItem,
+} from "@/components/jyotirmoydas/dynamic-scroll-island-toc";
+```
+
+```tsx
+const items: TOCItem[] = [
+  { name: "All" },
+  { name: "Category A", value: "a" },
+  { name: "Category B", value: "b" },
+];
+
+const scrollRef = useRef<HTMLDivElement>(null);
+const [active, setActive] = useState(items[0]);
+
+<DynamicScrollIslandTOC
+  data={items}
+  value={active}
+  setValue={setActive}
+  containerRef={scrollRef}
+/>;
+```
+
+## Props
+
+| Prop           | Type                             | Default                                          | Description                                        |
+| -------------- | -------------------------------- | ------------------------------------------------ | -------------------------------------------------- |
+| `data`         | `TOCItem[]`                      | required                                         | Array of items to display in the TOC.              |
+| `value`        | `TOCItem`                        | `data[0]`                                        | Currently selected item.                           |
+| `setValue`     | `(v: TOCItem) => void`           | `undefined`                                      | Callback when selection changes.                   |
+| `containerRef` | `RefObject<HTMLElement \| null>` | `undefined`                                      | Ref to scrollable container for progress tracking. |
+| `transition`   | `Transition`                     | `{ type: "spring", duration: 0.5, bounce: 0.1 }` | Custom transition settings.                        |
+| `layoutPrefix` | `string`                         | `""`                                             | Layout ID prefix for nested instances.             |
+| `className`    | `string`                         | `undefined`                                      | Additional CSS classes.                            |
+
+## TOCItem Interface
+
+```tsx
+interface TOCItem {
+  name: string; // Display name
+  value?: string; // Optional filter value (undefined = "All")
+}
+```
+
+## Acknowledgments
+
+- Original component inspiration from [Daddy Design](https://daddy.design/components/dynamic-scroll-island-toc)
+- Animation powered by [Motion](https://motion.dev)

@@ -1,0 +1,108 @@
+---
+title: Status Button
+description: A stateful button with animated transitions between normal, loading, success, and error states.
+author: Jyotirmoy Das
+category: components
+icon: status-button
+createdAt: 2025-12-25
+updatedAt: 2025-12-25
+published: true
+---
+
+<ComponentPreview
+  name="status-button-demo"
+  openInV0Url="https://jyotirmoydas.com/r/status-button.json"
+  codeCollapsible
+/>
+
+## Features
+
+- **Four animated states**: Normal, Loading, Success, and Error
+- **Smooth blur transitions**: Text and icons blur in/out during state changes
+- **Spring animations**: Natural, bouncy transitions using Motion for React
+- **Customizable text**: Override default text for each state
+- **Icon support**: Show custom icons in normal state
+
+## Installation
+
+<Tabs defaultValue="cli">
+  <TabsList>
+    <TabsTrigger value="cli">CLI</TabsTrigger>
+    <TabsTrigger value="manual">Manual</TabsTrigger>
+  </TabsList>
+  <TabsContent value="cli">
+
+```bash
+npx shadcn@latest add "https://jyotirmoydas.com/r/status-button.json"
+```
+
+  </TabsContent>
+  <TabsContent value="manual">
+    <Steps>
+      <Step>Install dependencies:</Step>
+
+```bash
+npm install motion react-icons class-variance-authority
+```
+
+      <Step>Copy the component code into your project.</Step>
+    </Steps>
+
+  </TabsContent>
+</Tabs>
+
+## Usage
+
+```tsx
+import { StatusButton } from "@/registry/status-button";
+import { TbSend } from "react-icons/tb";
+
+export function Example() {
+  const [status, setStatus] = useState<"loading" | "success" | "error">();
+
+  const handleClick = async () => {
+    setStatus("loading");
+    try {
+      await someApiCall();
+      setStatus("success");
+    } catch {
+      setStatus("error");
+    }
+  };
+
+  return (
+    <StatusButton
+      variant={status}
+      icon={<TbSend />}
+      text={{
+        loading: "Sending...",
+        success: "Sent!",
+        error: "Failed",
+      }}
+      onClick={handleClick}
+    >
+      Send Message
+    </StatusButton>
+  );
+}
+```
+
+## Props
+
+| Prop         | Type                                                     | Default           | Description                     |
+| ------------ | -------------------------------------------------------- | ----------------- | ------------------------------- |
+| `variant`    | `"loading" \| "success" \| "error"`                      | `undefined`       | The current state               |
+| `children`   | `ReactNode`                                              | Required          | Button content for normal state |
+| `icon`       | `ReactNode`                                              | `undefined`       | Icon for normal state           |
+| `text`       | `{ loading?: string; success?: string; error?: string }` | See below         | Custom text                     |
+| `transition` | `Transition`                                             | Spring transition | Motion transition settings      |
+
+### Default Text
+
+- `loading`: "Loading..."
+- `success`: "Success"
+- `error`: "Error"
+
+## Credits
+
+Inspired by the [Family Button](https://daddy.design/components/family-button) component.

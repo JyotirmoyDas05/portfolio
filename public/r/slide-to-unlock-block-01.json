@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "slide-to-unlock-block-01",
+  "type": "registry:block",
+  "registryDependencies": [
+    "@jyotirmoydas/slide-to-unlock",
+    "@jyotirmoydas/use-sound"
+  ],
+  "files": [
+    {
+      "path": "src/registry/examples/slide-to-unlock-demo-01.tsx",
+      "content": "\"use client\";\r\n\r\nimport { SlideToUnlock } from \"@/registry/slide-to-unlock\";\r\n\r\nexport default function SlideToUnlockDemo1() {\r\n  return <SlideToUnlock />;\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

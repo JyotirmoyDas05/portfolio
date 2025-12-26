@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "slide-to-unlock-block-02",
+  "type": "registry:block",
+  "registryDependencies": [
+    "@jyotirmoydas/slide-to-unlock"
+  ],
+  "files": [
+    {
+      "path": "src/registry/examples/slide-to-unlock-demo-02.tsx",
+      "content": "\"use client\";\r\n\r\nimport { SlideToUnlock } from \"@/registry/slide-to-unlock\";\r\n\r\nexport default function SlideToUnlockDemo2() {\r\n  return (\r\n    <SlideToUnlock\r\n      thumbColor=\"rgba(59, 130, 246, 0.95)\"\r\n      trackColorOff=\"#e7e5e4\"\r\n      trackColorOn=\"#173462\"\r\n      toastMessage=\"Color Changed\"\r\n    />\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

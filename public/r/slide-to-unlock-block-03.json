@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "slide-to-unlock-block-03",
+  "type": "registry:block",
+  "registryDependencies": [
+    "@jyotirmoydas/slide-to-unlock"
+  ],
+  "files": [
+    {
+      "path": "src/registry/examples/slide-to-unlock-demo-03.tsx",
+      "content": "\"use client\";\r\n\r\nimport { SlideToUnlock } from \"@/registry/slide-to-unlock\";\r\n\r\nexport default function SlideToUnlockDemo3() {\r\n  // Customize the optical parameters to fine-tune the glass effect\r\n  // Try adjusting these values to see how they affect the refraction!\r\n  return (\r\n    <SlideToUnlock\r\n      blur={0.3}\r\n      specularOpacity={0.7}\r\n      specularSaturation={8}\r\n      refractionLevel={1.2}\r\n      toastEnabled={false}\r\n      soundEnabled={false}\r\n    />\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}
