@@ -45,3 +45,9 @@ next-env.d.ts
 
 # flip-sentences (WIP)
 src/registry/flip-sentences/
+
+#temo-assets folder
+temp-assets/
+
+#powershell scripts
+*.ps1
