@@ -9,25 +9,19 @@ export default function manifest(): MetadataRoute.Manifest {
     description: SITE_INFO.description,
     icons: [
       {
-        src: "https://assets.jyotimoydas.in/images/icon-vector.svg",
-        type: "image/svg+xml",
-        sizes: "any",
-        purpose: "any",
-      },
-      {
-        src: "https://assets.jyotimoydas.in/images/icon-192x192.png",
+        src: "/web-app-manifest-192x192.png",
         type: "image/png",
         sizes: "192x192",
         purpose: "any",
       },
       {
-        src: "https://assets.jyotimoydas.in/images/icon-512x512.png",
+        src: "/web-app-manifest-512x512.png",
         type: "image/png",
         sizes: "512x512",
         purpose: "any",
       },
       {
-        src: "https://assets.jyotimoydas.in/images/maskable-icon.png",
+        src: "/web-app-manifest-512x512.png",
         type: "image/png",
         sizes: "512x512",
         purpose: "maskable",
@@ -37,31 +31,5 @@ export default function manifest(): MetadataRoute.Manifest {
     start_url: "/?utm_source=pwa",
     display: "standalone",
     scope: "/",
-    screenshots: [
-      {
-        src: "https://assets.jyotimoydas.in/images/screenshot-mobile-dark.webp",
-        type: "image/webp",
-        sizes: "440x956",
-        form_factor: "narrow",
-      },
-      {
-        src: "https://assets.jyotimoydas.in/images/screenshot-mobile-light.webp",
-        type: "image/webp",
-        sizes: "440x956",
-        form_factor: "narrow",
-      },
-      {
-        src: "https://assets.jyotimoydas.in/images/screenshot-desktop-dark.webp",
-        type: "image/webp",
-        sizes: "1920x1080",
-        form_factor: "wide",
-      },
-      {
-        src: "https://assets.jyotimoydas.in/images/screenshot-desktop-light.webp",
-        type: "image/webp",
-        sizes: "1920x1080",
-        form_factor: "wide",
-      },
-    ],
   };
 }

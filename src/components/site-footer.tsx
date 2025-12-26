@@ -73,7 +73,7 @@ export function SiteFooter() {
               className="flex text-muted-foreground transition-colors hover:text-foreground"
               href={
                 process.env.NEXT_PUBLIC_DMCA_URL ||
-                "https://www.dmca.com/ProtectionPro.aspx"
+                "https://www.dmca.com/Protection/Status.aspx?ID=1f5c45e6-1740-46b4-a771-b640b3eedfa3"
               }
               target="_blank"
               rel="noopener noreferrer"
