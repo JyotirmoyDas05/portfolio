@@ -75,7 +75,7 @@ export function ComponentPreview({
         <TabsContent value="preview">
           <div
             data-slot="preview"
-            className="rounded-xl border border-edge p-2"
+            className="overflow-hidden rounded-xl border border-edge p-2"
             // className="bg-zinc-950/0.75 bg-[radial-gradient(var(--pattern-foreground)_1px,transparent_0)] bg-size-[10px_10px] [--pattern-foreground:var(--color-zinc-950)]/5 dark:bg-white/0.75 dark:[--pattern-foreground:var(--color-white)]/5"
           >
             {(canReplay || openInV0Url || customActions) && (
@@ -107,7 +107,7 @@ export function ComponentPreview({
             <div
               key={`${replay}-${remountOnThemeChange ? (resolvedTheme ?? "system") : "static"}`}
               data-slot="component-preview"
-              className="flex min-h-72 items-center justify-center font-sans"
+              className="flex min-h-72 w-full items-center justify-center overflow-x-auto font-sans"
             >
               <React.Suspense
                 fallback={

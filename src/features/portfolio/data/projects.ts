@@ -102,7 +102,7 @@ export const PROJECTS: Project[] = [
     period: {
       start: "11.2024",
     },
-    link: "https://github.com/JyotirmoyDas05/LightNote",
+    link: "https://www.lightnote.page/",
     skills: [
       "Next.js 15",
       "React 19",
@@ -135,7 +135,7 @@ export const PROJECTS: Project[] = [
     period: {
       start: "10.2024",
     },
-    link: "https://github.com/JyotirmoyDas05/finwise.ly",
+    link: "https://finwise-ly-jyotirmoydas05s-projects.vercel.app/",
     skills: [
       "Next.js 15",
       "TypeScript",

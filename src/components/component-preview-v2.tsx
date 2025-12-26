@@ -57,7 +57,10 @@ export function ComponentPreviewV2({
       className={cn("my-[1.25em]", notProse && "not-prose", className)}
       {...props}
     >
-      <div data-slot="preview" className="rounded-t-xl border p-2">
+      <div
+        data-slot="preview"
+        className="overflow-hidden rounded-t-xl border p-2"
+      >
         {(canReplay || openInV0Url) && (
           <div data-slot="buttons" className="mb-2 flex justify-end gap-2">
             {canReplay && (
@@ -86,7 +89,7 @@ export function ComponentPreviewV2({
         <div
           key={`${replay}-${remountOnThemeChange ? (resolvedTheme ?? "system") : "static"}`}
           data-slot="component-preview"
-          className="flex min-h-72 items-center justify-center font-sans"
+          className="flex min-h-72 w-full items-center justify-center overflow-x-auto font-sans"
         >
           <React.Suspense
             fallback={
