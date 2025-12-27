@@ -172,12 +172,16 @@ export default function MultiLanguageDemo() {
       <style>{`
         [data-slot="component-preview"]:has(.apple-hello-lang-trigger) {
           position: relative;
+          overflow: visible !important;
+        }
+        [data-slot="preview"]:has(.apple-hello-lang-trigger) {
+          overflow: visible !important;
         }
         .apple-hello-lang-wrapper {
           position: absolute;
           top: -2.25rem;
           right: 8.85rem;
-          z-index: 10;
+          z-index: 50;
         }
       `}</style>
       <div className="apple-hello-lang-wrapper">
