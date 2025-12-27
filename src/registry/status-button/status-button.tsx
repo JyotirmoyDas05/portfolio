@@ -237,6 +237,7 @@ function StatusButton({
               strokeDasharray="62.33185307179586"
               strokeDashoffset="43.66456772333291"
               strokeLinecap="round"
+              style={{ transformOrigin: "center" }}
               animate={{
                 rotate: [0, 360 * 3],
                 transition: {

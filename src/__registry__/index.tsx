@@ -190,18 +190,6 @@ export const Index: Record<string, any> = {
       type: "registry:component",
     }],
   },
-  "consent-manager": {
-    name: "consent-manager",
-    description: "A React component for managing user consent for cookies and tracking in Next.js applications.",
-    type: "registry:component",
-    files: [{
-      path: "src/registry/src/components/consent-manager.tsx",
-      type: "registry:component",
-    },{
-      path: "src/registry/consent-manager/consent-manager-client.tsx",
-      type: "registry:component",
-    }],
-  },
   "dynamic-scroll-island-toc": {
     name: "dynamic-scroll-island-toc",
     description: "An iOS Dynamic Island-style scroll progress indicator with expandable TOC navigation.",
