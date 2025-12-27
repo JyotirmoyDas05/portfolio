@@ -213,11 +213,15 @@ function StatusButton({
       return (
         <div>
           <svg
-            className="size-6"
+            className="size-6 animate-spin"
             width="32"
             height="32"
             viewBox="0 0 24 24"
             fill="none"
+            style={{
+              animationDuration: "1s",
+              animationTimingFunction: "linear",
+            }}
           >
             <circle
               cx="12"
@@ -227,7 +231,7 @@ function StatusButton({
               strokeWidth="4"
               fill="none"
             />
-            <motion.circle
+            <circle
               cx="12"
               cy="12"
               r="10"
@@ -237,15 +241,6 @@ function StatusButton({
               strokeDasharray="62.33185307179586"
               strokeDashoffset="43.66456772333291"
               strokeLinecap="round"
-              style={{ transformOrigin: "center" }}
-              animate={{
-                rotate: [0, 360 * 3],
-                transition: {
-                  duration: 1,
-                  repeat: Infinity,
-                  ease: "easeOut",
-                },
-              }}
             />
           </svg>
         </div>
