@@ -1,6 +1,6 @@
 {
-  "name": "ncdai",
-  "version": "0.0.3",
+  "name": "jyotirmoy",
+  "version": "0.0.1",
   "description": "A simple CLI wrapper for adding components from jyotimoydas.in component registry using shadcn.",
   "publishConfig": {
     "access": "public"
@@ -24,7 +24,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "ncdai",
+    "jyotirmoy",
+    "jyotimoydas",
     "cli",
     "shadcn",
     "components",
@@ -36,7 +37,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JyotirmoyDas05/portfolio.git",
-    "directory": "packages/ncdai"
+    "directory": "packages/jyotirmoy"
   },
   "funding": "https://github.com/sponsors/JyotirmoyDas05",
   "bugs": {
