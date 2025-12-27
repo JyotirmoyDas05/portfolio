@@ -1,6 +1,6 @@
 {
   "name": "jyotirmoy",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A simple CLI wrapper for adding components from jyotimoydas.in component registry using shadcn.",
   "publishConfig": {
     "access": "public"
