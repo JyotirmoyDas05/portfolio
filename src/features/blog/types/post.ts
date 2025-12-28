@@ -7,6 +7,10 @@ export type PostMetadata = {
    */
   image?: string;
   /**
+   * Base64 blur placeholder for the image (auto-generated at build time).
+   */
+  blurDataURL?: string;
+  /**
    * Category identifier/slug used for filtering (see getPostsByCategory).
    */
   category?: string;

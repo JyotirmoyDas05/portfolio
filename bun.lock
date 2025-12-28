@@ -28,6 +28,7 @@
         "next-mdx-remote": "^5.0.0",
         "next-themes": "^0.4.6",
         "nuqs": "^2.8.0",
+        "plaiceholder": "^3.0.0",
         "posthog-js": "^1.310.1",
         "radix-ui": "^1.4.3",
         "react": "19.2.3",
@@ -40,7 +41,7 @@
         "react-medium-image-zoom": "^5.4.0",
         "react-use": "^17.6.0",
         "schema-dts": "^1.1.5",
-        "sharp": "^0.34.3",
+        "sharp": "^0.34.5",
         "sonner": "^2.0.5",
         "tailwind-merge": "^3.3.1",
         "vcard-creator": "^0.7.2",
@@ -1876,6 +1877,8 @@
     "pidtree": ["pidtree@0.6.0", "", { "bin": { "pidtree": "bin/pidtree.js" } }, "sha512-eG2dWTVw5bzqGRztnHExczNxt5VGsE6OwTeCG3fdUf9KBsZzO3R5OIIIzWR+iZA0NtZ+RDVdaoE2dK1cn6jH4g=="],
 
     "pkce-challenge": ["pkce-challenge@5.0.1", "", {}, "sha512-wQ0b/W4Fr01qtpHlqSqspcj3EhBvimsdh0KlHhH8HRZnMsEa0ea2fTULOXOS9ccQr3om+GcGRk4e+isrZWV8qQ=="],
+
+    "plaiceholder": ["plaiceholder@3.0.0", "", { "peerDependencies": { "sharp": ">= 0.30.6" } }, "sha512-jwHxxHPnr1BwRzPCeZgEK2BMsEy2327sWynw3qb6XC/oGgGDUTPtR8pFxFQmNArhMBwhkUbUr5OPhhIJpCa8eQ=="],
 
     "possible-typed-array-names": ["possible-typed-array-names@1.1.0", "", {}, "sha512-/+5VFTchJDoVj3bhoqi6UeymcD00DAwb1nJwamzPvHEszJ4FpF6SNNbUbOS8yI56qHzdV8eK0qEfOSiodkTdxg=="],
 

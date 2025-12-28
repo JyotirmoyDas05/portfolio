@@ -5,6 +5,21 @@ import path from "path";
 import type { Post, PostMetadata } from "@/features/blog/types/post";
 import { getFileBadgeStatusCached } from "@/lib/git-utils";
 
+// Load blur placeholder cache for LQIP
+type BlurCache = Record<string, string>;
+let blurCache: BlurCache = {};
+try {
+  const cachePath = path.join(
+    process.cwd(),
+    "src/features/blog/data/blur-cache.json"
+  );
+  if (fs.existsSync(cachePath)) {
+    blurCache = JSON.parse(fs.readFileSync(cachePath, "utf-8")) as BlurCache;
+  }
+} catch {
+  // Ignore cache errors
+}
+
 function parseFrontmatter(fileContent: string) {
   const file = matter(fileContent);
 
@@ -41,6 +56,8 @@ function getMDXData(dir: string) {
         // Git-based auto-detection (can be overridden by manual `new: true`)
         isRecentlyCreated: badgeStatus.isRecentlyCreated,
         isRecentlyUpdated: badgeStatus.isRecentlyUpdated,
+        // LQIP blur placeholder from cache
+        blurDataURL: metadata.image ? blurCache[metadata.image] : undefined,
       },
       slug,
       content,

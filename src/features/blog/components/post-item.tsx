@@ -32,6 +32,8 @@ export function PostItem({
             height={630}
             quality={100}
             priority={shouldPreloadImage}
+            placeholder={post.metadata.blurDataURL ? "blur" : "empty"}
+            blurDataURL={post.metadata.blurDataURL}
             unoptimized
           />
 
