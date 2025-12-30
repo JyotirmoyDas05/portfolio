@@ -151,13 +151,25 @@ export default function Page() {
                     {post.metadata.title}
                   </h2>
                 </ViewTransition>
-
-                {post.metadata.new && (
+                {/* Badge: manual override OR auto-detected new */}
+                {(post.metadata.new || post.metadata.isRecentlyCreated) && (
                   <span className="flex -translate-x-1 translate-y-px items-center justify-center">
                     <span className="flex size-2 rounded-sm bg-info" />
                     <span className="sr-only">New</span>
                   </span>
                 )}
+                {/* Badge: auto-detected updated (pulsing) */}
+                {!post.metadata.new &&
+                  !post.metadata.isRecentlyCreated &&
+                  post.metadata.isRecentlyUpdated && (
+                    <span className="flex -translate-x-1 translate-y-px items-center justify-center">
+                      <span className="relative flex size-2">
+                        <span className="absolute inline-flex size-full animate-ping rounded-sm bg-info opacity-75" />
+                        <span className="relative inline-flex size-2 rounded-sm bg-info" />
+                      </span>
+                      <span className="sr-only">Updated</span>
+                    </span>
+                  )}
               </Link>
             ))}
         </div>

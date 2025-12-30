@@ -14,7 +14,6 @@ export const USER = {
     "Open Source Contributor",
   ],
   address: "India",
-  phoneNumber: "KzkxNjAwMjQyMjcwNQ==", // Base64 encoded for spam protection
   email: "anlvdGltb3lkYXNjc2VAZ21haWwuY29t", // Base64 encoded for spam protection
   website: "https://jyotimoydas.in",
   jobTitle: "Full Stack Developer",
@@ -28,7 +27,7 @@ export const USER = {
   about: `
 - **Full Stack Developer** with a passion for building high-performance, user-centric software solutions with intuitive and engaging designs.
 - Skilled in **Next.js**, **React**, **TypeScript**, and modern front-end technologies; building high-quality, user-centric web and mobile applications.
-- Passionate about exploring new technologies and turning ideas into reality through polished, thoughtfully crafted personal projects.
+- Enthusiastic about exploring new technologies and turning ideas into reality through polished, thoughtfully crafted personal projects.
 `,
   avatar: "https://github.com/JyotirmoyDas05.png",
   ogImage: "https://jyotimoydas.in/og-image.png",

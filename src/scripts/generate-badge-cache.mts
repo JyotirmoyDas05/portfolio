@@ -12,8 +12,11 @@ import path from "path";
 import { type BadgeStatus, getFileBadgeStatus } from "../lib/git-utils";
 
 const CONTENT_DIR = path.join(process.cwd(), "src/features/blog/content");
-const CACHE_DIR = path.join(process.cwd(), ".next/cache");
-const CACHE_PATH = path.join(CACHE_DIR, "git-badge-cache.json");
+// Store cache in committed location (like blur-cache.json) so it persists in production
+const CACHE_PATH = path.join(
+  process.cwd(),
+  "src/features/blog/data/badge-cache.json"
+);
 
 interface CacheData {
   generatedAt: string;
@@ -31,9 +34,6 @@ function generateCache() {
     const key = path.relative(process.cwd(), filePath).replace(/\\/g, "/");
     entries[key] = getFileBadgeStatus(filePath);
   }
-
-  // Ensure cache directory exists
-  fs.mkdirSync(CACHE_DIR, { recursive: true });
 
   const cacheData: CacheData = {
     generatedAt: new Date().toISOString(),

@@ -38,7 +38,11 @@ interface CacheData {
   >;
 }
 
-const CACHE_PATH = path.join(process.cwd(), ".next/cache/git-badge-cache.json");
+// Cache stored in committed location so it persists in production
+const CACHE_PATH = path.join(
+  process.cwd(),
+  "src/features/blog/data/badge-cache.json"
+);
 let badgeCache: CacheData | null = null;
 
 /**

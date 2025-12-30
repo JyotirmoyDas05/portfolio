@@ -5,7 +5,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
     icon: "https://assets.jyotimoydas.in/images/link-icons/x.webp",
     title: "X (formerly Twitter)",
     description: "@jyotirmoydas",
-    href: "https://x.com/jyotirmoydas",
+    href: "https://x.com/ALLES_Gaming",
   },
   {
     icon: "https://assets.jyotimoydas.in/images/link-icons/github.webp",

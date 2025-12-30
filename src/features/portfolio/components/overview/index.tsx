@@ -1,4 +1,5 @@
 import {
+  FileTextIcon,
   GlobeIcon,
   MapPinIcon,
   MarsIcon,
@@ -20,7 +21,6 @@ import {
   IntroItemLink,
 } from "./intro-item";
 import { JobItem } from "./job-item";
-import { PhoneItem } from "./phone-item";
 
 export function Overview() {
   return (
@@ -56,9 +56,23 @@ export function Overview() {
 
           <CurrentLocalTimeItem timeZone={USER.timeZone} />
 
-          <PhoneItem phoneNumber={USER.phoneNumber} />
-
           <EmailItem email={USER.email} />
+
+          <IntroItem>
+            <IntroItemIcon>
+              <FileTextIcon />
+            </IntroItemIcon>
+            <IntroItemContent>
+              <IntroItemLink
+                href="https://assets.jyotimoydas.in/images/Resume/Jyotirmoy_Das_Resume.pdf"
+                aria-label="View my CV/Resume"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View CV
+              </IntroItemLink>
+            </IntroItemContent>
+          </IntroItem>
 
           <IntroItem>
             <IntroItemIcon>
