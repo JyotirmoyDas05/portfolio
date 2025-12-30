@@ -1,3 +1,5 @@
+import { ViewTransition } from "react";
+
 import { cn } from "@/lib/utils";
 
 export default function DocsLayout({
@@ -16,7 +18,7 @@ export default function DocsLayout({
         )}
       />
 
-      {children}
+      <ViewTransition>{children}</ViewTransition>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "./scroll-fade-effect.css";
+@import "katex/dist/katex.min.css";
 
 @plugin "@tailwindcss/typography";
 @plugin "@toolwind/corner-shape";

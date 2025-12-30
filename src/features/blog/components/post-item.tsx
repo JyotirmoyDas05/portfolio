@@ -2,7 +2,7 @@ import { format } from "date-fns";
 import { PinIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { ViewTransition } from "react";
 
 import type { Post } from "@/features/blog/types/post";
 import { cn } from "@/lib/utils";
@@ -23,51 +23,79 @@ export function PostItem({
         "sm:nth-[2n+1]:screen-line-before sm:nth-[2n+1]:screen-line-after"
       )}
     >
-      {post.metadata.image && (
-        <div className="relative select-none [&_img]:aspect-1200/630 [&_img]:rounded-xl">
-          <Image
-            src={post.metadata.image}
-            alt={post.metadata.title}
-            width={1200}
-            height={630}
-            quality={100}
-            priority={shouldPreloadImage}
-            placeholder={post.metadata.blurDataURL ? "blur" : "empty"}
-            blurDataURL={post.metadata.blurDataURL}
-            unoptimized
-          />
+      {post.metadata.image &&
+        (post.slug === "liquid-glass-article" ? (
+          <ViewTransition name={`post-image-${post.slug}`}>
+            <div className="relative select-none [&_img]:aspect-1200/630 [&_img]:rounded-xl">
+              <Image
+                src={post.metadata.image}
+                alt={post.metadata.title}
+                width={1200}
+                height={630}
+                quality={100}
+                priority={shouldPreloadImage}
+                placeholder={post.metadata.blurDataURL ? "blur" : "empty"}
+                blurDataURL={post.metadata.blurDataURL}
+                unoptimized
+              />
 
-          <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-black/10 ring-inset dark:ring-white/10" />
+              <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-black/10 ring-inset dark:ring-white/10" />
 
-          {post.metadata.pinned && (
-            <span className="absolute top-1.5 right-1.5 flex size-6 items-center justify-center rounded-md bg-secondary">
-              <PinIcon className="size-4 rotate-45 text-secondary-foreground" />
-              <span className="sr-only">Pinned</span>
-            </span>
-          )}
-        </div>
-      )}
+              {post.metadata.pinned && (
+                <span className="absolute top-1.5 right-1.5 flex size-6 items-center justify-center rounded-md bg-secondary">
+                  <PinIcon className="size-4 rotate-45 text-secondary-foreground" />
+                  <span className="sr-only">Pinned</span>
+                </span>
+              )}
+            </div>
+          </ViewTransition>
+        ) : (
+          <div className="relative select-none [&_img]:aspect-1200/630 [&_img]:rounded-xl">
+            <Image
+              src={post.metadata.image}
+              alt={post.metadata.title}
+              width={1200}
+              height={630}
+              quality={100}
+              priority={shouldPreloadImage}
+              placeholder={post.metadata.blurDataURL ? "blur" : "empty"}
+              blurDataURL={post.metadata.blurDataURL}
+              unoptimized
+            />
 
-      <div className="flex flex-col gap-1 p-2">
-        <h3 className="text-lg leading-snug font-medium text-balance underline-offset-4 group-hover/post:underline">
-          {post.metadata.title}
-          {/* Badge: manual override OR auto-detected new */}
-          {(post.metadata.new || post.metadata.isRecentlyCreated) && (
-            <span className="ml-2 inline-block size-2 -translate-y-px rounded-full bg-info">
-              <span className="sr-only">New</span>
-            </span>
-          )}
-          {/* Badge: auto-detected updated (pulsing) */}
-          {!post.metadata.new &&
-            !post.metadata.isRecentlyCreated &&
-            post.metadata.isRecentlyUpdated && (
-              <span className="relative ml-2 inline-flex size-2 -translate-y-px">
-                <span className="absolute inline-flex size-full animate-ping rounded-full bg-info opacity-75" />
-                <span className="relative inline-flex size-2 rounded-full bg-info" />
-                <span className="sr-only">Updated</span>
+            <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-black/10 ring-inset dark:ring-white/10" />
+
+            {post.metadata.pinned && (
+              <span className="absolute top-1.5 right-1.5 flex size-6 items-center justify-center rounded-md bg-secondary">
+                <PinIcon className="size-4 rotate-45 text-secondary-foreground" />
+                <span className="sr-only">Pinned</span>
               </span>
             )}
-        </h3>
+          </div>
+        ))}
+
+      <div className="flex flex-col gap-1 p-2">
+        <ViewTransition name={`post-title-${post.slug}`}>
+          <h3 className="text-lg leading-snug font-medium text-balance underline-offset-4 group-hover/post:underline">
+            {post.metadata.title}
+            {/* Badge: manual override OR auto-detected new */}
+            {(post.metadata.new || post.metadata.isRecentlyCreated) && (
+              <span className="ml-2 inline-block size-2 -translate-y-px rounded-full bg-info">
+                <span className="sr-only">New</span>
+              </span>
+            )}
+            {/* Badge: auto-detected updated (pulsing) */}
+            {!post.metadata.new &&
+              !post.metadata.isRecentlyCreated &&
+              post.metadata.isRecentlyUpdated && (
+                <span className="relative ml-2 inline-flex size-2 -translate-y-px">
+                  <span className="absolute inline-flex size-full animate-ping rounded-full bg-info opacity-75" />
+                  <span className="relative inline-flex size-2 rounded-full bg-info" />
+                  <span className="sr-only">Updated</span>
+                </span>
+              )}
+          </h3>
+        </ViewTransition>
 
         <dl>
           <dt className="sr-only">Published on</dt>

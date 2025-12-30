@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ViewTransition } from "react";
 
 import { ComponentIcon, Icons } from "@/components/icons";
 import { MDX } from "@/components/mdx";
@@ -145,9 +146,11 @@ export default function Page() {
                   />
                 </div>
 
-                <h2 className="leading-snug font-medium text-balance underline-offset-4 group-hover/post:underline">
-                  {post.metadata.title}
-                </h2>
+                <ViewTransition name={`component-title-${post.slug}`}>
+                  <h2 className="leading-snug font-medium text-balance underline-offset-4 group-hover/post:underline">
+                    {post.metadata.title}
+                  </h2>
+                </ViewTransition>
 
                 {post.metadata.new && (
                   <span className="flex -translate-x-1 translate-y-px items-center justify-center">

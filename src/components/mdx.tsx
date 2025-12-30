@@ -1,10 +1,13 @@
 import type { MDXRemoteProps } from "next-mdx-remote/rsc";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import { SiGooglechrome } from "react-icons/si";
 import rehypeExternalLinks from "rehype-external-links";
+import rehypeKatex from "rehype-katex";
 import type { LineElement } from "rehype-pretty-code";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
 import { visit } from "unist-util-visit";
 
 import {
@@ -26,6 +29,27 @@ import {
 } from "@/components/ui/table";
 import { Code, Heading } from "@/components/ui/typography";
 import { UTM_PARAMS } from "@/config/site";
+// Liquid Glass Interactive Components
+import {
+  DisplacementVectorField,
+  FunctionPlot,
+  FunctionPlotConcave,
+  FunctionPlotConvex,
+  FunctionPlotConvexCircle,
+  FunctionPlotLip,
+  MagnifyingGlass,
+  MixedUI,
+  ParallaxImageHero,
+  Playground,
+  RayRefractionSimulation,
+  RayRefractionSimulationMini,
+  RefractionAnglesExplanation,
+  Searchbox as LiquidGlassSearchbox,
+  Slider as LiquidGlassSlider,
+  SpecularPreview,
+  Switch as LiquidGlassSwitch,
+  VectorToRedGreen,
+} from "@/features/blog/components/liquid-glass";
 import { rehypeAddQueryParams } from "@/lib/rehype-add-query-params";
 import { rehypeComponent } from "@/lib/rehype-component";
 import { rehypeNpmCommand } from "@/lib/rehype-npm-command";
@@ -178,12 +202,34 @@ const components: MDXRemoteProps["components"] = {
   TestimonialAvatarRing,
   TestimonialQuote,
   TestimonialVerifiedBadge,
+  // Liquid Glass Interactive Components
+  DisplacementVectorField,
+  MagnifyingGlass,
+  MixedUI,
+  ParallaxImageHero,
+  Playground,
+  RayRefractionSimulation,
+  RayRefractionSimulationMini,
+  RefractionAnglesExplanation,
+  LiquidGlassSearchbox,
+  LiquidGlassSlider,
+  SpecularPreview,
+  LiquidGlassSwitch,
+  VectorToRedGreen,
+  FunctionPlot,
+  SiGooglechrome,
+  // Pre-configured FunctionPlot components for MDX
+  FunctionPlotConvexCircle,
+  FunctionPlotConvex,
+  FunctionPlotConcave,
+  FunctionPlotLip,
 };
 
 const options: MDXRemoteProps["options"] = {
   mdxOptions: {
-    remarkPlugins: [remarkGfm, remarkCodeImport],
+    remarkPlugins: [remarkGfm, remarkMath, remarkCodeImport],
     rehypePlugins: [
+      rehypeKatex,
       [
         rehypeExternalLinks,
         { target: "_blank", rel: "nofollow noopener noreferrer" },

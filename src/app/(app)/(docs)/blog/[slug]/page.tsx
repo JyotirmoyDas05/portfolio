@@ -3,6 +3,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ViewTransition } from "react";
 import type { BlogPosting as PageSchema, WithContext } from "schema-dts";
 
 import {
@@ -212,9 +213,11 @@ export default async function Page({
       </div>
 
       <Prose className="px-4">
-        <h1 className="screen-line-after text-3xl font-semibold">
-          {post.metadata.title}
-        </h1>
+        <ViewTransition name={`post-title-${slug}`}>
+          <h1 className="screen-line-after text-3xl font-semibold">
+            {post.metadata.title}
+          </h1>
+        </ViewTransition>
 
         <p className="text-muted-foreground">{post.metadata.description}</p>
 
