@@ -107,26 +107,6 @@
       "docs": "https://jyotimoydas.in/components/apple-hello-effect"
     },
     {
-      "name": "wheel-picker",
-      "type": "registry:component",
-      "title": "Wheel Picker",
-      "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
-      "description": "iOS-like wheel picker for React with smooth inertia scrolling and infinite loop support.",
-      "dependencies": [
-        "@ncdai/react-wheel-picker"
-      ],
-      "registryDependencies": [
-        "@jyotirmoydas/utils"
-      ],
-      "files": [
-        {
-          "path": "src/registry/wheel-picker/wheel-picker.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "docs": "https://jyotimoydas.in/components/react-wheel-picker"
-    },
-    {
       "name": "work-experience",
       "type": "registry:component",
       "title": "Work Experience",
@@ -325,24 +305,6 @@
       "docs": "https://jyotimoydas.in/components/command-box"
     },
     {
-      "name": "testimonials-marquee",
-      "type": "registry:component",
-      "title": "Testimonials Marquee",
-      "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
-      "description": "A testimonials marquee component for showcasing user feedback in a scrolling format.",
-      "registryDependencies": [
-        "@jyotirmoydas/utils",
-        "@kibo-ui/marquee"
-      ],
-      "files": [
-        {
-          "path": "src/registry/testimonials-marquee/testimonials-marquee.tsx",
-          "type": "registry:component"
-        }
-      ],
-      "docs": "https://jyotimoydas.in/components/testimonials-marquee"
-    },
-    {
       "name": "github-stars",
       "type": "registry:component",
       "title": "GitHub Stars",
@@ -513,40 +475,6 @@
       "docs": "https://jyotimoydas.in/components/status-indicator"
     },
     {
-      "name": "wheel-picker-block-01",
-      "type": "registry:block",
-      "registryDependencies": [
-        "@jyotirmoydas/wheel-picker"
-      ],
-      "files": [
-        {
-          "path": "src/registry/examples/wheel-picker-demo.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "wheel-picker-block-02",
-      "type": "registry:block",
-      "dependencies": [
-        "react-hook-form",
-        "@hookform/resolvers",
-        "zod"
-      ],
-      "registryDependencies": [
-        "@jyotirmoydas/wheel-picker",
-        "form",
-        "button",
-        "sonner"
-      ],
-      "files": [
-        {
-          "path": "src/registry/examples/wheel-picker-form-demo.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
       "name": "work-experience-block-01",
       "type": "registry:block",
       "registryDependencies": [
@@ -621,32 +549,6 @@
       "files": [
         {
           "path": "src/registry/examples/slide-to-unlock-demo-03.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "testimonials-marquee-block-01",
-      "type": "registry:block",
-      "registryDependencies": [
-        "@jyotirmoydas/testimonials-marquee"
-      ],
-      "files": [
-        {
-          "path": "src/registry/examples/testimonials-marquee-demo-01.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "testimonials-marquee-block-02",
-      "type": "registry:block",
-      "registryDependencies": [
-        "@jyotirmoydas/testimonials-marquee"
-      ],
-      "files": [
-        {
-          "path": "src/registry/examples/testimonials-marquee-demo-02.tsx",
           "type": "registry:component"
         }
       ]

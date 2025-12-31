@@ -55,17 +55,6 @@ import { rehypeComponent } from "@/lib/rehype-component";
 import { rehypeNpmCommand } from "@/lib/rehype-npm-command";
 import { remarkCodeImport } from "@/lib/remark-code-import";
 import { cn } from "@/lib/utils";
-import {
-  Testimonial,
-  TestimonialAuthor,
-  TestimonialAuthorName,
-  TestimonialAuthorTagline,
-  TestimonialAvatar,
-  TestimonialAvatarImg,
-  TestimonialAvatarRing,
-  TestimonialQuote,
-  TestimonialVerifiedBadge,
-} from "@/registry/testimonials-marquee";
 import type { NpmCommands } from "@/types/unist";
 
 import { BrowserCompatibility } from "./browser-compatibility";
@@ -193,15 +182,7 @@ const components: MDXRemoteProps["components"] = {
   YouTubeEmbed,
   IframeEmbed,
   FramedImage,
-  Testimonial,
-  TestimonialAuthor,
-  TestimonialAuthorTagline,
-  TestimonialAuthorName,
-  TestimonialAvatar,
-  TestimonialAvatarImg,
-  TestimonialAvatarRing,
-  TestimonialQuote,
-  TestimonialVerifiedBadge,
+
   // Liquid Glass Interactive Components
   DisplacementVectorField,
   MagnifyingGlass,

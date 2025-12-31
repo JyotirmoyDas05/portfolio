@@ -2,34 +2,6 @@ import type { Registry } from "shadcn/schema";
 
 export const blocks: Registry["items"] = [
   {
-    name: "wheel-picker-block-01",
-    type: "registry:block",
-    registryDependencies: ["@jyotirmoydas/wheel-picker"],
-    files: [
-      {
-        path: "examples/wheel-picker-demo.tsx",
-        type: "registry:component",
-      },
-    ],
-  },
-  {
-    name: "wheel-picker-block-02",
-    type: "registry:block",
-    dependencies: ["react-hook-form", "@hookform/resolvers", "zod"],
-    registryDependencies: [
-      "@jyotirmoydas/wheel-picker",
-      "form",
-      "button",
-      "sonner",
-    ],
-    files: [
-      {
-        path: "examples/wheel-picker-form-demo.tsx",
-        type: "registry:component",
-      },
-    ],
-  },
-  {
     name: "work-experience-block-01",
     type: "registry:block",
     registryDependencies: ["@jyotirmoydas/work-experience"],
@@ -98,28 +70,7 @@ export const blocks: Registry["items"] = [
       },
     ],
   },
-  {
-    name: "testimonials-marquee-block-01",
-    type: "registry:block",
-    registryDependencies: ["@jyotirmoydas/testimonials-marquee"],
-    files: [
-      {
-        path: "examples/testimonials-marquee-demo-01.tsx",
-        type: "registry:component",
-      },
-    ],
-  },
-  {
-    name: "testimonials-marquee-block-02",
-    type: "registry:block",
-    registryDependencies: ["@jyotirmoydas/testimonials-marquee"],
-    files: [
-      {
-        path: "examples/testimonials-marquee-demo-02.tsx",
-        type: "registry:component",
-      },
-    ],
-  },
+
   {
     name: "scroll-fade-effect-block-01",
     type: "registry:block",

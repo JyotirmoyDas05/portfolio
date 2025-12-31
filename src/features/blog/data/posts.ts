@@ -3,7 +3,7 @@ import matter from "gray-matter";
 import path from "path";
 
 import type { Post, PostMetadata } from "@/features/blog/types/post";
-import { getFileBadgeStatusCached } from "@/lib/git-utils";
+import type { BadgeStatus } from "@/lib/git-utils";
 
 // Load blur placeholder cache for LQIP
 type BlurCache = Record<string, string>;
@@ -18,6 +18,38 @@ try {
   }
 } catch {
   // Ignore cache errors
+}
+
+// Load badge cache for new/updated indicators
+type BadgeCache = {
+  generatedAt: string;
+  entries: Record<string, BadgeStatus>;
+};
+let badgeCache: BadgeCache | null = null;
+try {
+  const cachePath = path.join(
+    process.cwd(),
+    "src/features/blog/data/badge-cache.json"
+  );
+  if (fs.existsSync(cachePath)) {
+    badgeCache = JSON.parse(fs.readFileSync(cachePath, "utf-8")) as BadgeCache;
+  }
+} catch {
+  // Ignore cache errors
+}
+
+function getBadgeStatus(filePath: string): {
+  isRecentlyCreated: boolean;
+  isRecentlyUpdated: boolean;
+} {
+  const key = path.relative(process.cwd(), filePath).replace(/\\/g, "/");
+  if (badgeCache?.entries[key]) {
+    return {
+      isRecentlyCreated: badgeCache.entries[key].isRecentlyCreated,
+      isRecentlyUpdated: badgeCache.entries[key].isRecentlyUpdated,
+    };
+  }
+  return { isRecentlyCreated: false, isRecentlyUpdated: false };
 }
 
 function parseFrontmatter(fileContent: string) {
@@ -46,8 +78,7 @@ function getMDXData(dir: string) {
     const { metadata, content } = readMDXFile(filePath);
 
     // Auto-detect badge status from cached git history (generated at startup)
-    const badgeStatus = getFileBadgeStatusCached(filePath);
-
+    const badgeStatus = getBadgeStatus(filePath);
     const slug = path.basename(file, path.extname(file));
 
     return {

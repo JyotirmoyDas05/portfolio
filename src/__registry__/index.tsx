@@ -64,15 +64,6 @@ export const Index: Record<string, any> = {
       type: "registry:component",
     }],
   },
-  "wheel-picker": {
-    name: "wheel-picker",
-    description: "iOS-like wheel picker for React with smooth inertia scrolling and infinite loop support.",
-    type: "registry:component",
-    files: [{
-      path: "src/registry/wheel-picker/wheel-picker.tsx",
-      type: "registry:component",
-    }],
-  },
   "work-experience": {
     name: "work-experience",
     description: "Displays a list of work experiences with role details and durations.",
@@ -163,15 +154,6 @@ export const Index: Record<string, any> = {
       type: "registry:component",
     }],
   },
-  "testimonials-marquee": {
-    name: "testimonials-marquee",
-    description: "A testimonials marquee component for showcasing user feedback in a scrolling format.",
-    type: "registry:component",
-    files: [{
-      path: "src/registry/testimonials-marquee/testimonials-marquee.tsx",
-      type: "registry:component",
-    }],
-  },
   "github-stars": {
     name: "github-stars",
     description: "Display GitHub repository star count with formatted numbers and a tooltip showing the full count.",
@@ -214,24 +196,6 @@ export const Index: Record<string, any> = {
     type: "registry:component",
     files: [{
       path: "src/registry/status-indicator/status-indicator.tsx",
-      type: "registry:component",
-    }],
-  },
-  "wheel-picker-block-01": {
-    name: "wheel-picker-block-01",
-    description: "",
-    type: "registry:block",
-    files: [{
-      path: "src/registry/examples/wheel-picker-demo.tsx",
-      type: "registry:component",
-    }],
-  },
-  "wheel-picker-block-02": {
-    name: "wheel-picker-block-02",
-    description: "",
-    type: "registry:block",
-    files: [{
-      path: "src/registry/examples/wheel-picker-form-demo.tsx",
       type: "registry:component",
     }],
   },
@@ -286,24 +250,6 @@ export const Index: Record<string, any> = {
     type: "registry:block",
     files: [{
       path: "src/registry/examples/slide-to-unlock-demo-03.tsx",
-      type: "registry:component",
-    }],
-  },
-  "testimonials-marquee-block-01": {
-    name: "testimonials-marquee-block-01",
-    description: "",
-    type: "registry:block",
-    files: [{
-      path: "src/registry/examples/testimonials-marquee-demo-01.tsx",
-      type: "registry:component",
-    }],
-  },
-  "testimonials-marquee-block-02": {
-    name: "testimonials-marquee-block-02",
-    description: "",
-    type: "registry:block",
-    files: [{
-      path: "src/registry/examples/testimonials-marquee-demo-02.tsx",
       type: "registry:component",
     }],
   },
@@ -372,26 +318,6 @@ export const Index: Record<string, any> = {
       type: "registry:example",
     }],
     component: React.lazy(() => import("@/registry/examples/theme-switcher-demo.tsx")),
-  },
-  "wheel-picker-demo": {
-    name: "wheel-picker-demo",
-    description: "",
-    type: "registry:example",
-    files: [{
-      path: "src/registry/examples/wheel-picker-demo.tsx",
-      type: "registry:example",
-    }],
-    component: React.lazy(() => import("@/registry/examples/wheel-picker-demo.tsx")),
-  },
-  "wheel-picker-form-demo": {
-    name: "wheel-picker-form-demo",
-    description: "",
-    type: "registry:example",
-    files: [{
-      path: "src/registry/examples/wheel-picker-form-demo.tsx",
-      type: "registry:example",
-    }],
-    component: React.lazy(() => import("@/registry/examples/wheel-picker-form-demo.tsx")),
   },
   "work-experience-demo": {
     name: "work-experience-demo",
@@ -532,26 +458,6 @@ export const Index: Record<string, any> = {
       type: "registry:example",
     }],
     component: React.lazy(() => import("@/registry/examples/command-box-demo-02.tsx")),
-  },
-  "testimonials-marquee-demo-01": {
-    name: "testimonials-marquee-demo-01",
-    description: "",
-    type: "registry:example",
-    files: [{
-      path: "src/registry/examples/testimonials-marquee-demo-01.tsx",
-      type: "registry:example",
-    }],
-    component: React.lazy(() => import("@/registry/examples/testimonials-marquee-demo-01.tsx")),
-  },
-  "testimonials-marquee-demo-02": {
-    name: "testimonials-marquee-demo-02",
-    description: "",
-    type: "registry:example",
-    files: [{
-      path: "src/registry/examples/testimonials-marquee-demo-02.tsx",
-      type: "registry:example",
-    }],
-    component: React.lazy(() => import("@/registry/examples/testimonials-marquee-demo-02.tsx")),
   },
   "github-stars-demo": {
     name: "github-stars-demo",

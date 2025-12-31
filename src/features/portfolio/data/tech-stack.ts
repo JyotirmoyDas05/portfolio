@@ -20,15 +20,28 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Language"],
   },
   {
-    key: "php",
-    title: "PHP",
-    href: "https://www.php.net/",
+    key: "rust",
+    title: "Rust",
+    href: "https://www.rust-lang.org/",
+    categories: ["Language"],
+    theme: true,
+  },
+  {
+    key: "golang",
+    title: "Go",
+    href: "https://go.dev/",
     categories: ["Language"],
   },
   {
-    key: "java",
-    title: "Java",
-    href: "https://www.java.com/",
+    key: "c-lang",
+    title: "C",
+    href: "https://en.cppreference.com/w/c",
+    categories: ["Language"],
+  },
+  {
+    key: "cpp",
+    title: "C++",
+    href: "https://isocpp.org/",
     categories: ["Language"],
   },
   {
@@ -50,6 +63,12 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Library", "UI Library"],
   },
   {
+    key: "react-native",
+    title: "React Native",
+    href: "https://reactnative.dev/",
+    categories: ["Library", "Mobile"],
+  },
+  {
     key: "nextjs2",
     title: "Next.js",
     href: "https://nextjs.org/",
@@ -63,9 +82,29 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Framework"],
   },
   {
+    key: "expressjs",
+    title: "Express.js",
+    href: "https://expressjs.com/",
+    categories: ["Framework"],
+    theme: true,
+  },
+  {
+    key: "fastapi",
+    title: "FastAPI",
+    href: "https://fastapi.tiangolo.com/",
+    categories: ["Framework"],
+  },
+  {
     key: "shadcn-ui",
     title: "shadcn/ui",
     href: "https://ui.shadcn.com/",
+    categories: ["Library", "Component Library"],
+    theme: true,
+  },
+  {
+    key: "aceternity-ui",
+    title: "Aceternity UI",
+    href: "https://ui.aceternity.com/",
     categories: ["Library", "Component Library"],
     theme: true,
   },
@@ -108,12 +147,7 @@ export const TECH_STACK: TechStack[] = [
     href: "https://redux.js.org/",
     categories: ["State Management"],
   },
-  {
-    key: "antd",
-    title: "Ant Design",
-    href: "https://ant.design/",
-    categories: ["Library", "UI Library"],
-  },
+
   {
     key: "react-router",
     title: "React Router",
@@ -127,18 +161,7 @@ export const TECH_STACK: TechStack[] = [
     href: "https://reactnavigation.org/",
     categories: ["Library", "Navigation"],
   },
-  {
-    key: "loopback",
-    title: "LoopBack",
-    href: "https://loopback.io/",
-    categories: ["Framework"],
-  },
-  {
-    key: "laravel",
-    title: "Laravel",
-    href: "https://laravel.com/",
-    categories: ["Framework"],
-  },
+
   {
     key: "git",
     title: "Git",

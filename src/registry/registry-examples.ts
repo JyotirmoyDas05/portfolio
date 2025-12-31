@@ -34,28 +34,7 @@ export const examples: Registry["items"] = [
       },
     ],
   },
-  {
-    name: "wheel-picker-demo",
-    type: "registry:example",
-    registryDependencies: ["@jyotirmoydas/wheel-picker"],
-    files: [
-      {
-        path: "examples/wheel-picker-demo.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "wheel-picker-form-demo",
-    type: "registry:example",
-    registryDependencies: ["@jyotirmoydas/wheel-picker", "form"],
-    files: [
-      {
-        path: "examples/wheel-picker-form-demo.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
+
   {
     name: "work-experience-demo",
     type: "registry:example",
@@ -213,28 +192,7 @@ export const examples: Registry["items"] = [
       },
     ],
   },
-  {
-    name: "testimonials-marquee-demo-01",
-    type: "registry:example",
-    registryDependencies: ["@jyotirmoydas/testimonials-marquee"],
-    files: [
-      {
-        path: "examples/testimonials-marquee-demo-01.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "testimonials-marquee-demo-02",
-    type: "registry:example",
-    registryDependencies: ["@jyotirmoydas/testimonials-marquee"],
-    files: [
-      {
-        path: "examples/testimonials-marquee-demo-02.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
+
   {
     name: "github-stars-demo",
     type: "registry:example",

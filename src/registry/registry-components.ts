@@ -49,23 +49,7 @@ export const components: Registry["items"] = [
     ],
     docs: "https://jyotimoydas.in/components/apple-hello-effect",
   },
-  {
-    name: "wheel-picker",
-    type: "registry:component",
-    description:
-      "iOS-like wheel picker for React with smooth inertia scrolling and infinite loop support.",
-    title: "Wheel Picker",
-    author: "jyotirmoydas <jyotirmoydas12345@gmail.com>",
-    dependencies: ["@ncdai/react-wheel-picker"],
-    registryDependencies: ["@jyotirmoydas/utils"],
-    files: [
-      {
-        path: "wheel-picker/wheel-picker.tsx",
-        type: "registry:component",
-      },
-    ],
-    docs: "https://jyotimoydas.in/components/react-wheel-picker",
-  },
+
   {
     name: "work-experience",
     type: "registry:component",
@@ -233,22 +217,7 @@ export const components: Registry["items"] = [
     ],
     docs: "https://jyotimoydas.in/components/command-box",
   },
-  {
-    name: "testimonials-marquee",
-    type: "registry:component",
-    description:
-      "A testimonials marquee component for showcasing user feedback in a scrolling format.",
-    title: "Testimonials Marquee",
-    author: "jyotirmoydas <jyotirmoydas12345@gmail.com>",
-    registryDependencies: ["@jyotirmoydas/utils", "@kibo-ui/marquee"],
-    files: [
-      {
-        path: "testimonials-marquee/testimonials-marquee.tsx",
-        type: "registry:component",
-      },
-    ],
-    docs: "https://jyotimoydas.in/components/testimonials-marquee",
-  },
+
   {
     name: "github-stars",
     type: "registry:component",

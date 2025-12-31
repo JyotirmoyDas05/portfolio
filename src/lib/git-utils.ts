@@ -62,7 +62,8 @@ function loadBadgeCache(): CacheData | null {
 }
 
 /**
- * Get badge status from cache (instant) - falls back to live git if cache unavailable
+ * Get badge status from cache (instant) - returns default false values if not cached
+ * NOTE: We don't fall back to live git because it fails in production (Vercel has no git history)
  */
 export function getFileBadgeStatusCached(filePath: string): BadgeStatus {
   const cache = loadBadgeCache();
@@ -78,8 +79,14 @@ export function getFileBadgeStatusCached(filePath: string): BadgeStatus {
     };
   }
 
-  // Fallback to live git (slow but ensures correctness for uncached files)
-  return getFileBadgeStatus(filePath);
+  // Return safe defaults if cache miss - don't fall back to git (fails in production)
+  // This means files not in cache won't show badges, which is expected behavior
+  return {
+    isRecentlyCreated: false,
+    isRecentlyUpdated: false,
+    createdDate: null,
+    modifiedDate: null,
+  };
 }
 
 /**
