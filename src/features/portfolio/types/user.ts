@@ -29,6 +29,8 @@ export type User = {
   about: string;
   /** Public URL to avatar image */
   avatar: string;
+  /** Real avatar image URL (shown on hover) */
+  avatarReal?: string;
   /** Open Graph image URL for social sharing */
   ogImage: string;
   /** Audio URL for name pronunciation */

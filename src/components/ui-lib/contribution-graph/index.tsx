@@ -1,4 +1,4 @@
-// Thanks https://www.kibo-ui.com/components/contribution-graph
+// Contribution Graph Component
 
 "use client";
 

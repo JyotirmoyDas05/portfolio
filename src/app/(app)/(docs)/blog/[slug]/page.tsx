@@ -14,6 +14,7 @@ import {
 } from "@/components/base/ui/tooltip";
 import { InlineTOC } from "@/components/inline-toc";
 import { MDX } from "@/components/mdx";
+import { ArticleToc } from "@/components/toc";
 import { Button } from "@/components/ui/button";
 import { Kbd } from "@/components/ui/kbd";
 import { Prose } from "@/components/ui/typography";
@@ -212,21 +213,28 @@ export default async function Page({
         />
       </div>
 
-      <Prose className="px-4">
-        <ViewTransition name={`post-title-${slug}`}>
-          <h1 className="screen-line-after text-3xl font-semibold">
-            {post.metadata.title}
-          </h1>
-        </ViewTransition>
+      {/* Main content with sidebar */}
+      <div className="relative flex gap-8 px-4">
+        {/* Article content */}
+        <Prose className="min-w-0 flex-1">
+          <ViewTransition name={`post-title-${slug}`}>
+            <h1 className="screen-line-after text-3xl font-semibold">
+              {post.metadata.title}
+            </h1>
+          </ViewTransition>
 
-        <p className="text-muted-foreground">{post.metadata.description}</p>
+          <p className="text-muted-foreground">{post.metadata.description}</p>
 
-        <InlineTOC items={toc} />
+          <InlineTOC items={toc} />
 
-        <div>
-          <MDX code={post.content} />
-        </div>
-      </Prose>
+          <div>
+            <MDX code={post.content} />
+          </div>
+        </Prose>
+
+        {/* Sticky TOC sidebar */}
+        <ArticleToc items={toc} />
+      </div>
 
       <div className="screen-line-before h-4 w-full" />
     </>

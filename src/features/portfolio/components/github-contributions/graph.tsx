@@ -10,7 +10,7 @@ import {
   TooltipRoot,
   TooltipTrigger,
 } from "@/components/base/ui/tooltip";
-import type { Activity } from "@/components/kibo-ui/contribution-graph";
+import type { Activity } from "@/components/ui-lib/contribution-graph";
 import {
   ContributionGraph,
   ContributionGraphBlock,
@@ -18,7 +18,7 @@ import {
   ContributionGraphFooter,
   ContributionGraphLegend,
   ContributionGraphTotalCount,
-} from "@/components/kibo-ui/contribution-graph";
+} from "@/components/ui-lib/contribution-graph";
 import { GITHUB_USERNAME } from "@/config/site";
 
 export function GitHubContributionGraph({

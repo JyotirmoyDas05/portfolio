@@ -30,6 +30,8 @@ export const USER = {
 - Enthusiastic about exploring new technologies and turning ideas into reality through polished, thoughtfully crafted personal projects.
 `,
   avatar: "https://github.com/JyotirmoyDas05.png",
+  avatarReal:
+    "https://assets.jyotimoydas.in/images/Avatar_Real.jpg",
   ogImage: "https://jyotimoydas.in/og-image.png",
   namePronunciationUrl: "",
   timeZone: "Asia/Kolkata",
