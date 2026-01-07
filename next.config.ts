@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 import path from "path";
 
 const nextConfig: NextConfig = {
+  output: "standalone", // Optimized for Appwrite Sites - smaller builds, faster cold starts
   reactStrictMode: true,
   experimental: {
     viewTransition: true,

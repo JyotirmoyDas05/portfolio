@@ -31,7 +31,7 @@ export const USER = {
 `,
   avatar: "https://github.com/JyotirmoyDas05.png",
   avatarReal: "https://assets.jyotimoydas.in/images/Avatar_Real.jpg",
-  ogImage: "https://assets.jyotimoydas.in/images/og-image.png",
+  ogImage: "https://assets.jyotimoydas.in/images/og-image2.png",
   namePronunciationUrl: "",
   timeZone: "Asia/Kolkata",
   keywords: ["jyotirmoydas", "jyotirmoy das", "jyotirmoy", "das"],
