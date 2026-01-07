@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
     viewTransition: true,
   },
   transpilePackages: ["next-mdx-remote"],
-  allowedDevOrigins: ["chanhdai-macbook.local"],
+  allowedDevOrigins: ["jyotirmoydas-Omenbook.local"],
   turbopack: {
     root: path.join(__dirname, "."),
   },
