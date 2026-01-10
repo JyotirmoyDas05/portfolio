@@ -109,26 +109,14 @@ export const components: Registry["items"] = [
     title: "Slide to Unlock",
     author: "jyotirmoydas <jyotirmoydas12345@gmail.com>",
     dependencies: ["motion", "sonner"],
-    registryDependencies: ["@jyotirmoydas/utils", "@jyotirmoydas/use-sound"],
+    registryDependencies: [
+      "@jyotirmoydas/utils",
+      "@jyotirmoydas/use-sound",
+      "@jyotirmoydas/liquid-glass-lib",
+    ],
     files: [
       {
         path: "slide-to-unlock/slide-to-unlock.tsx",
-        type: "registry:component",
-      },
-      {
-        path: "slide-to-unlock/refraction-filter.tsx",
-        type: "registry:component",
-      },
-      {
-        path: "slide-to-unlock/lib/displacementMap.ts",
-        type: "registry:component",
-      },
-      {
-        path: "slide-to-unlock/lib/specular.ts",
-        type: "registry:component",
-      },
-      {
-        path: "slide-to-unlock/lib/surfaceEquations.ts",
         type: "registry:component",
       },
     ],
@@ -142,26 +130,13 @@ export const components: Registry["items"] = [
     title: "Liquid Glass Slider",
     author: "jyotirmoydas <jyotirmoydas12345@gmail.com>",
     dependencies: ["motion"],
-    registryDependencies: ["@jyotirmoydas/utils"],
+    registryDependencies: [
+      "@jyotirmoydas/utils",
+      "@jyotirmoydas/liquid-glass-lib",
+    ],
     files: [
       {
         path: "liquid-glass-slider/liquid-glass-slider.tsx",
-        type: "registry:component",
-      },
-      {
-        path: "liquid-glass-slider/refraction-filter.tsx",
-        type: "registry:component",
-      },
-      {
-        path: "liquid-glass-slider/lib/displacementMap.ts",
-        type: "registry:component",
-      },
-      {
-        path: "liquid-glass-slider/lib/specular.ts",
-        type: "registry:component",
-      },
-      {
-        path: "liquid-glass-slider/lib/surfaceEquations.ts",
         type: "registry:component",
       },
     ],
@@ -175,26 +150,13 @@ export const components: Registry["items"] = [
     title: "Liquid Glass Searchbox",
     author: "jyotirmoydas <jyotirmoydas12345@gmail.com>",
     dependencies: ["motion", "lucide-react"],
-    registryDependencies: ["@jyotirmoydas/utils"],
+    registryDependencies: [
+      "@jyotirmoydas/utils",
+      "@jyotirmoydas/liquid-glass-lib",
+    ],
     files: [
       {
         path: "liquid-glass-searchbox/liquid-glass-searchbox.tsx",
-        type: "registry:component",
-      },
-      {
-        path: "liquid-glass-searchbox/refraction-filter.tsx",
-        type: "registry:component",
-      },
-      {
-        path: "liquid-glass-searchbox/lib/displacementMap.ts",
-        type: "registry:component",
-      },
-      {
-        path: "liquid-glass-searchbox/lib/specular.ts",
-        type: "registry:component",
-      },
-      {
-        path: "liquid-glass-searchbox/lib/surfaceEquations.ts",
         type: "registry:component",
       },
     ],

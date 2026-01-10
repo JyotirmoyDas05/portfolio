@@ -16,6 +16,24 @@ export const Index: Record<string, any> = {
       type: "registry:lib",
     }],
   },
+  "liquid-glass-lib": {
+    name: "liquid-glass-lib",
+    description: "Shared refraction and displacement utilities for iOS 26-inspired liquid glass effects.",
+    type: "registry:lib",
+    files: [{
+      path: "src/registry/liquid-glass-lib/refraction-filter.tsx",
+      type: "registry:component",
+    },{
+      path: "src/registry/liquid-glass-lib/displacementMap.ts",
+      type: "registry:lib",
+    },{
+      path: "src/registry/liquid-glass-lib/specular.ts",
+      type: "registry:lib",
+    },{
+      path: "src/registry/liquid-glass-lib/surfaceEquations.ts",
+      type: "registry:lib",
+    }],
+  },
   "use-controllable-state": {
     name: "use-controllable-state",
     description: "",
@@ -89,18 +107,6 @@ export const Index: Record<string, any> = {
     files: [{
       path: "src/registry/slide-to-unlock/slide-to-unlock.tsx",
       type: "registry:component",
-    },{
-      path: "src/registry/slide-to-unlock/refraction-filter.tsx",
-      type: "registry:component",
-    },{
-      path: "src/registry/slide-to-unlock/lib/displacementMap.ts",
-      type: "registry:component",
-    },{
-      path: "src/registry/slide-to-unlock/lib/specular.ts",
-      type: "registry:component",
-    },{
-      path: "src/registry/slide-to-unlock/lib/surfaceEquations.ts",
-      type: "registry:component",
     }],
   },
   "liquid-glass-slider": {
@@ -110,18 +116,6 @@ export const Index: Record<string, any> = {
     files: [{
       path: "src/registry/liquid-glass-slider/liquid-glass-slider.tsx",
       type: "registry:component",
-    },{
-      path: "src/registry/liquid-glass-slider/refraction-filter.tsx",
-      type: "registry:component",
-    },{
-      path: "src/registry/liquid-glass-slider/lib/displacementMap.ts",
-      type: "registry:component",
-    },{
-      path: "src/registry/liquid-glass-slider/lib/specular.ts",
-      type: "registry:component",
-    },{
-      path: "src/registry/liquid-glass-slider/lib/surfaceEquations.ts",
-      type: "registry:component",
     }],
   },
   "liquid-glass-searchbox": {
@@ -130,18 +124,6 @@ export const Index: Record<string, any> = {
     type: "registry:component",
     files: [{
       path: "src/registry/liquid-glass-searchbox/liquid-glass-searchbox.tsx",
-      type: "registry:component",
-    },{
-      path: "src/registry/liquid-glass-searchbox/refraction-filter.tsx",
-      type: "registry:component",
-    },{
-      path: "src/registry/liquid-glass-searchbox/lib/displacementMap.ts",
-      type: "registry:component",
-    },{
-      path: "src/registry/liquid-glass-searchbox/lib/specular.ts",
-      type: "registry:component",
-    },{
-      path: "src/registry/liquid-glass-searchbox/lib/surfaceEquations.ts",
       type: "registry:component",
     }],
   },

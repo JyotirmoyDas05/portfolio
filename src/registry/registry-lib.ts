@@ -14,4 +14,31 @@ export const lib: Registry["items"] = [
       },
     ],
   },
+  {
+    name: "liquid-glass-lib",
+    type: "registry:lib",
+    title: "Liquid Glass Utilities",
+    description:
+      "Shared refraction and displacement utilities for iOS 26-inspired liquid glass effects.",
+    author: "jyotirmoydas <jyotirmoydas12345@gmail.com>",
+    dependencies: ["motion"],
+    files: [
+      {
+        path: "liquid-glass-lib/refraction-filter.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "liquid-glass-lib/displacementMap.ts",
+        type: "registry:lib",
+      },
+      {
+        path: "liquid-glass-lib/specular.ts",
+        type: "registry:lib",
+      },
+      {
+        path: "liquid-glass-lib/surfaceEquations.ts",
+        type: "registry:lib",
+      },
+    ],
+  },
 ];
