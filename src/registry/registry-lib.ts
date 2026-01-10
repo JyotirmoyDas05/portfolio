@@ -28,15 +28,15 @@ export const lib: Registry["items"] = [
         type: "registry:component",
       },
       {
-        path: "liquid-glass-lib/displacementMap.ts",
+        path: "src/lib/displacementMap.ts",
         type: "registry:lib",
       },
       {
-        path: "liquid-glass-lib/specular.ts",
+        path: "src/lib/specular.ts",
         type: "registry:lib",
       },
       {
-        path: "liquid-glass-lib/surfaceEquations.ts",
+        path: "src/lib/surfaceEquations.ts",
         type: "registry:lib",
       },
     ],

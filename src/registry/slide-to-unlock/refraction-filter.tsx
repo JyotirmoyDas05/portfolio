@@ -6,9 +6,9 @@ import React, { useEffect, useMemo, useState } from "react";
 import {
   calculateDisplacementMap,
   calculateDisplacementMap2,
-} from "./displacementMap";
-import { calculateRefractionSpecular } from "./specular";
-import { CONCAVE, CONVEX, CONVEX_CIRCLE, LIP } from "./surfaceEquations";
+} from "@/lib/displacementMap";
+import { calculateRefractionSpecular } from "@/lib/specular";
+import { CONCAVE, CONVEX, CONVEX_CIRCLE, LIP } from "@/lib/surfaceEquations";
 
 // Helper to get value from either a primitive or MotionValue
 function getValueOrMotion<T>(value: T | MotionValue<T>): T {

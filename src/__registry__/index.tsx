@@ -24,13 +24,13 @@ export const Index: Record<string, any> = {
       path: "src/registry/liquid-glass-lib/refraction-filter.tsx",
       type: "registry:component",
     },{
-      path: "src/registry/liquid-glass-lib/displacementMap.ts",
+      path: "src/registry/src/lib/displacementMap.ts",
       type: "registry:lib",
     },{
-      path: "src/registry/liquid-glass-lib/specular.ts",
+      path: "src/registry/src/lib/specular.ts",
       type: "registry:lib",
     },{
-      path: "src/registry/liquid-glass-lib/surfaceEquations.ts",
+      path: "src/registry/src/lib/surfaceEquations.ts",
       type: "registry:lib",
     }],
   },

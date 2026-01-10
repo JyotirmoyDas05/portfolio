@@ -34,15 +34,15 @@
           "type": "registry:component"
         },
         {
-          "path": "src/registry/liquid-glass-lib/displacementMap.ts",
+          "path": "src/lib/displacementMap.ts",
           "type": "registry:lib"
         },
         {
-          "path": "src/registry/liquid-glass-lib/specular.ts",
+          "path": "src/lib/specular.ts",
           "type": "registry:lib"
         },
         {
-          "path": "src/registry/liquid-glass-lib/surfaceEquations.ts",
+          "path": "src/lib/surfaceEquations.ts",
           "type": "registry:lib"
         }
       ]
