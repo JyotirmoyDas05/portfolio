@@ -44,6 +44,33 @@ Each entry is well-documented and includes:
 - Beautiful, readable code blocks
 - One-click command blocks (pnpm, npm, yarn, bun)
 
+#### Installing Components
+
+**Option 1: Using the CLI wrapper (recommended)**
+
+```bash
+npm i jyotirmoy
+npx jyotirmoy add liquid-glass-slider status-button
+```
+
+**Option 2: Using shadcn CLI directly**
+
+First, add the registry to your project's `components.json`:
+
+```json
+{
+  "registries": {
+    "@jyotirmoydas": "https://jyotimoydas.in/r/{name}.json"
+  }
+}
+```
+
+Then install any component:
+
+```bash
+npx shadcn@latest add @jyotirmoydas/liquid-glass-searchbox
+```
+
 ### Analytics
 
 User behavior tracking with [PostHog](https://posthog.com) to understand how visitors interact with the site:
