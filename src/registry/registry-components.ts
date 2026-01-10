@@ -121,15 +121,15 @@ export const components: Registry["items"] = [
       },
       {
         path: "slide-to-unlock/lib/displacementMap.ts",
-        type: "registry:lib",
+        type: "registry:component",
       },
       {
         path: "slide-to-unlock/lib/specular.ts",
-        type: "registry:lib",
+        type: "registry:component",
       },
       {
         path: "slide-to-unlock/lib/surfaceEquations.ts",
-        type: "registry:lib",
+        type: "registry:component",
       },
     ],
     docs: "https://jyotimoydas.in/components/slide-to-unlock",
@@ -154,15 +154,15 @@ export const components: Registry["items"] = [
       },
       {
         path: "liquid-glass-slider/lib/displacementMap.ts",
-        type: "registry:lib",
+        type: "registry:component",
       },
       {
         path: "liquid-glass-slider/lib/specular.ts",
-        type: "registry:lib",
+        type: "registry:component",
       },
       {
         path: "liquid-glass-slider/lib/surfaceEquations.ts",
-        type: "registry:lib",
+        type: "registry:component",
       },
     ],
     docs: "https://jyotimoydas.in/components/liquid-glass-slider",
@@ -187,15 +187,15 @@ export const components: Registry["items"] = [
       },
       {
         path: "liquid-glass-searchbox/lib/displacementMap.ts",
-        type: "registry:lib",
+        type: "registry:component",
       },
       {
         path: "liquid-glass-searchbox/lib/specular.ts",
-        type: "registry:lib",
+        type: "registry:component",
       },
       {
         path: "liquid-glass-searchbox/lib/surfaceEquations.ts",
-        type: "registry:lib",
+        type: "registry:component",
       },
     ],
     docs: "https://jyotimoydas.in/components/liquid-glass-searchbox",

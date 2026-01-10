@@ -94,13 +94,13 @@ export const Index: Record<string, any> = {
       type: "registry:component",
     },{
       path: "src/registry/slide-to-unlock/lib/displacementMap.ts",
-      type: "registry:lib",
+      type: "registry:component",
     },{
       path: "src/registry/slide-to-unlock/lib/specular.ts",
-      type: "registry:lib",
+      type: "registry:component",
     },{
       path: "src/registry/slide-to-unlock/lib/surfaceEquations.ts",
-      type: "registry:lib",
+      type: "registry:component",
     }],
   },
   "liquid-glass-slider": {
@@ -115,13 +115,13 @@ export const Index: Record<string, any> = {
       type: "registry:component",
     },{
       path: "src/registry/liquid-glass-slider/lib/displacementMap.ts",
-      type: "registry:lib",
+      type: "registry:component",
     },{
       path: "src/registry/liquid-glass-slider/lib/specular.ts",
-      type: "registry:lib",
+      type: "registry:component",
     },{
       path: "src/registry/liquid-glass-slider/lib/surfaceEquations.ts",
-      type: "registry:lib",
+      type: "registry:component",
     }],
   },
   "liquid-glass-searchbox": {
@@ -136,13 +136,13 @@ export const Index: Record<string, any> = {
       type: "registry:component",
     },{
       path: "src/registry/liquid-glass-searchbox/lib/displacementMap.ts",
-      type: "registry:lib",
+      type: "registry:component",
     },{
       path: "src/registry/liquid-glass-searchbox/lib/specular.ts",
-      type: "registry:lib",
+      type: "registry:component",
     },{
       path: "src/registry/liquid-glass-searchbox/lib/surfaceEquations.ts",
-      type: "registry:lib",
+      type: "registry:component",
     }],
   },
   "command-box": {
