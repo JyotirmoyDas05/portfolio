@@ -97,19 +97,13 @@ Licensed under the [MIT license](./LICENSE).
 
 You're free to use my code! Just make sure to <ins>remove all my personal information</ins> before publishing your website. It's awesome to see my code being useful to someone!
 
-## Contributors
-
-[![Contributors](https://contrib.rocks/image?repo=jyotirmoydas/jyotimoydas.in)](https://github.com/jyotirmoydas/jyotimoydas.in/graphs/contributors)
-
-> Made with [contrib.rocks](https://contrib.rocks)
-
 ## Stats
 
-![Stats](https://repobeats.axiom.co/api/embed/583bf08fbdef57c3921d3cfda902d546df3e6ed1.svg "Repobeats analytics image")
+![Stats](https://repobeats.axiom.co/api/embed/6614ed471ccc18220000e7dabdd56d7ada3ab098.svg "Repobeats analytics image")
 
 ## Star History
 
-[![Star History](https://starchart.cc/jyotirmoydas/jyotimoydas.in.svg?variant=adaptive&line=%23d37f2c)](https://starchart.cc/jyotirmoydas/jyotimoydas.in)
+[![Star History](https://starchart.cc/JyotirmoyDas05/portfolio.svg?variant=adaptive&line)](https://starchart.cc/JyotirmoyDas05/portfolio)
 
 ## Acknowledgments
 
