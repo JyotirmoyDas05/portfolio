@@ -4,8 +4,8 @@ A minimal, pixel-perfect dev portfolio, component registry, and blog to showcase
 
 Check out the live site: [jyotimoydas.in](https://jyotimoydas.in)
 
-[![screenshot-dark](https://assets.jyotimoydas.in/images/screenshot-desktop-dark.webp?t=1764345394#gh-dark-mode-only)](https://github.com/JyotirmoyDas05/portfolio#gh-dark-mode-only)
-[![screenshot-light](https://assets.jyotimoydas.in/images/screenshot-desktop-light.webp?t=1764345394#gh-light-mode-only)](https://github.com/JyotirmoyDas05/portfolio#gh-light-mode-only)
+[![screenshot-dark](https://assets.jyotimoydas.in/images/screenshot-desktop-dark.png#gh-dark-mode-only)](https://github.com/JyotirmoyDas05/portfolio#gh-dark-mode-only)
+[![screenshot-light](https://assets.jyotimoydas.in/images/screenshot-desktop-light.png#gh-light-mode-only)](https://github.com/JyotirmoyDas05/portfolio#gh-light-mode-only)
 
 ## Overview
 
@@ -121,9 +121,3 @@ You're free to use my code! Just make sure to <ins>remove all my personal inform
 - [PostHog](https://posthog.com)
 - [c15t](https://c15t.com)
 - And many other open-source libraries used in `package.json`
-
-## GitAds Sponsored
-
-[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=jyotirmoydas/jyotimoydas.in@github)](https://gitads.dev/v1/ad-track?source=jyotirmoydas/jyotimoydas.in@github)
-
-<!-- GitAds-Verify: QICCAB4PFWV9MHUGPGPN5B2I8SAXLAOK -->
