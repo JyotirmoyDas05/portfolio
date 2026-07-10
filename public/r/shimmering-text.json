@@ -5,12 +5,8 @@
   "title": "Shimmering Text",
   "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
   "description": "Smooth shimmering text animation built with Motion.",
-  "dependencies": [
-    "motion"
-  ],
-  "registryDependencies": [
-    "@jyotirmoydas/utils"
-  ],
+  "dependencies": ["motion"],
+  "registryDependencies": ["@jyotirmoydas/utils"],
   "files": [
     {
       "path": "src/registry/shimmering-text/shimmering-text.tsx",

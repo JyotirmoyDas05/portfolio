@@ -5,13 +5,8 @@
   "title": "Dynamic Scroll Island TOC",
   "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
   "description": "An iOS Dynamic Island-style scroll progress indicator with expandable TOC navigation.",
-  "dependencies": [
-    "motion",
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@jyotirmoydas/utils"
-  ],
+  "dependencies": ["motion", "lucide-react"],
+  "registryDependencies": ["@jyotirmoydas/utils"],
   "files": [
     {
       "path": "src/registry/dynamic-scroll-island-toc/dynamic-scroll-island-toc.tsx",

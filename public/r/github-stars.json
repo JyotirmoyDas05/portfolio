@@ -5,10 +5,7 @@
   "title": "GitHub Stars",
   "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
   "description": "Display GitHub repository star count with formatted numbers and a tooltip showing the full count.",
-  "registryDependencies": [
-    "button",
-    "tooltip"
-  ],
+  "registryDependencies": ["button", "tooltip"],
   "files": [
     {
       "path": "src/registry/github-stars/github-stars.tsx",

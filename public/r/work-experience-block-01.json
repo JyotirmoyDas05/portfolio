@@ -2,9 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "work-experience-block-01",
   "type": "registry:block",
-  "registryDependencies": [
-    "@jyotirmoydas/work-experience"
-  ],
+  "registryDependencies": ["@jyotirmoydas/work-experience"],
   "files": [
     {
       "path": "src/registry/examples/work-experience-demo.tsx",

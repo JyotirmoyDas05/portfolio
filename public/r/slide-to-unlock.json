@@ -5,10 +5,7 @@
   "title": "Slide to Unlock",
   "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
   "description": "An iOS 26-inspired liquid glass slide-to-unlock switch with refraction effects.",
-  "dependencies": [
-    "motion",
-    "sonner"
-  ],
+  "dependencies": ["motion", "sonner"],
   "registryDependencies": [
     "@jyotirmoydas/utils",
     "@jyotirmoydas/use-sound",

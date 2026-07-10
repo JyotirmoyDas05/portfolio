@@ -2,7 +2,7 @@
 
 import type { MotionValue } from "motion/react";
 import { motion, useTransform } from "motion/react";
-import React from "react";
+import type React from "react";
 
 import { imageDataToUrl } from "../lib/canvasUtils";
 import {

@@ -5,9 +5,7 @@
   "title": "Liquid Glass Slider",
   "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
   "description": "An iOS 26-inspired liquid glass slider with draggable thumb and SVG refraction effects.",
-  "dependencies": [
-    "motion"
-  ],
+  "dependencies": ["motion"],
   "registryDependencies": [
     "@jyotirmoydas/utils",
     "@jyotirmoydas/liquid-glass-lib"

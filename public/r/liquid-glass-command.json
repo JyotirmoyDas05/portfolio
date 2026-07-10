@@ -5,15 +5,8 @@
   "title": "Liquid Glass Command",
   "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
   "description": "An iOS 26-inspired liquid glass command palette (cmdk) with refraction effects.",
-  "dependencies": [
-    "motion",
-    "cmdk",
-    "radix-ui",
-    "lucide-react"
-  ],
-  "registryDependencies": [
-    "@jyotirmoydas/utils"
-  ],
+  "dependencies": ["motion", "cmdk", "radix-ui", "lucide-react"],
+  "registryDependencies": ["@jyotirmoydas/utils"],
   "files": [
     {
       "path": "src/registry/liquid-glass-command/liquid-glass-command.tsx",

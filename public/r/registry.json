@@ -8,10 +8,7 @@
       "type": "registry:lib",
       "title": "Utility Functions",
       "author": "jyotirmoydas <dai@jyotimoydas.in>",
-      "dependencies": [
-        "clsx",
-        "tailwind-merge"
-      ],
+      "dependencies": ["clsx", "tailwind-merge"],
       "files": [
         {
           "path": "src/lib/utils.ts",
@@ -25,9 +22,7 @@
       "title": "Liquid Glass Utilities",
       "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
       "description": "Shared refraction and displacement utilities for iOS 26-inspired liquid glass effects.",
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "src/registry/liquid-glass-lib/refraction-filter.tsx",
@@ -80,14 +75,8 @@
       "title": "Theme Switcher",
       "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
       "description": "A theme switcher component for Next.js apps with next-themes and Tailwind CSS, supporting system, light, and dark modes.",
-      "dependencies": [
-        "next-themes",
-        "lucide-react",
-        "motion"
-      ],
-      "registryDependencies": [
-        "@jyotirmoydas/utils"
-      ],
+      "dependencies": ["next-themes", "lucide-react", "motion"],
+      "registryDependencies": ["@jyotirmoydas/utils"],
       "files": [
         {
           "path": "src/registry/theme-switcher/theme-switcher.tsx",
@@ -101,12 +90,8 @@
       "type": "registry:component",
       "title": "Flip Sentences",
       "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
-      "dependencies": [
-        "motion"
-      ],
-      "registryDependencies": [
-        "@jyotirmoydas/utils"
-      ],
+      "dependencies": ["motion"],
+      "registryDependencies": ["@jyotirmoydas/utils"],
       "files": [
         {
           "path": "src/registry/flip-sentences/flip-sentences.tsx",
@@ -120,12 +105,8 @@
       "title": "Apple Hello Effect",
       "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
       "description": "Create a Xin chào and Hello writing effect inspired by Apple using Motion for React.",
-      "dependencies": [
-        "motion"
-      ],
-      "registryDependencies": [
-        "@jyotirmoydas/utils"
-      ],
+      "dependencies": ["motion"],
+      "registryDependencies": ["@jyotirmoydas/utils"],
       "files": [
         {
           "path": "src/registry/apple-hello-effect/apple-hello-effect.tsx",
@@ -140,14 +121,8 @@
       "title": "Work Experience",
       "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
       "description": "Displays a list of work experiences with role details and durations.",
-      "dependencies": [
-        "react-markdown",
-        "lucide-react"
-      ],
-      "devDependencies": [
-        "@tailwindcss/typography",
-        "tw-animate-css"
-      ],
+      "dependencies": ["react-markdown", "lucide-react"],
+      "devDependencies": ["@tailwindcss/typography", "tw-animate-css"],
       "registryDependencies": [
         "@jyotirmoydas/utils",
         "collapsible",
@@ -185,12 +160,8 @@
       "title": "Shimmering Text",
       "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
       "description": "Smooth shimmering text animation built with Motion.",
-      "dependencies": [
-        "motion"
-      ],
-      "registryDependencies": [
-        "@jyotirmoydas/utils"
-      ],
+      "dependencies": ["motion"],
+      "registryDependencies": ["@jyotirmoydas/utils"],
       "files": [
         {
           "path": "src/registry/shimmering-text/shimmering-text.tsx",
@@ -204,10 +175,7 @@
       "title": "Slide to Unlock",
       "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
       "description": "An iOS 26-inspired liquid glass slide-to-unlock switch with refraction effects.",
-      "dependencies": [
-        "motion",
-        "sonner"
-      ],
+      "dependencies": ["motion", "sonner"],
       "registryDependencies": [
         "@jyotirmoydas/utils",
         "@jyotirmoydas/use-sound",
@@ -227,9 +195,7 @@
       "title": "Liquid Glass Slider",
       "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
       "description": "An iOS 26-inspired liquid glass slider with draggable thumb and SVG refraction effects.",
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "registryDependencies": [
         "@jyotirmoydas/utils",
         "@jyotirmoydas/liquid-glass-lib"
@@ -248,10 +214,7 @@
       "title": "Liquid Glass Searchbox",
       "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
       "description": "An iOS 26-inspired liquid glass searchbox with focus animations and SVG refraction effects.",
-      "dependencies": [
-        "motion",
-        "lucide-react"
-      ],
+      "dependencies": ["motion", "lucide-react"],
       "registryDependencies": [
         "@jyotirmoydas/utils",
         "@jyotirmoydas/liquid-glass-lib"
@@ -276,9 +239,7 @@
         "lucide-react",
         "react-hotkeys-hook"
       ],
-      "registryDependencies": [
-        "@jyotirmoydas/utils"
-      ],
+      "registryDependencies": ["@jyotirmoydas/utils"],
       "files": [
         {
           "path": "src/registry/command-box/command-box.tsx",
@@ -293,10 +254,7 @@
       "title": "GitHub Stars",
       "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
       "description": "Display GitHub repository star count with formatted numbers and a tooltip showing the full count.",
-      "registryDependencies": [
-        "button",
-        "tooltip"
-      ],
+      "registryDependencies": ["button", "tooltip"],
       "files": [
         {
           "path": "src/registry/github-stars/github-stars.tsx",
@@ -310,9 +268,7 @@
       "title": "Scroll Fade Effect",
       "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
       "description": "A React component that adds a fade effect to content as you scroll.",
-      "registryDependencies": [
-        "@jyotirmoydas/utils"
-      ],
+      "registryDependencies": ["@jyotirmoydas/utils"],
       "files": [
         {
           "path": "src/registry/scroll-fade-effect/scroll-fade-effect.tsx",
@@ -400,13 +356,8 @@
       "title": "Dynamic Scroll Island TOC",
       "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
       "description": "An iOS Dynamic Island-style scroll progress indicator with expandable TOC navigation.",
-      "dependencies": [
-        "motion",
-        "lucide-react"
-      ],
-      "registryDependencies": [
-        "@jyotirmoydas/utils"
-      ],
+      "dependencies": ["motion", "lucide-react"],
+      "registryDependencies": ["@jyotirmoydas/utils"],
       "files": [
         {
           "path": "src/registry/dynamic-scroll-island-toc/dynamic-scroll-island-toc.tsx",
@@ -421,14 +372,8 @@
       "title": "Status Button",
       "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
       "description": "A stateful button with animated transitions between normal, loading, success, and error states.",
-      "dependencies": [
-        "motion",
-        "react-icons",
-        "class-variance-authority"
-      ],
-      "registryDependencies": [
-        "@jyotirmoydas/utils"
-      ],
+      "dependencies": ["motion", "react-icons", "class-variance-authority"],
+      "registryDependencies": ["@jyotirmoydas/utils"],
       "files": [
         {
           "path": "src/registry/status-button/status-button.tsx",
@@ -443,12 +388,8 @@
       "title": "Status Indicator",
       "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
       "description": "A toast notification that displays animated status transitions using Sonner.",
-      "dependencies": [
-        "sonner"
-      ],
-      "registryDependencies": [
-        "@jyotirmoydas/status-button"
-      ],
+      "dependencies": ["sonner"],
+      "registryDependencies": ["@jyotirmoydas/status-button"],
       "files": [
         {
           "path": "src/registry/status-indicator/status-indicator.tsx",
@@ -460,9 +401,7 @@
     {
       "name": "work-experience-block-01",
       "type": "registry:block",
-      "registryDependencies": [
-        "@jyotirmoydas/work-experience"
-      ],
+      "registryDependencies": ["@jyotirmoydas/work-experience"],
       "files": [
         {
           "path": "src/registry/examples/work-experience-demo.tsx",
@@ -473,9 +412,7 @@
     {
       "name": "shimmering-text-block-01",
       "type": "registry:block",
-      "registryDependencies": [
-        "@jyotirmoydas/shimmering-text"
-      ],
+      "registryDependencies": ["@jyotirmoydas/shimmering-text"],
       "files": [
         {
           "path": "src/registry/examples/shimmering-text-demo-01.tsx",
@@ -486,9 +423,7 @@
     {
       "name": "shimmering-text-block-02",
       "type": "registry:block",
-      "registryDependencies": [
-        "@jyotirmoydas/shimmering-text"
-      ],
+      "registryDependencies": ["@jyotirmoydas/shimmering-text"],
       "files": [
         {
           "path": "src/registry/examples/shimmering-text-demo-02.tsx",
@@ -513,9 +448,7 @@
     {
       "name": "slide-to-unlock-block-02",
       "type": "registry:block",
-      "registryDependencies": [
-        "@jyotirmoydas/slide-to-unlock"
-      ],
+      "registryDependencies": ["@jyotirmoydas/slide-to-unlock"],
       "files": [
         {
           "path": "src/registry/examples/slide-to-unlock-demo-02.tsx",
@@ -526,9 +459,7 @@
     {
       "name": "slide-to-unlock-block-03",
       "type": "registry:block",
-      "registryDependencies": [
-        "@jyotirmoydas/slide-to-unlock"
-      ],
+      "registryDependencies": ["@jyotirmoydas/slide-to-unlock"],
       "files": [
         {
           "path": "src/registry/examples/slide-to-unlock-demo-03.tsx",
@@ -539,9 +470,7 @@
     {
       "name": "scroll-fade-effect-block-01",
       "type": "registry:block",
-      "registryDependencies": [
-        "@jyotirmoydas/scroll-fade-effect"
-      ],
+      "registryDependencies": ["@jyotirmoydas/scroll-fade-effect"],
       "files": [
         {
           "path": "src/registry/examples/scroll-fade-effect-demo-01.tsx",
@@ -552,9 +481,7 @@
     {
       "name": "scroll-fade-effect-block-02",
       "type": "registry:block",
-      "registryDependencies": [
-        "@jyotirmoydas/scroll-fade-effect"
-      ],
+      "registryDependencies": ["@jyotirmoydas/scroll-fade-effect"],
       "files": [
         {
           "path": "src/registry/examples/scroll-fade-effect-demo-02.tsx",

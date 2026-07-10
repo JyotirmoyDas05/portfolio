@@ -2,9 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "shimmering-text-block-02",
   "type": "registry:block",
-  "registryDependencies": [
-    "@jyotirmoydas/shimmering-text"
-  ],
+  "registryDependencies": ["@jyotirmoydas/shimmering-text"],
   "files": [
     {
       "path": "src/registry/examples/shimmering-text-demo-02.tsx",

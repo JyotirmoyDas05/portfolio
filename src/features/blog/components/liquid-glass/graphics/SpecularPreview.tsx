@@ -10,7 +10,8 @@ import {
   useSpring,
   useTransform,
 } from "motion/react";
-import React, { useEffect, useRef, useState } from "react";
+import type React from "react";
+import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 import { ReplayButton } from "../components/Buttons";

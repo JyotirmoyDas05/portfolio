@@ -5,12 +5,8 @@
   "title": "Apple Hello Effect",
   "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
   "description": "Create a Xin chào and Hello writing effect inspired by Apple using Motion for React.",
-  "dependencies": [
-    "motion"
-  ],
-  "registryDependencies": [
-    "@jyotirmoydas/utils"
-  ],
+  "dependencies": ["motion"],
+  "registryDependencies": ["@jyotirmoydas/utils"],
   "files": [
     {
       "path": "src/registry/apple-hello-effect/apple-hello-effect.tsx",

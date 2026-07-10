@@ -5,7 +5,8 @@ const WORK_EXPERIENCE: ExperienceItemType[] = [
   {
     id: "suryastra",
     companyName: "Suryastra",
-    companyLogo: "https://assets.jyotimoydas.in/images/blog-images/Suryastra_example_company.png",
+    companyLogo:
+      "https://assets.jyotimoydas.in/images/blog-images/Suryastra_example_company.png",
     positions: [
       {
         id: "30d3a9fb-021d-452a-9d27-83655369b4b9",

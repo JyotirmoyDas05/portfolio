@@ -1,7 +1,8 @@
 "use client";
 
 import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
-import React, { useCallback, useEffect, useId, useRef } from "react";
+import type React from "react";
+import { useCallback, useEffect, useId, useRef } from "react";
 
 import { cn } from "@/lib/utils";
 

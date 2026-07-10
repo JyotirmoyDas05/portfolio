@@ -5,19 +5,9 @@
   "title": "Work Experience",
   "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
   "description": "Displays a list of work experiences with role details and durations.",
-  "dependencies": [
-    "react-markdown",
-    "lucide-react"
-  ],
-  "devDependencies": [
-    "@tailwindcss/typography",
-    "tw-animate-css"
-  ],
-  "registryDependencies": [
-    "@jyotirmoydas/utils",
-    "collapsible",
-    "separator"
-  ],
+  "dependencies": ["react-markdown", "lucide-react"],
+  "devDependencies": ["@tailwindcss/typography", "tw-animate-css"],
+  "registryDependencies": ["@jyotirmoydas/utils", "collapsible", "separator"],
   "files": [
     {
       "path": "src/registry/work-experience/work-experience.tsx",

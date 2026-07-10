@@ -2,10 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "scroll-fade-effect-block-04",
   "type": "registry:block",
-  "registryDependencies": [
-    "@jyotirmoydas/scroll-fade-effect",
-    "scroll-area"
-  ],
+  "registryDependencies": ["@jyotirmoydas/scroll-fade-effect", "scroll-area"],
   "files": [
     {
       "path": "src/registry/examples/scroll-fade-effect-demo-04.tsx",

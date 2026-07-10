@@ -183,7 +183,7 @@ export function SmearCursor({
 
           const raw = (i + 1) / (TRAIL.segments + 1);
 
-          const t = Math.pow(raw, TRAIL.trailingExponent);
+          const t = raw ** TRAIL.trailingExponent;
 
           const x = tailPosRef.current.x + dx * t;
           const y = tailPosRef.current.y + dy * t;
@@ -213,10 +213,11 @@ export function SmearCursor({
   }, [target, isVisible]);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     updateTarget();
     window.addEventListener("resize", updateTarget);
     return () => window.removeEventListener("resize", updateTarget);
-  }, [activeId, updateTarget]);
+  }, [updateTarget]);
 
   if (!isVisible) return null;
 

@@ -2,7 +2,8 @@
 
 import { SearchIcon, XIcon } from "lucide-react";
 import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
-import React, { forwardRef, useEffect, useId, useRef } from "react";
+import type React from "react";
+import { forwardRef, useEffect, useId, useRef } from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -12,10 +13,8 @@ import { RefractionFilter } from "./refraction-filter";
 // Types
 // ─────────────────────────────────────────────────────────────────────────────
 
-export interface LiquidGlassSearchboxProps extends Omit<
-  React.InputHTMLAttributes<HTMLInputElement>,
-  "onChange"
-> {
+export interface LiquidGlassSearchboxProps
+  extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "onChange"> {
   // ─────────────────────────────────────────────────────────────────────────
   // Input Control
   // ─────────────────────────────────────────────────────────────────────────

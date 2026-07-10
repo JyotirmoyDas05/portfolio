@@ -5,12 +5,8 @@
   "title": "Status Indicator",
   "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
   "description": "A toast notification that displays animated status transitions using Sonner.",
-  "dependencies": [
-    "sonner"
-  ],
-  "registryDependencies": [
-    "@jyotirmoydas/status-button"
-  ],
+  "dependencies": ["sonner"],
+  "registryDependencies": ["@jyotirmoydas/status-button"],
   "files": [
     {
       "path": "src/registry/status-indicator/status-indicator.tsx",

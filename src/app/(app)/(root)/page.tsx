@@ -4,7 +4,7 @@ import { About } from "@/features/portfolio/components/about";
 // import { Awards } from "@/features/portfolio/components/awards";
 import { Blog } from "@/features/portfolio/components/blog";
 import { Bookmarks } from "@/features/portfolio/components/bookmarks";
-import { Brand } from "@/features/portfolio/components/brand";
+// import { Brand } from "@/features/portfolio/components/brand";
 // import { Certifications } from "@/features/portfolio/components/certifications";
 import { Components } from "@/features/portfolio/components/components";
 import { Experiences } from "@/features/portfolio/components/experiences";
@@ -70,8 +70,8 @@ export default function Page() {
         <Bookmarks />
         <Separator />
 
-        <Brand />
-        <Separator />
+        {/* <Brand />
+        <Separator /> */}
       </div>
     </>
   );
@@ -97,7 +97,7 @@ function Separator({ className }: { className?: string }) {
     <div
       className={cn(
         "relative flex h-8 w-full border-x border-edge",
-        "before:absolute before:-left-[100vw] before:-z-1 before:h-8 before:w-[200vw]",
+        "before:absolute before:left-[100vw] before:-z-1 before:h-8 before:w-[200vw]",
         "before:bg-[repeating-linear-gradient(315deg,var(--pattern-foreground)_0,var(--pattern-foreground)_1px,transparent_0,transparent_50%)] before:bg-size-[10px_10px] before:[--pattern-foreground:var(--color-edge)]/56",
         className
       )}

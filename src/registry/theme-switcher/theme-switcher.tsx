@@ -173,5 +173,5 @@ function ThemeSwitcher({
   );
 }
 
-export { ThemeSwitcher };
 export type { ThemeSwitcherProps };
+export { ThemeSwitcher };

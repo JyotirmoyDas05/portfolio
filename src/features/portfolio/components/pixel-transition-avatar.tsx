@@ -51,9 +51,7 @@ export function PixelTransitionAvatar({
         className={cn(
           "absolute inset-0 size-full object-cover",
           "transition-all duration-400 ease-out",
-          isHovered
-            ? "scale-110 blur-sm"
-            : "blur-0 scale-100 opacity-100"
+          isHovered ? "scale-110 blur-sm" : "blur-0 scale-100 opacity-100"
         )}
         priority
         unoptimized

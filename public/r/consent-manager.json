@@ -5,13 +5,8 @@
   "title": "Consent Manager",
   "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
   "description": "A React component for managing user consent for cookies and tracking in Next.js applications.",
-  "dependencies": [
-    "@c15t/nextjs"
-  ],
-  "registryDependencies": [
-    "@jyotirmoydas/utils",
-    "button"
-  ],
+  "dependencies": ["@c15t/nextjs"],
+  "registryDependencies": ["@jyotirmoydas/utils", "button"],
   "files": [
     {
       "path": "src/components/consent-manager.tsx",

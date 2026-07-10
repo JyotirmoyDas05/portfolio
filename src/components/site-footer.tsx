@@ -4,6 +4,7 @@ import Link from "next/link";
 import { SITE_INFO, SOURCE_CODE_GITHUB_URL } from "@/config/site";
 
 import { Icons } from "./icons";
+import { TactileLogo } from "./tactile-logo";
 
 export function SiteFooter() {
   return (
@@ -32,7 +33,6 @@ export function SiteFooter() {
           >
             GitHub
           </a>
-          .(Soon)
         </p>
 
         <div className="screen-line-before screen-line-after flex w-full before:z-1 after:z-1">
@@ -81,6 +81,12 @@ export function SiteFooter() {
               <Icons.dmca className="h-5 w-auto" />
               <span className="sr-only">DMCA.com Protection Status</span>
             </a>
+          </div>
+        </div>
+
+        <div className="mx-auto flex w-full items-center justify-center border-x border-edge py-12">
+          <div className="w-full max-w-75 px-4">
+            <TactileLogo />
           </div>
         </div>
       </div>

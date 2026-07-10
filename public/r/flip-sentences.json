@@ -4,12 +4,8 @@
   "type": "registry:component",
   "title": "Flip Sentences",
   "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
-  "dependencies": [
-    "motion"
-  ],
-  "registryDependencies": [
-    "@jyotirmoydas/utils"
-  ],
+  "dependencies": ["motion"],
+  "registryDependencies": ["@jyotirmoydas/utils"],
   "files": [
     {
       "path": "src/registry/flip-sentences/flip-sentences.tsx",

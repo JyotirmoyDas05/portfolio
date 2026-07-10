@@ -5,10 +5,7 @@
   "title": "Liquid Glass Searchbox",
   "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
   "description": "An iOS 26-inspired liquid glass searchbox with focus animations and SVG refraction effects.",
-  "dependencies": [
-    "motion",
-    "lucide-react"
-  ],
+  "dependencies": ["motion", "lucide-react"],
   "registryDependencies": [
     "@jyotirmoydas/utils",
     "@jyotirmoydas/liquid-glass-lib"

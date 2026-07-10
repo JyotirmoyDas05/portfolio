@@ -97,7 +97,7 @@ export const EXPERIENCES: Experience[] = [
         title: "Kendriya Vidyalaya Khanapara, Guwahati",
         employmentPeriod: {
           start: "06.2012",
-          end: "05.2013",
+          end: "05.2023",
         },
         icon: "education",
         description: `- Recognized as one of the most outstanding student of the district.

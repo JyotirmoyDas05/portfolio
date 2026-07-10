@@ -2,11 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "wheel-picker-block-02",
   "type": "registry:block",
-  "dependencies": [
-    "react-hook-form",
-    "@hookform/resolvers",
-    "zod"
-  ],
+  "dependencies": ["react-hook-form", "@hookform/resolvers", "zod"],
   "registryDependencies": [
     "@jyotirmoydas/wheel-picker",
     "form",

@@ -3,7 +3,6 @@
 import { useCommandState } from "cmdk";
 import type { LucideProps } from "lucide-react";
 import {
-  AwardIcon,
   BookmarkIcon,
   BoxIcon,
   BriefcaseBusinessIcon,
@@ -13,13 +12,10 @@ import {
   HeartIcon,
   LayersIcon,
   MoonStarIcon,
-  QuoteIcon,
   RssIcon,
-  ShieldCheckIcon,
   SunMediumIcon,
   TextIcon,
   TextInitialIcon,
-  TriangleDashedIcon,
   TypeIcon,
 } from "lucide-react";
 import Image from "next/image";
@@ -84,11 +80,11 @@ const PORTFOLIO_LINKS: CommandLinkItem[] = [
     href: "/#about",
     icon: TextInitialIcon,
   },
-  {
-    title: "Testimonials",
-    href: "/#testimonials",
-    icon: QuoteIcon,
-  },
+  // {
+  //   title: "Testimonials",
+  //   href: "/#testimonials",
+  //   icon: QuoteIcon,
+  // },
   {
     title: "Tech Stack",
     href: "/#stack",
@@ -104,16 +100,16 @@ const PORTFOLIO_LINKS: CommandLinkItem[] = [
     href: "/#projects",
     icon: BoxIcon,
   },
-  {
-    title: "Honors & Awards",
-    href: "/#awards",
-    icon: AwardIcon,
-  },
-  {
-    title: "Certifications",
-    href: "/#certs",
-    icon: ShieldCheckIcon,
-  },
+  // {
+  //   title: "Honors & Awards",
+  //   href: "/#awards",
+  //   icon: AwardIcon,
+  // },
+  // {
+  //   title: "Certifications",
+  //   href: "/#certs",
+  //   icon: ShieldCheckIcon,
+  // },
   {
     title: "Bookmarks",
     href: "/#bookmarks",
@@ -353,7 +349,7 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
               Copy Logotype as SVG
             </CommandItem>
 
-            <CommandItem
+            {/* <CommandItem
               onSelect={() => handleOpenLink("/blog/jyotirmoy-brand")}
             >
               <TriangleDashedIcon />
@@ -365,7 +361,7 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
                 <DownloadIcon />
                 Download Brand Assets
               </a>
-            </CommandItem>
+            </CommandItem> */}
           </CommandGroup>
 
           <CommandGroup heading="Theme">
@@ -499,9 +495,9 @@ function buildCommandMetaMap() {
   commandMetaMap.set("Copy Logotype as SVG", {
     commandKind: "command",
   });
-  commandMetaMap.set("Download Brand Assets", {
-    commandKind: "command",
-  });
+  // commandMetaMap.set("Download Brand Assets", {
+  //   commandKind: "command",
+  // });
 
   SOCIAL_LINK_ITEMS.forEach((item) => {
     commandMetaMap.set(item.title, {

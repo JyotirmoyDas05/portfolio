@@ -5,9 +5,7 @@
   "title": "Liquid Glass Utilities",
   "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
   "description": "Shared refraction and displacement utilities for iOS 26-inspired liquid glass effects.",
-  "dependencies": [
-    "motion"
-  ],
+  "dependencies": ["motion"],
   "files": [
     {
       "path": "src/registry/liquid-glass-lib/refraction-filter.tsx",

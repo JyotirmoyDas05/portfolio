@@ -1,7 +1,8 @@
 "use client";
 
 import { motion, type MotionValue, useTransform } from "motion/react";
-import React, { useEffect, useMemo, useState } from "react";
+import type React from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import {
   calculateDisplacementMap,

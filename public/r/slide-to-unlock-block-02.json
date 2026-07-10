@@ -2,9 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "slide-to-unlock-block-02",
   "type": "registry:block",
-  "registryDependencies": [
-    "@jyotirmoydas/slide-to-unlock"
-  ],
+  "registryDependencies": ["@jyotirmoydas/slide-to-unlock"],
   "files": [
     {
       "path": "src/registry/examples/slide-to-unlock-demo-02.tsx",

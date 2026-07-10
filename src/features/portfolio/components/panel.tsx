@@ -1,5 +1,5 @@
 import { Slot as SlotPrimitive } from "radix-ui";
-import React from "react";
+import type React from "react";
 
 const Slot = SlotPrimitive.Slot;
 

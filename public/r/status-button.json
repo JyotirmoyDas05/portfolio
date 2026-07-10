@@ -5,14 +5,8 @@
   "title": "Status Button",
   "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
   "description": "A stateful button with animated transitions between normal, loading, success, and error states.",
-  "dependencies": [
-    "motion",
-    "react-icons",
-    "class-variance-authority"
-  ],
-  "registryDependencies": [
-    "@jyotirmoydas/utils"
-  ],
+  "dependencies": ["motion", "react-icons", "class-variance-authority"],
+  "registryDependencies": ["@jyotirmoydas/utils"],
   "files": [
     {
       "path": "src/registry/status-button/status-button.tsx",

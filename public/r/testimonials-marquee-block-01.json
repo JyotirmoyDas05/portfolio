@@ -2,9 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "testimonials-marquee-block-01",
   "type": "registry:block",
-  "registryDependencies": [
-    "@jyotirmoydas/testimonials-marquee"
-  ],
+  "registryDependencies": ["@jyotirmoydas/testimonials-marquee"],
   "files": [
     {
       "path": "src/registry/examples/testimonials-marquee-demo-01.tsx",

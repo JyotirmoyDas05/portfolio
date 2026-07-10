@@ -1,98 +1,98 @@
 {
-  "generatedAt": "2026-01-07T19:34:31.371Z",
+  "generatedAt": "2026-07-10T16:42:09.679Z",
   "entries": {
     "src/features/blog/content/apple-hello-effect.mdx": {
-      "isRecentlyCreated": true,
+      "isRecentlyCreated": false,
       "isRecentlyUpdated": false,
       "createdDate": "2025-12-26T07:20:11.000Z",
       "modifiedDate": "2025-12-29T09:47:51.000Z"
     },
     "src/features/blog/content/command-box.mdx": {
-      "isRecentlyCreated": true,
+      "isRecentlyCreated": false,
       "isRecentlyUpdated": false,
       "createdDate": "2025-12-26T07:20:11.000Z",
       "modifiedDate": "2025-12-29T09:47:51.000Z"
     },
     "src/features/blog/content/dynamic-scroll-island-toc.mdx": {
-      "isRecentlyCreated": true,
+      "isRecentlyCreated": false,
       "isRecentlyUpdated": false,
       "createdDate": "2025-12-26T07:20:11.000Z",
       "modifiedDate": "2025-12-29T09:47:51.000Z"
     },
     "src/features/blog/content/github-stars.mdx": {
-      "isRecentlyCreated": true,
+      "isRecentlyCreated": false,
       "isRecentlyUpdated": false,
       "createdDate": "2025-12-26T07:20:11.000Z",
       "modifiedDate": "2025-12-29T09:47:51.000Z"
     },
     "src/features/blog/content/liquid-glass-article.mdx": {
-      "isRecentlyCreated": true,
+      "isRecentlyCreated": false,
       "isRecentlyUpdated": false,
       "createdDate": "2025-12-30T14:17:33.000Z",
       "modifiedDate": "2025-12-31T13:02:54.000Z"
     },
     "src/features/blog/content/liquid-glass-searchbox.mdx": {
-      "isRecentlyCreated": true,
+      "isRecentlyCreated": false,
       "isRecentlyUpdated": false,
       "createdDate": "2025-12-26T07:20:11.000Z",
       "modifiedDate": "2025-12-29T09:47:51.000Z"
     },
     "src/features/blog/content/liquid-glass-slider.mdx": {
-      "isRecentlyCreated": true,
+      "isRecentlyCreated": false,
       "isRecentlyUpdated": false,
       "createdDate": "2025-12-26T07:20:11.000Z",
       "modifiedDate": "2025-12-29T09:47:51.000Z"
     },
     "src/features/blog/content/scroll-fade-effect.mdx": {
-      "isRecentlyCreated": true,
+      "isRecentlyCreated": false,
       "isRecentlyUpdated": false,
       "createdDate": "2025-12-26T07:20:11.000Z",
       "modifiedDate": "2025-12-29T09:47:51.000Z"
     },
     "src/features/blog/content/shimmering-text.mdx": {
-      "isRecentlyCreated": true,
+      "isRecentlyCreated": false,
       "isRecentlyUpdated": false,
       "createdDate": "2025-12-26T07:20:11.000Z",
       "modifiedDate": "2025-12-29T09:47:51.000Z"
     },
     "src/features/blog/content/slide-to-unlock.mdx": {
-      "isRecentlyCreated": true,
+      "isRecentlyCreated": false,
       "isRecentlyUpdated": false,
       "createdDate": "2025-12-26T07:20:11.000Z",
       "modifiedDate": "2025-12-29T09:47:51.000Z"
     },
     "src/features/blog/content/status-button.mdx": {
-      "isRecentlyCreated": true,
+      "isRecentlyCreated": false,
       "isRecentlyUpdated": false,
       "createdDate": "2025-12-26T07:20:11.000Z",
       "modifiedDate": "2025-12-29T09:47:51.000Z"
     },
     "src/features/blog/content/status-indicator.mdx": {
-      "isRecentlyCreated": true,
+      "isRecentlyCreated": false,
       "isRecentlyUpdated": false,
       "createdDate": "2025-12-26T07:20:11.000Z",
       "modifiedDate": "2025-12-29T09:47:51.000Z"
     },
     "src/features/blog/content/theme-switcher-component.mdx": {
-      "isRecentlyCreated": true,
+      "isRecentlyCreated": false,
       "isRecentlyUpdated": false,
       "createdDate": "2025-12-26T07:20:11.000Z",
       "modifiedDate": "2025-12-29T09:47:51.000Z"
     },
     "src/features/blog/content/uptime-kuma.mdx": {
-      "isRecentlyCreated": true,
+      "isRecentlyCreated": false,
       "isRecentlyUpdated": false,
       "createdDate": "2025-12-26T07:20:11.000Z",
       "modifiedDate": "2025-12-29T09:47:51.000Z"
     },
     "src/features/blog/content/welcome.mdx": {
-      "isRecentlyCreated": true,
+      "isRecentlyCreated": false,
       "isRecentlyUpdated": false,
       "createdDate": "2025-12-26T07:20:11.000Z",
       "modifiedDate": "2025-12-29T09:47:51.000Z"
     },
     "src/features/blog/content/work-experience-component.mdx": {
-      "isRecentlyCreated": true,
+      "isRecentlyCreated": false,
       "isRecentlyUpdated": false,
       "createdDate": "2025-12-26T07:20:11.000Z",
       "modifiedDate": "2025-12-29T09:47:51.000Z"

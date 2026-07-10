@@ -5,15 +5,8 @@
   "title": "Command Box",
   "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
   "description": "A customizable command palette/search box with keyboard shortcuts and footer logo customization.",
-  "dependencies": [
-    "cmdk",
-    "radix-ui",
-    "lucide-react",
-    "react-hotkeys-hook"
-  ],
-  "registryDependencies": [
-    "@jyotirmoydas/utils"
-  ],
+  "dependencies": ["cmdk", "radix-ui", "lucide-react", "react-hotkeys-hook"],
+  "registryDependencies": ["@jyotirmoydas/utils"],
   "files": [
     {
       "path": "src/registry/command-box/command-box.tsx",

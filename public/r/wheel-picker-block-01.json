@@ -2,9 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "wheel-picker-block-01",
   "type": "registry:block",
-  "registryDependencies": [
-    "@jyotirmoydas/wheel-picker"
-  ],
+  "registryDependencies": ["@jyotirmoydas/wheel-picker"],
   "files": [
     {
       "path": "src/registry/examples/wheel-picker-demo.tsx",

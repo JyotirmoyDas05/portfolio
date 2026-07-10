@@ -10,7 +10,7 @@ export const CONVEX_CIRCLE: SurfaceFnDef = {
 
 export const CONVEX: SurfaceFnDef = {
   title: "Convex Squircle",
-  fn: (x) => Math.pow(1 - Math.pow(1 - x, 4), 1 / 4),
+  fn: (x) => (1 - (1 - x) ** 4) ** (1 / 4),
 };
 
 export const CONCAVE: SurfaceFnDef = {

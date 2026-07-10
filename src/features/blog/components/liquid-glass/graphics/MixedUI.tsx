@@ -7,7 +7,8 @@ import {
   useSpring,
   useTransform,
 } from "motion/react";
-import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import type React from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import {
   IoEllipsisHorizontal,
   IoListOutline,

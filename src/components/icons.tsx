@@ -378,7 +378,7 @@ export function ComponentIcon({ variant, ...props }: ComponentIconProps) {
     case "theme-switcher":
       return <MoonStarIcon {...props} />;
 
-    case "apple-hello-effect":
+    case "apple-hello-effect": {
       const { className, ...restProps } = props;
       return (
         <Icons.apple
@@ -386,6 +386,7 @@ export function ComponentIcon({ variant, ...props }: ComponentIconProps) {
           {...restProps}
         />
       );
+    }
 
     case "shimmering-text":
       return <ZapIcon {...props} />;
