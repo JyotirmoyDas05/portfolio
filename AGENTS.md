@@ -296,6 +296,11 @@ Edit `src/features/portfolio/data/user.ts` with new:
 
 - Components may depend on external packages
 
+### Package Version Pinning
+
+- **Consent Manager**: `@c15t/nextjs` is pinned exactly to `"1.8.3"`. Do NOT upgrade this package. Version 2.x enforces default stylesheet files that conflict with custom theme slots, button encasings, and dialog backdrop stacking. Pinning to version `1.8.3` keeps it headless-friendly and fully compatible with the custom slots defined in `src/components/consent-manager.tsx`.
+
+
 ### Auto-generated Files
 
 **NEVER EDIT** these files directly:
