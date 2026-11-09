@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "liquid-glass-searchbox-block-02",
+  "title": "Liquid Glass Searchbox Block 02",
+  "description": "A liquid glass searchbox with a custom width and placeholder.",
+  "registryDependencies": [
+    "https://jyotimoydas.in/r/liquid-glass-searchbox.json"
+  ],
+  "files": [
+    {
+      "path": "src/registry/examples/liquid-glass-searchbox-demo-02.tsx",
+      "content": "\"use client\";\n\nimport { useState } from \"react\";\n\nimport { LiquidGlassSearchbox } from \"@/registry/liquid-glass-searchbox/liquid-glass-searchbox\";\n\nexport default function LiquidGlassSearchboxCustomDemo() {\n  const [query, setQuery] = useState(\"\");\n\n  return (\n    <LiquidGlassSearchbox\n      value={query}\n      onChange={setQuery}\n      onClear={() => setQuery(\"\")}\n      placeholder=\"Find components...\"\n      width={350}\n      height={48}\n      blur={0.5}\n      specularOpacity={0.3}\n      refractionLevel={0.9}\n    />\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:block"
+}

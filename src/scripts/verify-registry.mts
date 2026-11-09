@@ -132,6 +132,18 @@ for (const entry of index.items) {
   if (!entry.description) fail(entry.name, "missing description");
 }
 
+// docs must only link to items that are actually served
+const CONTENT = path.join(process.cwd(), "src/features/blog/content");
+for (const file of readdirSync(CONTENT)) {
+  const text = readFileSync(path.join(CONTENT, file), "utf8");
+  for (const [, name] of text.matchAll(
+    /(?:@jyotirmoydas\/|\/r\/)([a-z0-9-]+)(?:\.json)?/g
+  )) {
+    if (!items.has(name))
+      fail(file, `links to registry item "${name}" which does not exist`);
+  }
+}
+
 if (errors.length > 0) {
   console.error(
     `Registry verification failed (${errors.length}):\n- ${errors.join("\n- ")}`

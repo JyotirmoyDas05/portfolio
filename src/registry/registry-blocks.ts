@@ -80,6 +80,34 @@ export const blocks: Registry["items"] = [
     [registryItemUrl("liquid-glass-slider")]
   ),
   block(
+    "liquid-glass-slider-block-02",
+    "Liquid Glass Slider Block 02",
+    "A liquid glass slider with custom fill, track and thumb colors.",
+    "liquid-glass-slider-demo-02",
+    [registryItemUrl("liquid-glass-slider")]
+  ),
+  block(
+    "liquid-glass-slider-block-03",
+    "Liquid Glass Slider Block 03",
+    "A liquid glass slider with tuned glass refraction settings.",
+    "liquid-glass-slider-demo-03",
+    [registryItemUrl("liquid-glass-slider")]
+  ),
+  block(
+    "liquid-glass-searchbox-block-01",
+    "Liquid Glass Searchbox Block 01",
+    "A liquid glass searchbox with a controlled value and a clear button.",
+    "liquid-glass-searchbox-demo-01",
+    [registryItemUrl("liquid-glass-searchbox")]
+  ),
+  block(
+    "liquid-glass-searchbox-block-02",
+    "Liquid Glass Searchbox Block 02",
+    "A liquid glass searchbox with a custom width and placeholder.",
+    "liquid-glass-searchbox-demo-02",
+    [registryItemUrl("liquid-glass-searchbox")]
+  ),
+  block(
     "scroll-fade-effect-block-01",
     "Scroll Fade Effect Block 01",
     "A vertical scroll fade over a long list of tags.",

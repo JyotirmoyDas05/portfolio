@@ -253,6 +253,42 @@ export const Index: Record<string, any> = {
       type: "registry:component",
     }],
   },
+  "liquid-glass-slider-block-02": {
+    name: "liquid-glass-slider-block-02",
+    description: "A liquid glass slider with custom fill, track and thumb colors.",
+    type: "registry:block",
+    files: [{
+      path: "src/registry/examples/liquid-glass-slider-demo-02.tsx",
+      type: "registry:component",
+    }],
+  },
+  "liquid-glass-slider-block-03": {
+    name: "liquid-glass-slider-block-03",
+    description: "A liquid glass slider with tuned glass refraction settings.",
+    type: "registry:block",
+    files: [{
+      path: "src/registry/examples/liquid-glass-slider-demo-03.tsx",
+      type: "registry:component",
+    }],
+  },
+  "liquid-glass-searchbox-block-01": {
+    name: "liquid-glass-searchbox-block-01",
+    description: "A liquid glass searchbox with a controlled value and a clear button.",
+    type: "registry:block",
+    files: [{
+      path: "src/registry/examples/liquid-glass-searchbox-demo-01.tsx",
+      type: "registry:component",
+    }],
+  },
+  "liquid-glass-searchbox-block-02": {
+    name: "liquid-glass-searchbox-block-02",
+    description: "A liquid glass searchbox with a custom width and placeholder.",
+    type: "registry:block",
+    files: [{
+      path: "src/registry/examples/liquid-glass-searchbox-demo-02.tsx",
+      type: "registry:component",
+    }],
+  },
   "scroll-fade-effect-block-01": {
     name: "scroll-fade-effect-block-01",
     description: "A vertical scroll fade over a long list of tags.",

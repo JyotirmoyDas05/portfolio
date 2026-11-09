@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "liquid-glass-slider-block-03",
+  "title": "Liquid Glass Slider Block 03",
+  "description": "A liquid glass slider with tuned glass refraction settings.",
+  "registryDependencies": ["https://jyotimoydas.in/r/liquid-glass-slider.json"],
+  "files": [
+    {
+      "path": "src/registry/examples/liquid-glass-slider-demo-03.tsx",
+      "content": "\"use client\";\n\nimport { LiquidGlassSlider } from \"@/registry/liquid-glass-slider/liquid-glass-slider\";\n\nexport default function LiquidGlassSliderOpticalDemo() {\n  return (\n    <LiquidGlassSlider\n      defaultValue={60}\n      blur={0.3}\n      specularOpacity={0.7}\n      specularSaturation={10}\n      refractionLevel={1.2}\n    />\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:block"
+}

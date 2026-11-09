@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "liquid-glass-searchbox-block-01",
+  "title": "Liquid Glass Searchbox Block 01",
+  "description": "A liquid glass searchbox with a controlled value and a clear button.",
+  "registryDependencies": [
+    "https://jyotimoydas.in/r/liquid-glass-searchbox.json"
+  ],
+  "files": [
+    {
+      "path": "src/registry/examples/liquid-glass-searchbox-demo-01.tsx",
+      "content": "\"use client\";\n\nimport { useState } from \"react\";\n\nimport { LiquidGlassSearchbox } from \"@/registry/liquid-glass-searchbox/liquid-glass-searchbox\";\n\nexport default function LiquidGlassSearchboxDemo() {\n  const [query, setQuery] = useState(\"\");\n\n  return (\n    <LiquidGlassSearchbox\n      value={query}\n      onChange={setQuery}\n      onClear={() => setQuery(\"\")}\n      placeholder=\"Search...\"\n    />\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:block"
+}

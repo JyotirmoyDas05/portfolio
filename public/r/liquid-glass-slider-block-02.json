@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "liquid-glass-slider-block-02",
+  "title": "Liquid Glass Slider Block 02",
+  "description": "A liquid glass slider with custom fill, track and thumb colors.",
+  "registryDependencies": ["https://jyotimoydas.in/r/liquid-glass-slider.json"],
+  "files": [
+    {
+      "path": "src/registry/examples/liquid-glass-slider-demo-02.tsx",
+      "content": "\"use client\";\n\nimport { LiquidGlassSlider } from \"@/registry/liquid-glass-slider/liquid-glass-slider\";\n\nexport default function LiquidGlassSliderCustomColorsDemo() {\n  return (\n    <LiquidGlassSlider\n      defaultValue={50}\n      fillColor=\"#22c55e\"\n      trackColor=\"#14532d44\"\n      thumbColor=\"rgba(34, 197, 94, 0.9)\"\n    />\n  );\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:block"
+}

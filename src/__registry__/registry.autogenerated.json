@@ -573,6 +573,66 @@
       "type": "registry:block"
     },
     {
+      "name": "liquid-glass-slider-block-02",
+      "title": "Liquid Glass Slider Block 02",
+      "description": "A liquid glass slider with custom fill, track and thumb colors.",
+      "registryDependencies": [
+        "https://jyotimoydas.in/r/liquid-glass-slider.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/examples/liquid-glass-slider-demo-02.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "type": "registry:block"
+    },
+    {
+      "name": "liquid-glass-slider-block-03",
+      "title": "Liquid Glass Slider Block 03",
+      "description": "A liquid glass slider with tuned glass refraction settings.",
+      "registryDependencies": [
+        "https://jyotimoydas.in/r/liquid-glass-slider.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/examples/liquid-glass-slider-demo-03.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "type": "registry:block"
+    },
+    {
+      "name": "liquid-glass-searchbox-block-01",
+      "title": "Liquid Glass Searchbox Block 01",
+      "description": "A liquid glass searchbox with a controlled value and a clear button.",
+      "registryDependencies": [
+        "https://jyotimoydas.in/r/liquid-glass-searchbox.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/examples/liquid-glass-searchbox-demo-01.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "type": "registry:block"
+    },
+    {
+      "name": "liquid-glass-searchbox-block-02",
+      "title": "Liquid Glass Searchbox Block 02",
+      "description": "A liquid glass searchbox with a custom width and placeholder.",
+      "registryDependencies": [
+        "https://jyotimoydas.in/r/liquid-glass-searchbox.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/examples/liquid-glass-searchbox-demo-02.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "type": "registry:block"
+    },
+    {
       "name": "scroll-fade-effect-block-01",
       "title": "Scroll Fade Effect Block 01",
       "description": "A vertical scroll fade over a long list of tags.",
