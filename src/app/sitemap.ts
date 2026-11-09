@@ -3,21 +3,37 @@ import type { MetadataRoute } from "next";
 import { SITE_INFO } from "@/config/site";
 import { getAllPosts, getPostsByCategory } from "@/features/blog/data/posts";
 
+const latest = (posts: ReturnType<typeof getAllPosts>) =>
+  new Date(
+    Math.max(...posts.map((p) => new Date(p.metadata.updatedAt).getTime()))
+  ).toISOString();
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const posts = getAllPosts().map((post) => ({
-    url: `${SITE_INFO.url}/blog/${post.slug}`,
+  const allPosts = getAllPosts();
+  const componentPosts = getPostsByCategory("components");
+
+  // Component posts are canonical under /components, so list them there only.
+  const blogPosts = allPosts.filter(
+    (post) => post.metadata.category !== "components"
+  );
+
+  const toEntry = (base: string) => (post: (typeof allPosts)[number]) => ({
+    url: `${SITE_INFO.url}${base}/${post.slug}`,
     lastModified: new Date(post.metadata.updatedAt).toISOString(),
-  }));
+  });
 
-  const components = getPostsByCategory("components").map((post) => ({
-    url: `${SITE_INFO.url}/components/${post.slug}`,
-    lastModified: new Date(post.metadata.updatedAt).toISOString(),
-  }));
+  const routes = [
+    { url: SITE_INFO.url, lastModified: latest(allPosts) },
+    { url: `${SITE_INFO.url}/blog`, lastModified: latest(blogPosts) },
+    {
+      url: `${SITE_INFO.url}/components`,
+      lastModified: latest(componentPosts),
+    },
+  ];
 
-  const routes = ["", "/blog", "/components"].map((route) => ({
-    url: `${SITE_INFO.url}${route}`,
-    lastModified: new Date().toISOString(),
-  }));
-
-  return [...routes, ...posts, ...components];
+  return [
+    ...routes,
+    ...blogPosts.map(toEntry("/blog")),
+    ...componentPosts.map(toEntry("/components")),
+  ];
 }

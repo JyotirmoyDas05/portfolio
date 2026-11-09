@@ -31,6 +31,12 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.jyotimoydas.in" }],
+        destination: "https://jyotimoydas.in/:path*",
+        permanent: true,
+      },
+      {
         source:
           "/:section(blog|components)/writing-effect-inspired-by-apple:extension(.mdx)?",
         destination: "/:section/apple-hello-effect:extension",

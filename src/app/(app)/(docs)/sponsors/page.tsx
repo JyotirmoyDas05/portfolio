@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Sponsors",
   description:
     "Grateful for the support that helps me grow and maintain high-quality projects.",
+  alternates: { canonical: "/sponsors" },
 };
 
 export default function Page() {

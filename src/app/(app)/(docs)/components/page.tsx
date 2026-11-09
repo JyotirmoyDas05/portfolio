@@ -24,6 +24,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Components",
   description: "A collection of reusable components.",
+  alternates: { canonical: "/components" },
 };
 
 const componentsJSON = `\`\`\`json title="components.json" showLineNumbers {3}
