@@ -25,7 +25,7 @@ const CATEGORY_ORDER = [
   "Database",
   "Version Control",
   "Containerization",
-  "Tools",
+  "Workflow and Tools",
 ];
 
 type GroupedTech = {

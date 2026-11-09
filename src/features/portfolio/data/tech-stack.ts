@@ -45,6 +45,12 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Language"],
   },
   {
+    key: "kotlin",
+    title: "Kotlin",
+    href: "https://kotlinlang.org/",
+    categories: ["Language"],
+  },
+  {
     key: "nodejs",
     title: "Node.js",
     href: "https://nodejs.org/",
@@ -57,6 +63,13 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Runtime Environment"],
   },
   {
+    key: "pnpm",
+    title: "pnpm",
+    href: "https://pnpm.io/",
+    categories: ["Runtime Environment"],
+    theme: true,
+  },
+  {
     key: "react",
     title: "React",
     href: "https://react.dev/",
@@ -67,6 +80,12 @@ export const TECH_STACK: TechStack[] = [
     title: "React Native",
     href: "https://reactnative.dev/",
     categories: ["Library", "Mobile"],
+  },
+  {
+    key: "jetpack-compose",
+    title: "Jetpack Compose",
+    href: "https://developer.android.com/compose",
+    categories: ["Library", "UI Library"],
   },
   {
     key: "nextjs2",
@@ -93,6 +112,30 @@ export const TECH_STACK: TechStack[] = [
     title: "FastAPI",
     href: "https://fastapi.tiangolo.com/",
     categories: ["Framework"],
+  },
+  {
+    key: "hono",
+    title: "Hono",
+    href: "https://hono.dev/",
+    categories: ["Framework"],
+  },
+  {
+    key: "tauri",
+    title: "Tauri",
+    href: "https://tauri.app/",
+    categories: ["Framework", "Desktop"],
+  },
+  {
+    key: "ktor",
+    title: "Ktor",
+    href: "https://ktor.io/",
+    categories: ["Framework"],
+  },
+  {
+    key: "kotlin-multiplatform",
+    title: "Kotlin Multiplatform",
+    href: "https://www.jetbrains.com/kotlin-multiplatform/",
+    categories: ["Framework", "Mobile"],
   },
   {
     key: "shadcn-ui",
@@ -193,22 +236,59 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Database"],
   },
   {
+    key: "postgresql",
+    title: "PostgreSQL",
+    href: "https://www.postgresql.org/",
+    categories: ["Database"],
+  },
+  {
+    key: "prisma",
+    title: "Prisma",
+    href: "https://www.prisma.io/",
+    categories: ["Database"],
+    theme: true,
+  },
+  {
+    key: "firebase",
+    title: "Firebase",
+    href: "https://firebase.google.com/",
+    categories: ["Database"],
+  },
+  {
     key: "figma",
     title: "Figma",
     href: "https://www.figma.com/",
-    categories: ["Tools", "Design"],
+    categories: ["Workflow and Tools", "Design"],
   },
   {
     key: "ps",
     title: "Adobe Photoshop",
     href: "https://www.adobe.com/vn_en/products/photoshop.html",
-    categories: ["Tools", "Design"],
+    categories: ["Workflow and Tools", "Design"],
+  },
+  {
+    key: "ae",
+    title: "Adobe After Effects",
+    href: "https://www.adobe.com/products/aftereffects.html",
+    categories: ["Workflow and Tools", "Design"],
   },
   {
     key: "chatgpt",
     title: "ChatGPT",
     href: "https://chatgpt.com/",
-    categories: ["Tools", "AI"],
+    categories: ["Workflow and Tools", "AI"],
     theme: true,
+  },
+  {
+    key: "claude",
+    title: "Claude",
+    href: "https://claude.ai/",
+    categories: ["Workflow and Tools", "AI"],
+  },
+  {
+    key: "gemini",
+    title: "Gemini",
+    href: "https://gemini.google.com/",
+    categories: ["Workflow and Tools", "AI"],
   },
 ];
