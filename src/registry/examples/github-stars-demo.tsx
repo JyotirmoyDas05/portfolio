@@ -1,4 +1,4 @@
-import { GitHubStars } from "@/registry/github-stars";
+import { GitHubStars } from "@/registry/github-stars/github-stars";
 
 export default function GitHubStarsDemo() {
   return (

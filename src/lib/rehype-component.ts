@@ -5,6 +5,7 @@ import { u } from "unist-builder";
 import { visit } from "unist-util-visit";
 
 import { Index } from "@/__registry__/index";
+import { toInstalledImports } from "@/lib/registry-imports";
 import type { UnistNode, UnistTree } from "@/types/unist";
 
 export function rehypeComponent() {
@@ -56,10 +57,7 @@ export function rehypeComponent() {
           // Replace imports.
           // TODO: Use @swc/core and a visitor to replace this.
           // For now a simple regex should do.
-          source = source.replaceAll(
-            `@/registry/`,
-            "@/components/jyotirmoydas/"
-          );
+          source = toInstalledImports(source);
           source = source.replaceAll("export default", "export");
 
           const title = getNodeAttributeByName(node, "title");
@@ -119,10 +117,7 @@ export function rehypeComponent() {
           // Replace imports.
           // TODO: Use @swc/core and a visitor to replace this.
           // For now a simple regex should do.
-          source = source.replaceAll(
-            `@/registry/`,
-            "@/components/jyotirmoydas/"
-          );
+          source = toInstalledImports(source);
           source = source.replaceAll("export default", "export");
 
           const codeMeta = getNodeAttributeByName(node, "data-code-meta");

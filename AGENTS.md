@@ -85,21 +85,24 @@ The project features a custom component registry built on top of shadcn/ui:
 - `registry:example` - Component examples/demos
 - `registry:lib` - Utility libraries
 
-### Available Components
+### Available Items
 
-1. **theme-switcher** - Theme switching component
-2. **flip-sentences** - Text animation component
-3. **apple-hello-effect** - Apple-style writing effect
-4. **wheel-picker** - iOS-like wheel picker
-5. **work-experience** - Work experience display
-6. **shimmering-text** - Shimmering text animation
-7. **slide-to-unlock** - iOS-style slide to unlock component
-8. **scroll-fade-effect** - Adds fade effect to content as you scroll
-9. **github-stars** - GitHub repository stars display component
-10. **testimonials-marquee** - Testimonials marquee component
-11. **use-controllable-state** - State management hook
-12. **use-sound** - Sound effects hook
-13. **utils** - Utility functions
+Components: theme-switcher, flip-sentences, apple-hello-effect, work-experience, shimmering-text, slide-to-unlock, liquid-glass-slider, liquid-glass-searchbox, command-box, github-stars, scroll-fade-effect, dynamic-scroll-island-toc, status-button, status-indicator.
+
+Hooks: use-controllable-state, use-sound, use-theme-transition. Lib: liquid-glass-lib.
+
+Blocks (`*-block-NN`) are installable demos of the components above.
+
+### Registry Authoring Rules
+
+Files shipped by an item land in the user’s project, so they must work there. `bun run registry:build` runs `registry:verify`, which fails the build on the mistakes below.
+
+- Import `cn` from `"cn"` and list `"cn"` in `dependencies`. Never add a `utils` registry item or depend on one (it overwrites the user’s `utils.ts`).
+- Import other registry files as `@/registry/<dir>/<file>` (e.g. `@/registry/status-button/status-button`). The CLI turns this into `@/components/<file>`. Never import through a barrel (`@/registry/<dir>`): the CLI would rewrite it to `@/components` and drop the file name. Do not use relative imports between items.
+- Use `registryItemUrl("name")` from `src/config/registry.ts` for dependencies on this registry, so plain URL installs resolve without the `@jyotirmoydas` namespace configured. Use bare names (`"button"`, `"command"`) for shadcn items.
+- Every shadcn component a file imports (`@/components/ui/*`) must be in `registryDependencies`. Every hook, lib or component a file imports must be shipped by the item or one of its dependencies. Never import portfolio-only files (`@/components/icons`, `@/lib/events`, ...).
+- Every item needs `title` and `description`. Keep the registry flat and never put `content` in `registry.json`.
+- `registry:build` empties `public/r` first, so removing an item from the registry stops it being served.
 
 > **Note**: All components are compatible with [Tailwind CSS v4](https://tailwindcss.com/blog/tailwindcss-v4) and [React 19](https://react.dev/blog/2024/12/05/react-19).
 
@@ -109,7 +112,7 @@ The project features a custom component registry built on top of shadcn/ui:
 # Build registry internally
 bun run registry:internal:build
 
-# Build shadcn registry
+# Build shadcn registry (also runs registry:verify)
 bun run registry:build
 ```
 

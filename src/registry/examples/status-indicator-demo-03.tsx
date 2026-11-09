@@ -3,8 +3,8 @@
 import { TbSend } from "react-icons/tb";
 
 import { cn } from "@/lib/utils";
-import type { StatusButtonRadius } from "@/registry/status-button";
-import { showStatusIndicator } from "@/registry/status-indicator";
+import type { StatusButtonRadius } from "@/registry/status-button/status-button";
+import { showStatusIndicator } from "@/registry/status-indicator/status-indicator";
 
 const radiusOptions: { value: StatusButtonRadius; label: string }[] = [
   { value: "none", label: "None" },

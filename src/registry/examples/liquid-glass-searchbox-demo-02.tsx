@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import { LiquidGlassSearchbox } from "@/registry/liquid-glass-searchbox";
+import { LiquidGlassSearchbox } from "@/registry/liquid-glass-searchbox/liquid-glass-searchbox";
 
 export default function LiquidGlassSearchboxCustomDemo() {
   const [query, setQuery] = useState("");

@@ -1,5 +1,6 @@
 "use client";
 
+import { cn } from "cn";
 import {
   mix,
   motion,
@@ -11,9 +12,7 @@ import React, { useCallback, useEffect } from "react";
 import { toast } from "sonner";
 
 import { useSound } from "@/hooks/use-sound";
-import { cn } from "@/lib/utils";
-
-import { RefractionFilter } from "./refraction-filter";
+import { RefractionFilter } from "@/registry/liquid-glass-lib/refraction-filter";
 
 /**
  * Props for the SlideToUnlock component.

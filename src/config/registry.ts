@@ -16,3 +16,12 @@ export const registryConfig = {
     process.env.REGISTRY_NAMESPACE_URL ||
     "https://jyotimoydas.in/r/{name}.json",
 };
+
+/**
+ * Absolute URL of a registry item. Used for `registryDependencies` so that
+ * installing an item by plain URL resolves its dependencies without the
+ * namespace being configured in the user's components.json.
+ */
+export function registryItemUrl(name: string) {
+  return registryConfig.namespaceUrl.replace("{name}", name);
+}

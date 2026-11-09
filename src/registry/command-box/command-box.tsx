@@ -1,8 +1,9 @@
 "use client";
 
 import { useCommandState } from "cmdk";
+import { cn } from "cn";
 import type { LucideProps } from "lucide-react";
-import { CornerDownLeftIcon } from "lucide-react";
+import { CornerDownLeftIcon, SearchIcon } from "lucide-react";
 import Image from "next/image";
 import * as React from "react";
 import { useCallback, useState } from "react";
@@ -18,7 +19,6 @@ import {
 } from "@/components/ui/command";
 import { Kbd } from "@/components/ui/kbd";
 import { Separator } from "@/components/ui/separator";
-import { cn } from "@/lib/utils";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Types
@@ -109,7 +109,6 @@ export interface CommandBoxLinkGroupProps {
 // Command Box Trigger Button
 // ─────────────────────────────────────────────────────────────────────────────
 
-import { Icons } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import { Kbd as KbdComponent, KbdGroup } from "@/components/ui/kbd";
 
@@ -130,7 +129,7 @@ export function CommandBoxTrigger({
       )}
       onClick={onClick}
     >
-      <Icons.search aria-hidden />
+      <SearchIcon aria-hidden />
 
       <span className="font-sans text-sm/4 font-medium sm:hidden">Search</span>
 

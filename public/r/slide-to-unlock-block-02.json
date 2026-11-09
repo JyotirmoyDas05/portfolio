@@ -1,13 +1,15 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "slide-to-unlock-block-02",
-  "type": "registry:block",
-  "registryDependencies": ["@jyotirmoydas/slide-to-unlock"],
+  "title": "Slide to Unlock Block 02",
+  "description": "A slide-to-unlock switch with custom thumb, track and toast colors.",
+  "registryDependencies": ["https://jyotimoydas.in/r/slide-to-unlock.json"],
   "files": [
     {
       "path": "src/registry/examples/slide-to-unlock-demo-02.tsx",
-      "content": "\"use client\";\n\nimport { SlideToUnlock } from \"@/registry/slide-to-unlock\";\n\nexport default function SlideToUnlockDemo2() {\n  return (\n    <SlideToUnlock\n      thumbColor=\"rgba(59, 130, 246, 0.95)\"\n      trackColorOff=\"#e7e5e4\"\n      trackColorOn=\"#173462\"\n      toastMessage=\"Color Changed\"\n    />\n  );\n}\n",
+      "content": "\"use client\";\n\nimport { SlideToUnlock } from \"@/registry/slide-to-unlock/slide-to-unlock\";\n\nexport default function SlideToUnlockDemo2() {\n  return (\n    <SlideToUnlock\n      thumbColor=\"rgba(59, 130, 246, 0.95)\"\n      trackColorOff=\"#e7e5e4\"\n      trackColorOn=\"#173462\"\n      toastMessage=\"Color Changed\"\n    />\n  );\n}\n",
       "type": "registry:component"
     }
-  ]
+  ],
+  "type": "registry:block"
 }

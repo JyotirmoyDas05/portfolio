@@ -1,13 +1,12 @@
 "use client";
 
+import { cn } from "cn";
 import { SearchIcon, XIcon } from "lucide-react";
 import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
 import type React from "react";
 import { forwardRef, useEffect, useId, useRef } from "react";
 
-import { cn } from "@/lib/utils";
-
-import { RefractionFilter } from "./refraction-filter";
+import { RefractionFilter } from "@/registry/liquid-glass-lib/refraction-filter";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Types

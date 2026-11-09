@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 import {
   StatusButton,
   type StatusButtonVariant,
-} from "@/registry/status-button";
+} from "@/registry/status-button/status-button";
 
 // =============================================================================
 // Demo Data

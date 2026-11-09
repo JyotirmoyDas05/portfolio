@@ -1,3 +1,4 @@
+import { cn } from "cn";
 import {
   BriefcaseBusinessIcon,
   ChevronsDownUpIcon,
@@ -16,7 +17,6 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import { Separator } from "@/components/ui/separator";
-import { cn } from "@/lib/utils";
 
 const iconMap = {
   code: CodeXmlIcon,

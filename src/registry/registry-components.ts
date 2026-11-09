@@ -1,5 +1,7 @@
 import type { Registry } from "shadcn/schema";
 
+import { registryItemUrl } from "../config/registry";
+
 export const components: Registry["items"] = [
   {
     name: "theme-switcher",
@@ -8,8 +10,11 @@ export const components: Registry["items"] = [
       "A theme switcher component for Next.js apps with next-themes and Tailwind CSS, supporting system, light, and dark modes.",
     title: "Theme Switcher",
     author: "jyotirmoydas <jyotirmoydas12345@gmail.com>",
-    dependencies: ["next-themes", "lucide-react", "motion"],
-    registryDependencies: ["@jyotirmoydas/utils"],
+    dependencies: ["cn", "next-themes", "lucide-react", "motion"],
+    registryDependencies: [
+      registryItemUrl("use-sound"),
+      registryItemUrl("use-theme-transition"),
+    ],
     files: [
       {
         path: "theme-switcher/theme-switcher.tsx",
@@ -21,10 +26,11 @@ export const components: Registry["items"] = [
   {
     name: "flip-sentences",
     type: "registry:component",
+    description:
+      "Cycles through a list of sentences with a smooth flip transition built with Motion.",
     title: "Flip Sentences",
     author: "jyotirmoydas <jyotirmoydas12345@gmail.com>",
-    dependencies: ["motion"],
-    registryDependencies: ["@jyotirmoydas/utils"],
+    dependencies: ["cn", "motion"],
     files: [
       {
         path: "flip-sentences/flip-sentences.tsx",
@@ -39,8 +45,7 @@ export const components: Registry["items"] = [
       "Create a Xin chào and Hello writing effect inspired by Apple using Motion for React.",
     title: "Apple Hello Effect",
     author: "jyotirmoydas <jyotirmoydas12345@gmail.com>",
-    dependencies: ["motion"],
-    registryDependencies: ["@jyotirmoydas/utils"],
+    dependencies: ["cn", "motion"],
     files: [
       {
         path: "apple-hello-effect/apple-hello-effect.tsx",
@@ -57,9 +62,9 @@ export const components: Registry["items"] = [
       "Displays a list of work experiences with role details and durations.",
     title: "Work Experience",
     author: "jyotirmoydas <jyotirmoydas12345@gmail.com>",
-    dependencies: ["react-markdown", "lucide-react"],
+    dependencies: ["cn", "react-markdown", "lucide-react"],
     devDependencies: ["@tailwindcss/typography", "tw-animate-css"],
-    registryDependencies: ["@jyotirmoydas/utils", "collapsible", "separator"],
+    registryDependencies: ["collapsible", "separator"],
     files: [
       {
         path: "work-experience/work-experience.tsx",
@@ -92,8 +97,7 @@ export const components: Registry["items"] = [
     description: "Smooth shimmering text animation built with Motion.",
     title: "Shimmering Text",
     author: "jyotirmoydas <jyotirmoydas12345@gmail.com>",
-    dependencies: ["motion"],
-    registryDependencies: ["@jyotirmoydas/utils"],
+    dependencies: ["cn", "motion"],
     files: [
       {
         path: "shimmering-text/shimmering-text.tsx",
@@ -108,11 +112,10 @@ export const components: Registry["items"] = [
       "An iOS 26-inspired liquid glass slide-to-unlock switch with refraction effects.",
     title: "Slide to Unlock",
     author: "jyotirmoydas <jyotirmoydas12345@gmail.com>",
-    dependencies: ["motion", "sonner"],
+    dependencies: ["cn", "motion", "sonner"],
     registryDependencies: [
-      "@jyotirmoydas/utils",
-      "@jyotirmoydas/use-sound",
-      "@jyotirmoydas/liquid-glass-lib",
+      registryItemUrl("use-sound"),
+      registryItemUrl("liquid-glass-lib"),
     ],
     files: [
       {
@@ -129,11 +132,8 @@ export const components: Registry["items"] = [
       "An iOS 26-inspired liquid glass slider with draggable thumb and SVG refraction effects.",
     title: "Liquid Glass Slider",
     author: "jyotirmoydas <jyotirmoydas12345@gmail.com>",
-    dependencies: ["motion"],
-    registryDependencies: [
-      "@jyotirmoydas/utils",
-      "@jyotirmoydas/liquid-glass-lib",
-    ],
+    dependencies: ["cn", "motion"],
+    registryDependencies: [registryItemUrl("liquid-glass-lib")],
     files: [
       {
         path: "liquid-glass-slider/liquid-glass-slider.tsx",
@@ -149,11 +149,8 @@ export const components: Registry["items"] = [
       "An iOS 26-inspired liquid glass searchbox with focus animations and SVG refraction effects.",
     title: "Liquid Glass Searchbox",
     author: "jyotirmoydas <jyotirmoydas12345@gmail.com>",
-    dependencies: ["motion", "lucide-react"],
-    registryDependencies: [
-      "@jyotirmoydas/utils",
-      "@jyotirmoydas/liquid-glass-lib",
-    ],
+    dependencies: ["cn", "motion", "lucide-react"],
+    registryDependencies: [registryItemUrl("liquid-glass-lib")],
     files: [
       {
         path: "liquid-glass-searchbox/liquid-glass-searchbox.tsx",
@@ -169,8 +166,8 @@ export const components: Registry["items"] = [
       "A customizable command palette/search box with keyboard shortcuts and footer logo customization.",
     title: "Command Box",
     author: "jyotirmoydas <jyotirmoydas12345@gmail.com>",
-    dependencies: ["cmdk", "radix-ui", "lucide-react", "react-hotkeys-hook"],
-    registryDependencies: ["@jyotirmoydas/utils"],
+    dependencies: ["cn", "cmdk", "lucide-react", "react-hotkeys-hook"],
+    registryDependencies: ["button", "command", "kbd", "separator"],
     files: [
       {
         path: "command-box/command-box.tsx",
@@ -202,7 +199,7 @@ export const components: Registry["items"] = [
       "A React component that adds a fade effect to content as you scroll.",
     title: "Scroll Fade Effect",
     author: "jyotirmoydas <jyotirmoydas12345@gmail.com>",
-    registryDependencies: ["@jyotirmoydas/utils"],
+    dependencies: ["cn"],
     files: [
       {
         path: "scroll-fade-effect/scroll-fade-effect.tsx",
@@ -299,8 +296,7 @@ export const components: Registry["items"] = [
       "An iOS Dynamic Island-style scroll progress indicator with expandable TOC navigation.",
     title: "Dynamic Scroll Island TOC",
     author: "jyotirmoydas <jyotirmoydas12345@gmail.com>",
-    dependencies: ["motion", "lucide-react"],
-    registryDependencies: ["@jyotirmoydas/utils"],
+    dependencies: ["cn", "motion", "lucide-react"],
     files: [
       {
         path: "dynamic-scroll-island-toc/dynamic-scroll-island-toc.tsx",
@@ -316,8 +312,7 @@ export const components: Registry["items"] = [
       "A stateful button with animated transitions between normal, loading, success, and error states.",
     title: "Status Button",
     author: "jyotirmoydas <jyotirmoydas12345@gmail.com>",
-    dependencies: ["motion", "react-icons", "class-variance-authority"],
-    registryDependencies: ["@jyotirmoydas/utils"],
+    dependencies: ["cn", "motion", "react-icons", "class-variance-authority"],
     files: [
       {
         path: "status-button/status-button.tsx",
@@ -334,7 +329,7 @@ export const components: Registry["items"] = [
     title: "Status Indicator",
     author: "jyotirmoydas <jyotirmoydas12345@gmail.com>",
     dependencies: ["sonner"],
-    registryDependencies: ["@jyotirmoydas/status-button"],
+    registryDependencies: [registryItemUrl("status-button")],
     files: [
       {
         path: "status-indicator/status-indicator.tsx",

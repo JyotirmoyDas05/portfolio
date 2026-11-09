@@ -1,10 +1,9 @@
 "use client";
 
+import { cn } from "cn";
 import type { HTMLMotionProps, Variants } from "motion/react";
 import { motion } from "motion/react";
 import * as React from "react";
-
-import { cn } from "@/lib/utils";
 
 export type ShimmeringTextProps = Omit<HTMLMotionProps<"span">, "children"> & {
   text: string;

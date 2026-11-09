@@ -2,19 +2,6 @@ import type { Registry } from "shadcn/schema";
 
 export const lib: Registry["items"] = [
   {
-    name: "utils",
-    type: "registry:lib",
-    title: "Utility Functions",
-    author: "jyotirmoydas <dai@jyotimoydas.in>",
-    dependencies: ["clsx", "tailwind-merge"],
-    files: [
-      {
-        path: "src/lib/utils.ts",
-        type: "registry:lib",
-      },
-    ],
-  },
-  {
     name: "liquid-glass-lib",
     type: "registry:lib",
     title: "Liquid Glass Utilities",

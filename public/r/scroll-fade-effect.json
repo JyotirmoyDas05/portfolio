@@ -1,15 +1,14 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "scroll-fade-effect",
-  "type": "registry:component",
   "title": "Scroll Fade Effect",
   "author": "jyotirmoydas <jyotirmoydas12345@gmail.com>",
   "description": "A React component that adds a fade effect to content as you scroll.",
-  "registryDependencies": ["@jyotirmoydas/utils"],
+  "dependencies": ["cn"],
   "files": [
     {
       "path": "src/registry/scroll-fade-effect/scroll-fade-effect.tsx",
-      "content": "import React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport function ScrollFadeEffect({\n  className,\n  orientation = \"vertical\",\n  ...props\n}: React.ComponentProps<\"div\"> & {\n  orientation?: \"horizontal\" | \"vertical\";\n}) {\n  return (\n    <div\n      data-orientation={orientation}\n      className={cn(\n        \"data-[orientation=horizontal]:overflow-x-auto data-[orientation=vertical]:overflow-y-auto\",\n        \"data-[orientation=horizontal]:scroll-fade-effect-x data-[orientation=vertical]:scroll-fade-effect-y\",\n        className\n      )}\n      {...props}\n    />\n  );\n}\n",
+      "content": "import { cn } from \"cn\";\nimport type React from \"react\";\n\nexport function ScrollFadeEffect({\n  className,\n  orientation = \"vertical\",\n  ...props\n}: React.ComponentProps<\"div\"> & {\n  orientation?: \"horizontal\" | \"vertical\";\n}) {\n  return (\n    <div\n      data-orientation={orientation}\n      className={cn(\n        \"data-[orientation=horizontal]:overflow-x-auto data-[orientation=vertical]:overflow-y-auto\",\n        \"data-[orientation=horizontal]:scroll-fade-effect-x data-[orientation=vertical]:scroll-fade-effect-y\",\n        className\n      )}\n      {...props}\n    />\n  );\n}\n",
       "type": "registry:component"
     }
   ],
@@ -86,5 +85,6 @@
       "animation-range": "0 var(--scroll-buffer), calc(100% - var(--scroll-buffer)) 100%",
       "animation-fill-mode": "both"
     }
-  }
+  },
+  "type": "registry:component"
 }

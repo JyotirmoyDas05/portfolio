@@ -2,7 +2,7 @@
 
 import { TbCloudUpload, TbCreditCard, TbSend } from "react-icons/tb";
 
-import { showStatusIndicator } from "@/registry/status-indicator";
+import { showStatusIndicator } from "@/registry/status-indicator/status-indicator";
 
 /**
  * Basic Status Indicator Demo

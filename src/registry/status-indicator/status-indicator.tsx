@@ -9,7 +9,7 @@ import {
   type StatusButtonColor,
   type StatusButtonRadius,
   type StatusButtonVariant,
-} from "@/registry/status-button";
+} from "@/registry/status-button/status-button";
 
 // =============================================================================
 // Types
@@ -175,7 +175,7 @@ function StatusIndicator({
  *
  * @example
  * ```tsx
- * import { showStatusIndicator } from "@/registry/status-indicator";
+ * import { showStatusIndicator } from "@/registry/status-indicator/status-indicator";
  *
  * // With color preset
  * showStatusIndicator({

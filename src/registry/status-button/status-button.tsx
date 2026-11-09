@@ -1,6 +1,7 @@
 "use client";
 
 import { cva, type VariantProps } from "class-variance-authority";
+import { cn } from "cn";
 import {
   AnimatePresence,
   type HTMLMotionProps,
@@ -10,8 +11,6 @@ import {
   type Transition,
 } from "motion/react";
 import { TbAlertTriangleFilled, TbCircleCheckFilled } from "react-icons/tb";
-
-import { cn } from "@/lib/utils";
 
 // =============================================================================
 // Types

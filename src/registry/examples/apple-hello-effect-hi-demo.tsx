@@ -31,7 +31,7 @@ import {
   AppleHelloHindiEffect,
   AppleHelloHungarianEffect,
   AppleHelloIndonesianEffect,
-} from "@/registry/apple-hello-effect";
+} from "@/registry/apple-hello-effect/apple-hello-effect";
 
 const LANGUAGES = [
   {

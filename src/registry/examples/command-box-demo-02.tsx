@@ -33,7 +33,7 @@ import {
   type CommandKind,
   type CommandLinkItem,
   useCommandBox,
-} from "@/registry/command-box";
+} from "@/registry/command-box/command-box";
 
 // Demo menu links
 const MENU_LINKS: CommandLinkItem[] = [

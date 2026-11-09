@@ -1,5 +1,6 @@
 "use client";
 
+import { cn } from "cn";
 import { ChevronUpIcon, XIcon } from "lucide-react";
 import {
   AnimatePresence,
@@ -12,8 +13,6 @@ import {
   useTransform,
 } from "motion/react";
 import { type RefObject, useCallback, useEffect, useState } from "react";
-
-import { cn } from "@/lib/utils";
 
 // =============================================================================
 // Types

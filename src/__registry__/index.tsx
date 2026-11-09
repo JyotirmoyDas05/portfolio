@@ -7,15 +7,6 @@
 import React from "react";
 
 export const Index: Record<string, any> = {
-  "utils": {
-    name: "utils",
-    description: "",
-    type: "registry:lib",
-    files: [{
-      path: "src/registry/src/lib/utils.ts",
-      type: "registry:lib",
-    }],
-  },
   "liquid-glass-lib": {
     name: "liquid-glass-lib",
     description: "Shared refraction and displacement utilities for iOS 26-inspired liquid glass effects.",
@@ -36,7 +27,7 @@ export const Index: Record<string, any> = {
   },
   "use-controllable-state": {
     name: "use-controllable-state",
-    description: "",
+    description: "Hook for components that can be either controlled or uncontrolled.",
     type: "registry:hook",
     files: [{
       path: "src/registry/src/hooks/use-layout-effect.tsx",
@@ -55,6 +46,15 @@ export const Index: Record<string, any> = {
       type: "registry:hook",
     }],
   },
+  "use-theme-transition": {
+    name: "use-theme-transition",
+    description: "Animates theme changes with the View Transitions API, expanding from the clicked element.",
+    type: "registry:hook",
+    files: [{
+      path: "src/registry/src/hooks/use-theme-transition.ts",
+      type: "registry:hook",
+    }],
+  },
   "theme-switcher": {
     name: "theme-switcher",
     description: "A theme switcher component for Next.js apps with next-themes and Tailwind CSS, supporting system, light, and dark modes.",
@@ -66,7 +66,7 @@ export const Index: Record<string, any> = {
   },
   "flip-sentences": {
     name: "flip-sentences",
-    description: "",
+    description: "Cycles through a list of sentences with a smooth flip transition built with Motion.",
     type: "registry:component",
     files: [{
       path: "src/registry/flip-sentences/flip-sentences.tsx",
@@ -183,7 +183,7 @@ export const Index: Record<string, any> = {
   },
   "work-experience-block-01": {
     name: "work-experience-block-01",
-    description: "",
+    description: "A work experience list with expandable roles, using sample data.",
     type: "registry:block",
     files: [{
       path: "src/registry/examples/work-experience-demo.tsx",
@@ -192,7 +192,7 @@ export const Index: Record<string, any> = {
   },
   "shimmering-text-block-01": {
     name: "shimmering-text-block-01",
-    description: "",
+    description: "Shimmering text at a larger size.",
     type: "registry:block",
     files: [{
       path: "src/registry/examples/shimmering-text-demo-01.tsx",
@@ -201,7 +201,7 @@ export const Index: Record<string, any> = {
   },
   "shimmering-text-block-02": {
     name: "shimmering-text-block-02",
-    description: "",
+    description: "Shimmering text with custom colors for a loading message.",
     type: "registry:block",
     files: [{
       path: "src/registry/examples/shimmering-text-demo-02.tsx",
@@ -210,7 +210,7 @@ export const Index: Record<string, any> = {
   },
   "slide-to-unlock-block-01": {
     name: "slide-to-unlock-block-01",
-    description: "",
+    description: "The default slide-to-unlock switch.",
     type: "registry:block",
     files: [{
       path: "src/registry/examples/slide-to-unlock-demo-01.tsx",
@@ -219,7 +219,7 @@ export const Index: Record<string, any> = {
   },
   "slide-to-unlock-block-02": {
     name: "slide-to-unlock-block-02",
-    description: "",
+    description: "A slide-to-unlock switch with custom thumb, track and toast colors.",
     type: "registry:block",
     files: [{
       path: "src/registry/examples/slide-to-unlock-demo-02.tsx",
@@ -228,16 +228,34 @@ export const Index: Record<string, any> = {
   },
   "slide-to-unlock-block-03": {
     name: "slide-to-unlock-block-03",
-    description: "",
+    description: "A slide-to-unlock switch with tuned glass refraction settings.",
     type: "registry:block",
     files: [{
       path: "src/registry/examples/slide-to-unlock-demo-03.tsx",
       type: "registry:component",
     }],
   },
+  "slide-to-unlock-block-04": {
+    name: "slide-to-unlock-block-04",
+    description: "A disabled slide-to-unlock switch.",
+    type: "registry:block",
+    files: [{
+      path: "src/registry/examples/slide-to-unlock-demo-04.tsx",
+      type: "registry:component",
+    }],
+  },
+  "liquid-glass-slider-block-01": {
+    name: "liquid-glass-slider-block-01",
+    description: "A liquid glass slider with a default value and a change handler.",
+    type: "registry:block",
+    files: [{
+      path: "src/registry/examples/liquid-glass-slider-demo-01.tsx",
+      type: "registry:component",
+    }],
+  },
   "scroll-fade-effect-block-01": {
     name: "scroll-fade-effect-block-01",
-    description: "",
+    description: "A vertical scroll fade over a long list of tags.",
     type: "registry:block",
     files: [{
       path: "src/registry/examples/scroll-fade-effect-demo-01.tsx",
@@ -246,7 +264,7 @@ export const Index: Record<string, any> = {
   },
   "scroll-fade-effect-block-02": {
     name: "scroll-fade-effect-block-02",
-    description: "",
+    description: "A horizontal scroll fade over a row of artwork.",
     type: "registry:block",
     files: [{
       path: "src/registry/examples/scroll-fade-effect-demo-02.tsx",
@@ -255,7 +273,7 @@ export const Index: Record<string, any> = {
   },
   "scroll-fade-effect-block-03": {
     name: "scroll-fade-effect-block-03",
-    description: "",
+    description: "A vertical scroll fade applied to the shadcn scroll area.",
     type: "registry:block",
     files: [{
       path: "src/registry/examples/scroll-fade-effect-demo-03.tsx",
@@ -264,7 +282,7 @@ export const Index: Record<string, any> = {
   },
   "scroll-fade-effect-block-04": {
     name: "scroll-fade-effect-block-04",
-    description: "",
+    description: "A horizontal scroll fade applied to the shadcn scroll area.",
     type: "registry:block",
     files: [{
       path: "src/registry/examples/scroll-fade-effect-demo-04.tsx",

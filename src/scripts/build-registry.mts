@@ -90,8 +90,9 @@ export const Index: Record<string, any> = {`;
     "utf8"
   );
 
-  // Build public registry
-  rimraf.sync(path.join(PUBLIC_REGISTRY_PATH, "registry.json"));
+  // Build public registry, cleaned so removed items stop being served
+  rimraf.sync(PUBLIC_REGISTRY_PATH);
+  await fs.mkdir(PUBLIC_REGISTRY_PATH, { recursive: true });
   await fs.writeFile(
     path.join(PUBLIC_REGISTRY_PATH, "registry.json"),
     registryJSON,

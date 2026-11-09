@@ -4,6 +4,7 @@ import path from "node:path";
 import { visit } from "unist-util-visit";
 
 import { Index } from "@/__registry__/index";
+import { toInstalledImports } from "@/lib/registry-imports";
 import type { UnistNode, UnistTree } from "@/types/unist";
 
 export function remarkComponent() {
@@ -54,7 +55,7 @@ export function remarkComponent() {
           // Replace imports.
           // TODO: Use @swc/core and a visitor to replace this.
           // For now a simple regex should do.
-          source = source.replaceAll(`@/registry/`, "@/components/");
+          source = toInstalledImports(source);
           source = source.replaceAll("export default", "export");
 
           const title = getNodeAttributeByName(node, "title");
@@ -100,7 +101,7 @@ export function remarkComponent() {
           // Replace imports.
           // TODO: Use @swc/core and a visitor to replace this.
           // For now a simple regex should do.
-          source = source.replaceAll(`@/registry/`, "@/components/");
+          source = toInstalledImports(source);
           source = source.replaceAll("export default", "export");
 
           const codeBlock = {

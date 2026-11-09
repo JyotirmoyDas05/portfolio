@@ -1,5 +1,6 @@
 "use client";
 
+import { cn } from "cn";
 import { MonitorIcon, MoonIcon, MoonStarIcon, SunIcon } from "lucide-react";
 import { motion } from "motion/react";
 import { useTheme } from "next-themes";
@@ -8,7 +9,6 @@ import { useCallback, useRef, useSyncExternalStore } from "react";
 
 import { useSound } from "@/hooks/use-sound";
 import { useThemeTransition } from "@/hooks/use-theme-transition";
-import { cn } from "@/lib/utils";
 
 // =============================================================================
 // Types

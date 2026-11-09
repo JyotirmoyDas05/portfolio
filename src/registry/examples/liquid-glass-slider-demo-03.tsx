@@ -1,6 +1,6 @@
 "use client";
 
-import { LiquidGlassSlider } from "@/registry/liquid-glass-slider";
+import { LiquidGlassSlider } from "@/registry/liquid-glass-slider/liquid-glass-slider";
 
 export default function LiquidGlassSliderOpticalDemo() {
   return (

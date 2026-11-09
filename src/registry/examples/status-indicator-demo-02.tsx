@@ -3,8 +3,8 @@
 import { TbCreditCard } from "react-icons/tb";
 
 import { cn } from "@/lib/utils";
-import type { StatusButtonColor } from "@/registry/status-button";
-import { showStatusIndicator } from "@/registry/status-indicator";
+import type { StatusButtonColor } from "@/registry/status-button/status-button";
+import { showStatusIndicator } from "@/registry/status-indicator/status-indicator";
 
 const colors: { value: StatusButtonColor; label: string }[] = [
   { value: "default", label: "Default" },

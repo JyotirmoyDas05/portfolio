@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 import {
   DynamicScrollIslandTOC,
   type TOCItem,
-} from "@/registry/dynamic-scroll-island-toc";
+} from "@/registry/dynamic-scroll-island-toc/dynamic-scroll-island-toc";
 
 // =============================================================================
 // Demo Data
